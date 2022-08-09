@@ -530,6 +530,22 @@ class Merchant(SendNotificationMixin,
     forbid_drivers_edit_schedule = models.BooleanField(default=False,
                                                        verbose_name='Restrict drivers from editing schedules')
 
+    signature_or_photo = 0
+    signature = 1
+    photo = 2
+
+    confirmation_requirement_choices = (
+        (signature_or_photo, 'Either signature required or photo required'),
+        (signature, 'Signature required and photo optional'),
+        (photo, 'Photo required and signature optional'),
+    )
+
+    confirmation_requirement = models.IntegerField(
+        choices=confirmation_requirement_choices,
+        default=DISABLED)
+
+    minimum_confirmation_photos = models.IntegerField(default=0)
+
     objects = MerchantManager()
     all_objects = models.Manager()
 
