@@ -76,6 +76,8 @@ class MerchantSerializer(RadaroMobileModelSerializer):
     enable_high_resolution = serializers.BooleanField(source='high_resolution')
     enable_eta_with_traffic = serializers.BooleanField(source='eta_with_traffic')
 
+    confirmation_requirement = serializers.SerializerMethodField()
+
     class Meta:
         model = Merchant
         fields = ('id', 'merchant_identifier', 'geofence_settings', 'working_time',
@@ -93,7 +95,9 @@ class MerchantSerializer(RadaroMobileModelSerializer):
 
                   'enable_driver_create_job', 'enable_auto_complete_customer_fields',  'enable_app_jobs_assignment',
                   'enable_address_2', 'enable_high_resolution', 'enable_eta_with_traffic', 'enable_skids',
-                  'forbid_drivers_unassign_jobs', 'enable_concatenated_orders', 'forbid_drivers_edit_schedule')
+                  'forbid_drivers_unassign_jobs', 'enable_concatenated_orders', 'forbid_drivers_edit_schedule',
+
+                  'confirmation_requirement', 'minimum_confirmation_photos')
 
     def get_enable_job_checklist(self, instance):
         return instance.checklist is not None
@@ -114,3 +118,11 @@ class MerchantSerializer(RadaroMobileModelSerializer):
             Merchant.UPON_EXITING: 'upon_exiting',
         }
         return choice[instance.geofence_settings]
+
+    def get_confirmation_requirement(self, instance):
+        choice = {
+            Merchant.signature_or_photo: 'Either signature required or photo required',
+            Merchant.signature: 'Signature required and photo optional',
+            Merchant.photo: 'Photo required and signature optional',
+        }
+        return choice[instance.confirmation_requirement]
