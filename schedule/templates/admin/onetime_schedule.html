@@ -1,0 +1,20 @@
+<div>
+    <div>
+    <br>
+    <label style="flex: 6%; font-weight: bold;" for="{{ subwidget.attrs.id }}">One time</label>
+    {% for subwidget in widget.subwidgets %}
+        <div style="margin-bottom: 5px; display: flex;">
+            <label style="width: 120px; font-weight: bold;" for="{{ subwidget.attrs.id }}">
+                {{ subwidget.attrs.label_text }}
+            </label>
+            <div>
+                {% with widget=subwidget %}
+                    <div class="{% if widget.errors %}grp-errors{% endif %}">
+                        {% include widget.template_name %}
+                    </div>
+                {% endwith %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

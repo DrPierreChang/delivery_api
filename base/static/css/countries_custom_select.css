@@ -1,0 +1,8 @@
+#id_ALLOWED_COUNTRIES {
+    overflow: scroll;
+    max-height: 400px;
+}
+#id_ALLOWED_COUNTRIES>li {
+    width: 33%;
+    float: left;
+}

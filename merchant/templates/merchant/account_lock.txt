@@ -1,0 +1,5 @@
+Hello, {{member.first_name}}!
+Please be aware that you currently have insufficient funds on your account to process jobs and track your drivers.
+To reactivate your account, please add credit at the link below.
+{{ settings.FRONTEND_URL }}
+Thank you for using Radaro! We appreciate your business.

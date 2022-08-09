@@ -1,0 +1,1 @@
+{% if terminatecode.type == 'error'%}Termination{% else %}Completion{% endif %} Notification

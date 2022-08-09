@@ -1,0 +1,22 @@
+<div>
+    <div>
+    {% for subwidget in widget.subwidgets %}
+        <div style="margin-bottom: 5px; display: flex;">
+            <label style="flex: 6%; font-weight: bold;" for="{{ subwidget.attrs.id }}">
+                {{ subwidget.attrs.label_text }}
+            </label>
+            <div style="flex: 94%">
+                {% with widget=subwidget %}
+                    <div class="{% if widget.errors %}grp-errors{% endif %}">
+                        {% include widget.template_name %}
+                        {{ widget.errors }}
+                    </div>
+                    <p class="grp-help">
+                        Preview: "{{ widget.attrs.preview }}"
+                    </p>
+                {% endwith %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

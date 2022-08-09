@@ -1,0 +1,12 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{customer.name}}!
+{% endblock %}
+{% block content %}
+        Please rate your order from {{ merchant }}.
+Follow the link below:
+{{ url }}
+{% endblock %}
+
+{% block empty %}
+{% endblock %}

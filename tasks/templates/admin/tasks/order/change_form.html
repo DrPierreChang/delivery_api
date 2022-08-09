@@ -1,0 +1,18 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls order_tags%}
+{% block object-tools-items %}
+    {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+    <li><a href="{% add_preserved_filters history_url %}">History</a></li>
+    {% job_status as show_order %}
+    {% job_path as job_path %}
+    {% if show_order %}
+        <li><a href="{{ original.get_order_url }}" target="_blank">Customer url</a></li>
+    {% endif %}
+    {% if job_path %}
+        <li><a href="{% url 'routes_comparison' original.order_id %}" target="_blank">Order routes</a></li>
+    {% endif %}
+        <li><a href="{% url 'geofences_comparison' original.order_id %}" target="_blank">Order geofences</a></li>
+    {% if has_absolute_url %}
+        <li><a href="{{ absolute_url }}" class="grp-state-focus" target="_blank">View on site</a></li>
+    {% endif %}
+{% endblock %}

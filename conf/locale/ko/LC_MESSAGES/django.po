@@ -1,0 +1,1012 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 16:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base/api/mobile/invitations/v1/serializers.py:51
+msgid "Already registered."
+msgstr "이미 등록."
+
+#: base/api/mobile/invitations/v1/serializers.py:54
+msgid "No invitations with this phone number were found."
+msgstr "이 전화번호로 초대장을 찾을 수 없습니다."
+
+#: base/api/mobile/invitations/v1/serializers.py:74
+msgid "Pin code is not valid or out of date."
+msgstr "핀 코드가 유효하지 않거나 오래되었습니다."
+
+#: base/csv_parsing.py:13
+msgid "Time has wrong format. Use hh:mm time format instead."
+msgstr "시간 형식이 잘못되었습니다. 대신 hh:mm 시간 형식을 사용하십시오."
+
+#: base/csv_parsing.py:18 base/csv_parsing.py:33
+msgid "\"driver_id\" field is required."
+msgstr "\"driver_id\" 필드는 필수입니다."
+
+#: base/csv_parsing.py:92 schedule/admin/fields/schedule.py:19
+#: schedule/api/mobile/schedule/v1/serializers.py:31
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:32
+msgid "Break ranges overlap."
+msgstr "중단 범위가 겹칩니다."
+
+#: base/csv_parsing.py:144 base/csv_parsing.py:146
+#: schedule/admin/fields/schedule.py:20
+#: schedule/api/mobile/schedule/v1/serializers.py:71
+#: schedule/api/mobile/schedule/v1/serializers.py:75
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:27
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:32
+msgid "The break went beyond working hours."
+msgstr "휴식 시간은 근무 시간을 넘어 섰습니다."
+
+#: base/fields.py:13
+#, python-format
+msgid "'%(value)s' value must be valid JSON."
+msgstr "' %(value)s ' 값은 유효한 JSON이어야 합니다."
+
+#: base/fields.py:14
+msgid "All keys must be in YYYY-MM-DD format."
+msgstr "모든 키는 YYYY-MM-DD 형식이어야 합니다."
+
+#: base/fields.py:15
+msgid "All keys must be days."
+msgstr "모든 키는 일이어야 합니다."
+
+#: base/fields.py:16
+msgid "Data must be in key-value format."
+msgstr "데이터는 키-값 형식이어야 합니다."
+
+#: base/models/cars.py:16
+msgid "Scooter"
+msgstr "스쿠터"
+
+#: base/models/cars.py:17
+msgid "Car"
+msgstr "자동차"
+
+#: base/models/cars.py:18
+msgid "Pickup / Ute"
+msgstr "픽업 / 우테"
+
+#: base/models/cars.py:19
+msgid "Van"
+msgstr "봉고차"
+
+#: base/models/cars.py:20
+msgid "Truck"
+msgstr "트럭"
+
+#: base/templates/admin/drivers_schedule_import.html:17
+msgid "Home"
+msgstr "집"
+
+#: custom_auth/api/legacy/serializers.py:70
+msgid "User with such email doesn't exist."
+msgstr "해당 이메일을 가진 사용자가 존재하지 않습니다."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:25
+msgid "Invalid username or password."
+msgstr "잘못된 사용자 이름 또는 암호입니다."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:29
+msgid "User inactive or deleted."
+msgstr "사용자가 비활성화되었거나 삭제되었습니다."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:35
+msgid "You're currently online on another device."
+msgstr "현재 다른 기기에서 온라인 상태입니다."
+
+#: custom_auth/push_messages/composers.py:11
+msgid "you logged in"
+msgstr "당신은 로그인"
+
+#: custom_auth/push_messages/composers.py:21
+msgid " on another device."
+msgstr " 다른 장치에서."
+
+#: driver/api/mobile/drivers/v1/serializers/validators.py:29
+msgid "User with such email already registered."
+msgstr "그러한 이메일을 가진 사용자가 이미 등록되어 있습니다."
+
+#: driver/push_messages/composers.py:12
+msgid "you have been forced offline"
+msgstr "당신은 강제로 오프라인되었습니다"
+
+#: driver/push_messages/composers.py:18 merchant/push_messages/composers.py:16
+#, python-brace-format
+msgid " by the manager {manager}"
+msgstr " 관리자 {manager}"
+
+#: merchant/api/legacy/serializers/skill_sets.py:20
+#, python-format
+msgid "%(count)d active job that has"
+msgid_plural "%(count)d active jobs that have"
+msgstr[0] "%(count)d 활성 작업이 있습니다."
+
+#: merchant/api/legacy/serializers/skill_sets.py:25
+#, python-format
+msgid "Can't delete the skill because you have %(jobs_msg)s this skill"
+msgid_plural ""
+"Can't delete the skills because you have %(jobs_msg)s these skills"
+msgstr[0] "%(jobs_msg)s 기술이 있으므로 기술을 삭제할 수 없습니다."
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "you"
+msgstr "너"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "driver"
+msgid_plural "drivers"
+msgstr[0] "운전사"
+
+#: merchant/api/legacy/serializers/skill_sets.py:35
+#, python-format
+msgid "%(count)d job that has"
+msgid_plural "%(count)d jobs that have"
+msgstr[0] "%(count)d 개의 작업이 있습니다."
+
+#: merchant/api/legacy/serializers/skill_sets.py:38
+#, python-format
+msgid ""
+"%(jobs_msg)s this skill will be unassigned from %(from)s after you delete "
+"the skill"
+msgid_plural ""
+"%(jobs_msg)s these skills will be unassigned from %(from)s after you delete "
+"the skills"
+msgstr[0] "%(jobs_msg)s 이 기술은 기술을 삭제한 후 %(from)s"
+
+#: merchant/models/merchant.py:400
+msgid "route optimisation"
+msgstr "경로 최적화"
+
+#: merchant/models/merchant.py:403
+msgid "route optimisation focus"
+msgstr "경로 최적화 초점"
+
+#: merchant/models/merchant.py:404
+msgid ""
+"Set, what to focus on for group optimisation. This setting is useful only "
+"with \"route optimisation\" enabled."
+msgstr ""
+"그룹 최적화를 위해 집중해야 할 사항을 설정합니다. 이 설정은 \"경로 최적화"
+"\"가 활성화된 경우에만 유용합니다."
+
+#: merchant/models/merchant.py:409
+msgid ""
+"Set average duration of time a driver needs to spend to on job site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"운전자가 작업 현장에서 보내야 하는 평균 시간을 설정합니다. 이 설정은 \"경로 "
+"최적화\"가 활성화된 경우에만 유용합니다."
+
+#: merchant/models/merchant.py:414
+msgid ""
+"Set average duration of time a driver needs to spend to on pickup site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"운전자가 픽업 장소에서 보내야 하는 평균 시간을 설정합니다. 이 설정은 \"경로 "
+"최적화\"가 활성화된 경우에만 유용합니다."
+
+#: merchant/models/merchant.py:422
+msgid "Barcodes"
+msgstr "바코드"
+
+#: merchant/models/merchant.py:629
+msgid "You can't use `route optimisation` feature without enabling `hubs`"
+msgstr "'허브'를 활성화하지 않으면 '경로 최적화' 기능을 사용할 수 없습니다."
+
+#: merchant/models/merchant.py:664
+msgid ""
+"You cannot select an option that requires a barcode scan upon delivery with "
+"`enable_delivery_confirmation` disabled"
+msgstr ""
+"'enable_delivery_confirmation'이 비활성화된 상태에서 배송 시 바코드 스캔이 필"
+"요한 옵션을 선택할 수 없습니다."
+
+#: merchant/models/merchant.py:670
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation` disabled"
+msgstr "'enable_delivery_confirmation'이 비활성화된 옵션은 선택할 수 없습니다."
+
+#: merchant/models/merchant.py:675
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation_documents` "
+"disabled"
+msgstr ""
+"'enable_delivery_confirmation_documents'가 비활성화된 옵션은 선택할 수 없습니"
+"다."
+
+#: merchant/models/merchant.py:680
+msgid "You cannot select an option with `in_app_jobs_assignment` disabled"
+msgstr "'in_app_jobs_assignment'가 비활성화된 옵션은 선택할 수 없습니다."
+
+#: merchant/permissions.py:17
+msgid ""
+"You don't have ability to perform this action because labels aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"라벨이 활성화되지 않았기 때문에 이 작업을 수행할 수 없습니다. 관리자에게 문의"
+"하시기 바랍니다."
+
+#: merchant/permissions.py:27
+msgid ""
+"You don't have ability to perform this action because skill sets aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"스킬 세트가 활성화되지 않았기 때문에 이 작업을 수행할 수 없습니다. 관리자에"
+"게 문의하시기 바랍니다."
+
+#: merchant/permissions.py:35
+msgid ""
+"You don't have ability to perform this action because barcodes aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"바코드가 활성화되어 있지 않기 때문에 이 작업을 수행할 수 없습니다. 관리자에"
+"게 문의하시기 바랍니다."
+
+#: merchant/permissions.py:51
+msgid ""
+"You don't have ability to perform this action because SKIDs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"SKID가 활성화되어 있지 않기 때문에 이 작업을 수행할 수 없습니다. 관리자에게 "
+"문의하시기 바랍니다."
+
+#: merchant/permissions.py:59
+msgid ""
+"You don't have ability to perform this action because subbranding aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"하위 브랜드가 활성화되지 않았기 때문에 이 작업을 수행할 수 없습니다. 관리자에"
+"게 문의하시기 바랍니다."
+
+#: merchant/permissions.py:67
+msgid ""
+"You don't have ability to perform this action because hubs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"허브가 활성화되어 있지 않기 때문에 이 작업을 수행할 수 없습니다. 관리자에게 "
+"문의하시기 바랍니다."
+
+#: merchant/push_messages/composers.py:13
+#, python-brace-format
+msgid "skill set \"{name}\" {message}"
+msgstr "스킬 세트 \" {name} \" {message}"
+
+#: merchant/push_messages/composers.py:32
+msgid "has been added to you"
+msgstr "당신에게 추가되었습니다"
+
+#: merchant/push_messages/composers.py:37
+msgid "has been removed from you"
+msgstr "당신에게서 제거되었습니다"
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:65
+msgid "A valid bool is required."
+msgstr "유효한 부울이 필요합니다."
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:96
+msgid "Not a valid choice"
+msgstr "유효한 선택이 아닙니다"
+
+#: merchant_extension/api/mobile/checklists/v2/serializers.py:14
+msgid "Photos are required for this answer."
+msgstr "이 답변에는 사진이 필요합니다."
+
+#: radaro_utils/filters/date_filters.py:26
+#, python-brace-format
+msgid "{alias} for today (US EST timezone)"
+msgstr "{alias} (미국 동부 표준시)"
+
+#: radaro_utils/filters/date_filters.py:27
+#, python-brace-format
+msgid "{alias} for 24+ hours ago"
+msgstr "24시간 이상 전의 {alias}"
+
+#: radaro_utils/filters/date_filters.py:28
+#, python-brace-format
+msgid "{alias} for 72+ hours ago"
+msgstr "72시간 이상 전의 {alias}"
+
+#: radaro_utils/filters/date_filters.py:29
+msgid "7 days"
+msgstr "7 일"
+
+#: radaro_utils/filters/date_filters.py:30
+msgid "Month"
+msgstr "월"
+
+#: radaro_utils/filters/date_filters.py:31
+msgid "3 months"
+msgstr "3 개월"
+
+#: radaro_utils/filters/date_filters.py:32
+msgid "Year"
+msgstr "년도"
+
+#: radaro_utils/password_validation.py:17
+#, python-format
+msgid "The password must contain at least %(min_letters)d uppercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d uppercase characters"
+msgstr[0] "%(min_letters)d 개 이상의 대문자를 포함해야 합니다."
+
+#: radaro_utils/password_validation.py:37
+#, python-format
+msgid "The password must contain at least %(min_letters)d lowercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d lowercase characters"
+msgstr[0] "%(min_letters)d 소문자를 포함해야 합니다."
+
+#: radaro_utils/password_validation.py:57
+#, python-format
+msgid "The password must contain at least %(min_numbers)d number"
+msgid_plural "The password must contain at least %(min_numbers)d numbers"
+msgstr[0] "%(min_numbers)d 개 이상의 숫자를 포함해야 합니다."
+
+#: radaro_utils/radaro_phone/serializers.py:25
+msgid "This field may not be blank."
+msgstr "이 필드는 비워둘 수 없습니다."
+
+#: radaro_utils/radaro_phone/serializers.py:27
+msgid "Phone number have too many characters"
+msgstr "전화번호에 문자가 너무 많습니다."
+
+#: radaro_utils/radaro_phone/utils.py:31
+msgid "Not supported region for merchant."
+msgstr "판매자가 지원하지 않는 지역입니다."
+
+#: radaro_utils/radaro_phone/utils.py:33
+msgid "Invalid phone number for merchant's region."
+msgid_plural "Invalid phone number for merchant's regions."
+msgstr[0] "판매자 지역의 전화번호가 잘못되었습니다."
+
+#: radaro_utils/radaro_phone/utils.py:52
+msgid ""
+"Phone must be in international format since the merchant operates in "
+"multiple countries."
+msgstr "판매자가 여러 국가에서 운영하므로 전화는 국제 형식이어야 합니다."
+
+#: radaro_utils/serializers/mixins.py:37
+msgid "You should specify either location or address"
+msgstr "위치 또는 주소를 지정해야 합니다."
+
+#: radaro_utils/serializers/mixins.py:41
+msgid "Address not found."
+msgstr "주소를 찾을 수 없습니다."
+
+#: radaro_utils/serializers/mobile/serializers.py:45
+#, python-brace-format
+msgid "Invalid data. Expected a dictionary, but got {datatype}."
+msgstr "유효하지 않은 데이터. 사전이 필요하지만 {datatype} 있습니다."
+
+#: radaro_utils/serializers/validators.py:55
+msgid "This date cannot be earlier than now."
+msgstr "이 날짜는 지금보다 빠를 수 없습니다."
+
+#: route_optimisation/admin/base.py:38
+msgid "Optimisation cost"
+msgstr "최적화 비용"
+
+#: route_optimisation/admin/base.py:78
+msgid "Soft delete selected optimisations and unassign jobs"
+msgstr "선택한 최적화를 일시 삭제하고 작업 할당을 취소합니다."
+
+#: route_optimisation/admin/base.py:89
+msgid "Soft delete selected optimisations, keep jobs assigned"
+msgstr "선택한 최적화를 일시 삭제하고 작업을 할당된 상태로 유지"
+
+#: route_optimisation/api/mobile/v1/serializers.py:54
+#: route_optimisation/api/web/serializers/route_optimisation.py:54
+#: route_optimisation/api/web/temp_legacy/serializers/route_optimisation.py:64
+#: webhooks/api/route_optimisation/v1/serializers/optimisation.py:68
+#: webhooks/api/route_optimisation/v2/serializers/optimisation.py:48
+msgid "Cannot create optimisation in the past."
+msgstr "과거에 최적화를 만들 수 없습니다."
+
+#: route_optimisation/api/permissions.py:9
+msgid "Route optimisation is not active for you"
+msgstr "경로 최적화가 활성화되어 있지 않습니다."
+
+#: route_optimisation/api/web/filters.py:75
+msgid "\"{}\" is not a valid value."
+msgstr "\"{}\"은(는) 유효한 값이 아닙니다."
+
+#: route_optimisation/api/web/serializers/manage_orders.py:27
+#: route_optimisation/api/web/serializers/manage_orders.py:41
+#: route_optimisation/logging/logs/validation.py:124
+msgid "optimisation"
+msgstr "최적화"
+
+#: route_optimisation/api/web/serializers/refresh.py:43
+msgid "This field is required."
+msgstr "이 필드는 필수입니다."
+
+#: route_optimisation/api/web/temp_legacy/views.py:50
+#: route_optimisation/api/web/views/route_optimisations.py:65
+msgid "You can't delete optimisation which hasn't yet been calculated."
+msgstr "아직 계산되지 않은 최적화는 삭제할 수 없습니다."
+
+#: route_optimisation/apps.py:9
+msgid "Route Optimisation"
+msgstr "경로 최적화"
+
+#: route_optimisation/celery_tasks/notification.py:30
+#, python-brace-format
+msgid " on {optimisation_day}"
+msgstr "{optimisation_day} 에"
+
+#: route_optimisation/engine/ortools/context/init.py:256
+msgid ""
+"We could not create the optimisation. There are orders on different "
+"continents."
+msgstr "최적화를 만들 수 없습니다. 다른 대륙에 주문이 있습니다."
+
+#: route_optimisation/engine/ortools/context/init.py:267
+msgid ""
+"We could not create the optimisation. There are hubs on different continents."
+msgstr "최적화를 만들 수 없습니다. 다른 대륙에 허브가 있습니다."
+
+#: route_optimisation/logging/logs/base.py:89
+#: route_optimisation/logging/logs/base.py:94
+msgid "Old type route optimisation"
+msgstr "이전 유형 경로 최적화"
+
+#: route_optimisation/logging/logs/exception.py:60
+#: route_optimisation/logging/logs/help_logs.py:21
+#: route_optimisation/logging/logs/help_logs.py:43
+#: route_optimisation/logging/logs/help_logs.py:58
+#: route_optimisation/logging/logs/help_logs.py:82
+#: route_optimisation/logging/logs/help_logs.py:86
+#: route_optimisation/logging/logs/help_logs.py:90
+#: route_optimisation/logging/logs/help_logs.py:93
+#: route_optimisation/logging/logs/help_logs.py:171
+#: route_optimisation/logging/logs/help_logs.py:228
+#: route_optimisation/logging/logs/managing.py:82
+#: route_optimisation/logging/logs/state_change.py:16
+#: route_optimisation/logging/logs/state_change.py:53
+#: route_optimisation/logging/logs/state_change.py:56
+#: route_optimisation/logging/logs/state_change.py:58
+#: route_optimisation/logging/logs/validation.py:57
+#: route_optimisation/logging/logs/validation.py:64
+#: route_optimisation/logging/logs/validation.py:66
+#: route_optimisation/logging/logs/validation.py:69
+#: route_optimisation/logging/logs/validation.py:88
+#: route_optimisation/logging/logs/validation.py:93
+#: route_optimisation/logging/logs/validation.py:97
+#: route_optimisation/logging/logs/validation.py:101
+#: route_optimisation/logging/logs/validation.py:105
+#: route_optimisation/logging/logs/validation.py:193
+#: route_optimisation/logging/logs/validation.py:196
+#: route_optimisation/logging/logs/validation.py:199
+#: route_optimisation/logging/logs/validation.py:202
+#: route_optimisation/logging/logs/validation.py:244
+#: route_optimisation/utils/backends/move_orders.py:81
+#: route_optimisation/utils/backends/move_orders.py:88
+#: route_optimisation/utils/validation/serializers.py:71
+#: route_optimisation/utils/validation/serializers.py:160
+#: webhooks/api/route_optimisation/v2/serializers/options.py:25
+msgid "Optimisation"
+msgstr "최적화"
+
+#: route_optimisation/logging/logs/validation.py:71
+msgid "optimised"
+msgstr "최적화된"
+
+#: route_optimisation/push_messages/composers.py:11
+msgid "your route was optimised"
+msgstr "경로가 최적화되었습니다"
+
+#: route_optimisation/push_messages/composers.py:34
+msgid "Route optimisation"
+msgstr "경로 최적화"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "completed"
+msgstr "완전한"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "failed"
+msgstr "실패한"
+
+#: route_optimisation/push_messages/composers.py:56
+msgid "your route was removed"
+msgstr "경로가 삭제되었습니다"
+
+#: route_optimisation/push_messages/composers.py:79
+msgid "your route was updated"
+msgstr "경로가 업데이트되었습니다"
+
+#: route_optimisation/utils/validation/serializers.py:158
+#, python-brace-format
+msgid ""
+"Vehicle Capacity feature is disabled, please turn this on to create "
+"{optimisation} that accounts Vehicle Capacity"
+msgstr ""
+"차량 용량 기능이 비활성화되었습니다. 차량 용량을 고려하는 {optimisation}"
+
+#: route_optimisation/utils/validation/serializers.py:172
+msgid "Wrong working hours"
+msgstr "잘못된 근무 시간"
+
+#: route_optimisation/utils/validation/serializers.py:180
+msgid "No start hub passed"
+msgstr "통과된 시작 허브가 없습니다."
+
+#: route_optimisation/utils/validation/serializers.py:190
+msgid "No end hub passed"
+msgstr "통과된 엔드 허브가 없습니다."
+
+#: route_optimisation/utils/validation/validators.py:47
+msgid "There are no jobs to optimise"
+msgstr "최적화할 작업이 없습니다."
+
+#: route_optimisation/utils/validation/validators.py:53
+msgid "Too many jobs to optimise"
+msgstr "최적화할 작업이 너무 많습니다."
+
+#: route_optimisation/utils/validation/validators.py:61
+msgid "There are no drivers available"
+msgstr "사용 가능한 드라이버가 없습니다"
+
+#: routing_optimization/apps.py:9
+msgid "Routing Optimisation"
+msgstr "라우팅 최적화"
+
+#: schedule/admin/fields/const_schedule.py:26
+msgid "The values in the constant schedule are required."
+msgstr "상수 일정의 값이 필요합니다."
+
+#: schedule/admin/fields/schedule.py:15
+msgid "There must be both values."
+msgstr "두 값이 모두 있어야 합니다."
+
+#: schedule/admin/fields/schedule.py:16
+#: schedule/api/mobile/schedule/v1/serializers.py:46
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:17
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:44
+msgid "The start time should be less than the end time."
+msgstr "시작 시간은 종료 시간보다 작아야 합니다."
+
+#: schedule/admin/fields/schedule.py:17 schedule/admin/fields/schedule.py:49
+msgid "Invalid data."
+msgstr "유효하지 않은 데이터."
+
+#: schedule/admin/fields/schedule.py:18
+#: schedule/api/mobile/schedule/v1/serializers.py:15
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:17
+msgid "The start of the break must be before the end."
+msgstr "휴식의 시작은 종료 이전이어야 합니다."
+
+#: schedule/admin/fields/schedule.py:21
+#: schedule/api/mobile/schedule/v1/serializers.py:42
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:48
+msgid "You can't add a weekend break."
+msgstr "주말 휴식은 추가할 수 없습니다."
+
+#: schedule/api/mobile/schedule/v1/serializers.py:36
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:13
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:40
+msgid "You must enter both time period values"
+msgstr "두 기간 값을 모두 입력해야 합니다."
+
+#: schedule/api/mobile/schedule/v1/serializers.py:39
+msgid "Breaks are only available on one time schedule"
+msgstr "휴식은 한 시간에만 가능합니다."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:119
+msgid "Barcode is not found"
+msgstr "바코드를 찾을 수 없습니다"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:121
+msgid "This barcode has not been assigned to you"
+msgstr "이 바코드는 귀하에게 할당되지 않았습니다."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:124
+msgid "The barcode has been already scanned both times"
+msgstr "바코드가 이미 두 번 스캔되었습니다."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:144
+msgid "The barcode has been already scanned upon delivery"
+msgstr "배송 시 바코드가 이미 스캔되었습니다."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:149
+msgid "The barcode has been already scanned at warehouse"
+msgstr "바코드는 이미 창고에서 스캔되었습니다."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:153
+msgid "Incorrect job status to scan this barcode"
+msgstr "이 바코드를 스캔하기 위한 잘못된 작업 상태"
+
+#: tasks/api/mobile/concatenated_orders/v1/serializers.py:41
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:40
+msgid "You cannot use pick up status"
+msgstr "픽업 상태를 사용할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/barcodes.py:31
+#, python-brace-format
+msgid "Barcode {code} already exists."
+msgstr "바코드 {code} 이(가) 이미 존재합니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:52
+msgid "Cannot change SKID with current order status"
+msgstr "현재 주문 상태로는 SKID를 변경할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:54
+msgid "Cannot change SKID with current driver status"
+msgstr "현재 드라이버 상태로 SKID를 변경할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/confirmation.py:124
+msgid "You cannot change the status until delivery is confirmed"
+msgstr "배송이 확인될 때까지 상태를 변경할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:60
+#, python-brace-format
+msgid "Forbidden to change status from \"{old_status}\" to \"{new_status}\""
+msgstr "{old_status} \"에서 \" {new_status} \"(으)로 변경하는 것이 금지됨"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:78
+msgid "You cannot send starting point in the current status"
+msgstr "현재 상태에서는 출발점을 보낼 수 없습니다"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:85
+msgid "You cannot send ending point in the current status"
+msgstr "현재 상태에서는 종료 지점을 보낼 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:92
+msgid "You cannot specify a wayback point in the current status"
+msgstr "현재 상태에서는 경유지를 지정할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:45
+msgid "You can not send a comment without a code"
+msgstr "코드가 없으면 댓글을 보낼 수 없습니다"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:53
+msgid "Success codes are disabled for your merchant."
+msgstr "귀하의 판매자에 대해 성공 코드가 비활성화되었습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:60
+#, python-brace-format
+msgid "{code_type} comment is required."
+msgstr "{code_type} 주석이 필요합니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:81
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:88
+#, python-brace-format
+msgid "You can not pass {code_type} code with this status."
+msgstr "이 상태에서는 {code_type} 코드를 전달할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:102
+msgid "You cannot change the status before sending a terminate code"
+msgstr "종료 코드를 보내기 전에는 상태를 변경할 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_create.py:32
+msgid "Pickup customer and pickup address must be used together"
+msgstr "픽업 고객과 픽업 주소를 함께 사용해야 합니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_documents.py:29
+#, python-brace-format
+msgid "The document named \"{name}\" is already uploaded to the server."
+msgstr "{name} \"이라는 문서가 이미 서버에 업로드되었습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:57
+msgid "You are not able to send pick up confirmation with the current status"
+msgstr "현재 상태로는 픽업 확인서를 보낼 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:63
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:69
+msgid "You are not able to send confirmation with the current status"
+msgstr "현재 상태로는 확인서를 보낼 수 없습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:40
+#, python-brace-format
+msgid "Driver {full_name} doesn't have all these skills"
+msgstr "드라이버 {full_name} 은(는) 이 모든 기술을 가지고 있지 않습니다."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:49
+msgid "There are no drivers with the same set of skills."
+msgstr "동일한 기술 세트를 가진 운전자는 없습니다."
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+msgid "Pick up after"
+msgstr "수거 후"
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Pick up deadline"
+msgstr "픽업 기한"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+msgid "Deliver after"
+msgstr "배달 후"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Deliver deadline"
+msgstr "납기일자"
+
+#: tasks/api/web/orders/serializers/order/validators.py:41
+#, python-brace-format
+msgid "{lower_label} cannot be later than {upper_label}"
+msgstr "{lower_label} 나중에 초과 할 수 없습니다 {upper_label}"
+
+#: tasks/api/web/orders/serializers/order/validators.py:44
+#, python-brace-format
+msgid "{lower_label} and {upper_label} must be within one day"
+msgstr "{lower_label} 및 {upper_label} 은 1일 이내여야 합니다."
+
+#: tasks/mixins/order_status.py:35
+msgid "Not assigned"
+msgstr "할당되지 않음"
+
+#: tasks/mixins/order_status.py:36
+msgid "Assigned"
+msgstr "할당 된"
+
+#: tasks/mixins/order_status.py:37
+msgid "Pick up"
+msgstr "픽업"
+
+#: tasks/mixins/order_status.py:38
+msgid "Picked up"
+msgstr "픽업"
+
+#: tasks/mixins/order_status.py:39
+msgid "In progress"
+msgstr "진행 중"
+
+#: tasks/mixins/order_status.py:40
+msgid "Way back"
+msgstr "돌아 오는 길에"
+
+#: tasks/mixins/order_status.py:41
+msgid "Completed"
+msgstr "완전한"
+
+#: tasks/mixins/order_status.py:42
+msgid "Failed"
+msgstr "실패한"
+
+#: tasks/push_notification/push_messages/event_composers.py:12
+msgid "your job"
+msgstr "작업"
+
+#: tasks/push_notification/push_messages/event_composers.py:21
+msgid " has been deleted"
+msgstr " 삭제되었습니다"
+
+#: tasks/push_notification/push_messages/event_composers.py:36
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been updated with new info"
+msgstr "{appeal} , \" {title} \" 작업이 새 정보로 업데이트되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:44
+#, python-brace-format
+msgid ""
+"Seems, that you've arrived at job location. Please carry out the {checklist}"
+msgstr "작업 위치에 도착한 것 같습니다. {checklist} 수행하십시오."
+
+#: tasks/push_notification/push_messages/event_composers.py:45
+#, python-brace-format
+msgid "You've arrived at your job. Please carry out the {checklist}"
+msgstr "당신은 당신의 직장에 도착했습니다. {checklist} 수행하십시오."
+
+#: tasks/push_notification/push_messages/event_composers.py:53
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" deadline has expired"
+msgstr "{appeal} , \" {title} \" 작업 마감일이 만료되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:61
+#, python-brace-format
+msgid "You have less than 30 minutes to finish job \"{title}\""
+msgstr "{title} ' 작업을 완료하는 데 30분 미만이 소요됩니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:69
+#, python-brace-format
+msgid "SKID info in job \"{title}\" has been updated"
+msgstr "{title} \" 작업의 SKID 정보가 업데이트되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:77
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been added to concatenated job"
+msgstr "{appeal}, \"{title}\" 작업이 연결된 작업에 추가되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:85
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been removed from concatenated job"
+msgstr "{appeal}, \"{title}\" 작업이 연결된 작업에서 제거되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:97
+#, python-brace-format
+msgid "{appeal}, your concatenated job has been ungrouped"
+msgstr "{appeal}, 연결된 작업이 그룹 해제되었습니다."
+
+#: tasks/push_notification/push_messages/event_composers.py:105
+#, python-brace-format
+msgid "{appeal}, your jobs have been grouped into concatenated job"
+msgstr "{appeal}, 작업이 연결된 작업으로 그룹화되었습니다."
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:53
+msgid "your current job"
+msgstr "당신의 현재 직업"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:54
+msgid "has been"
+msgstr "되었습니다"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:65
+msgid " by the manager"
+msgstr " 매니저에 의해"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:74
+msgid "marked as"
+msgstr "로 표시"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:89
+#: tasks/push_notification/push_messages/order_change_status_composers.py:119
+msgid "Job"
+msgstr "직업"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:96
+msgid " is available"
+msgstr " 사용할 수 있습니다"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:126
+msgid " was unassigned from you"
+msgstr " 당신에게서 할당이 취소되었습니다"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:134
+msgid "you have received"
+msgstr "당신은 받았습니다"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:135
+msgid "a new job:"
+msgstr "새로운 직업:"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:152
+msgid "you've received"
+msgstr "당신은 받았다"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:163
+#, python-brace-format
+msgid " {count} new jobs"
+msgstr " {count} 새 작업"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:187
+#, python-brace-format
+msgid "{count} jobs were unassigned from you"
+msgstr "{count} 개의 작업이 할당 해제되었습니다."
+
+#: tasks/utils/reminder.py:36
+#, python-brace-format
+msgid "on {delivery_day}"
+msgstr "{delivery_day} 에"
+
+#: tasks/utils/reminder.py:39
+msgid "tomorrow"
+msgstr "내일"
+
+#: tasks/utils/reminder.py:40
+msgid "Good news! "
+msgstr "좋은 소식!"
+
+#: tasks/utils/reminder.py:56
+msgid "today"
+msgstr "오늘"
+
+#: webhooks/api/permissions.py:53
+msgid "External Route optimisation API is not available for you"
+msgstr "외부 경로 최적화 API를 사용할 수 없습니다."
+
+#: webhooks/api/route_optimisation/v1/views.py:41
+#: webhooks/api/route_optimisation/v2/views.py:54
+msgid ""
+"Customers can only be notified in Completed/Running optimisation statuses."
+msgstr "고객은 완료/실행 최적화 상태에서만 알림을 받을 수 있습니다."
+
+#~ msgid "You can't create optimisation in past"
+#~ msgstr "과거에는 최적화를 만들 수 없습니다."
+
+#~ msgid ""
+#~ "You already have existing optimisation or currently running optimisation "
+#~ "process on this day"
+#~ msgstr ""
+#~ "이 날짜에 이미 기존 최적화가 있거나 현재 실행 중인 최적화 프로세스가 있습"
+#~ "니다."
+
+#~ msgid "There is currently running optimisation process for the driver"
+#~ msgstr "현재 드라이버에 대한 최적화 프로세스가 실행 중입니다."
+
+#~ msgid ""
+#~ "You can't create or update solo optimisation while group optimisation is "
+#~ "still not finished."
+#~ msgstr ""
+#~ "그룹 최적화가 아직 완료되지 않은 동안에는 솔로 최적화를 생성하거나 업데이"
+#~ "트할 수 없습니다."
+
+#~ msgid "Optimisation successfully created."
+#~ msgstr "최적화가 성공적으로 생성되었습니다."
+
+#~ msgid "Unknown optimiser backend."
+#~ msgstr "알 수 없는 최적화 도구 백엔드입니다."
+
+#~ msgid "Optimisation time exceeded. Optimisation cancelled."
+#~ msgstr "최적화 시간이 초과되었습니다. 최적화가 취소되었습니다."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are more than 100 jobs to "
+#~ "optimise."
+#~ msgstr "최적화를 만들 수 없습니다. 최적화할 작업이 100개 이상 있습니다."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs with deadline on "
+#~ "a selected day."
+#~ msgstr ""
+#~ "최적화를 만들 수 없습니다. 선택한 날짜에 마감일이 있는 작업이 없습니다."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs assigned to "
+#~ "driver in near future."
+#~ msgstr ""
+#~ "최적화를 만들 수 없습니다. 가까운 장래에 드라이버에 할당된 작업이 없습니"
+#~ "다."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created solo "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "최적화를 만들 수 없습니다. 이 드라이버에 대한 솔로 최적화가 이미 생성되었"
+#~ "습니다."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created group "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "최적화를 만들 수 없습니다. 이 드라이버에 대한 그룹 최적화가 이미 생성되었"
+#~ "습니다."
+
+#~ msgid ""
+#~ "You do not need to re-optimise your route. There is no difference with "
+#~ "previously optimised route."
+#~ msgstr ""
+#~ "경로를 다시 최적화할 필요가 없습니다. 이전에 최적화된 경로와 차이가 없습니"
+#~ "다."
+
+#~ msgid "We could not create the optimisation. Unknown error occurred."
+#~ msgstr "최적화를 만들 수 없습니다. 알 수 없는 오류가 발생했습니다."
+
+#~ msgid "parent optimisation"
+#~ msgstr "상위 최적화"
+
+#~ msgid "Optimisation finished."
+#~ msgstr "최적화가 완료되었습니다."
+
+#, python-brace-format
+#~ msgid ">>>Start GROUP optimisation. ID: {id}<<<"
+#~ msgstr "> > > 그룹 최적화를 시작합니다. 아이디: {id} < < <"
+
+#~ msgid "Optimisation failed."
+#~ msgstr "최적화에 실패했습니다."
+
+#~ msgid "Answer for this question already exists."
+#~ msgstr "이 질문에 대한 답변이 이미 있습니다."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "유효한 이미지를 업로드하세요. 업로드한 파일은 이미지가 아니거나 손상된 이"
+#~ "미지입니다."

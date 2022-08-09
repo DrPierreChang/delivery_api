@@ -1,0 +1,1 @@
+Deadline {{ ind + 10 }},Prospekte Pobeditelei {{ ind + 50 }},6,{{ date }},,,,CSV_deadline_{{ ind + 1 }}

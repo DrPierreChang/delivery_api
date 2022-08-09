@@ -1,0 +1,77 @@
+{% extends 'email/email_base.html' %}
+{% load helper_tags %}
+
+{% block caption %}
+    Weekly Report<br>
+	{{ report_period }}<br>
+	<em style="font-size: small">{{ server_name }}</em>
+{% endblock %}
+{% block content %}
+	{% for type in types %}
+		{% with type_preferences=preferences|lookup:type %}
+			{% with total_data=data.total|lookup:type %}
+				<p style="font-size: 14px; line-height: 1.25;">{{ type_preferences.total_verbose }}: <b style="font-size: larger">{{ total_data.count }}</b>
+					{% if type_preferences.compare_with_prev %}
+						{% with percent=total_data.percent_growth|stylize_growth %}
+							(<span style="color: {{ percent.color }}">{{ percent.value }}</span>)
+						{% endwith %}
+					{% endif %}
+				</p>
+			{% endwith %}
+		{% endwith %}
+	{% endfor %}
+	<br>
+
+	<p style="font-size: 14px; line-height: 1.25; font-weight: bold; margin-top: 15px; text-align: center; ">Detailed Statistics</p>
+	{% for type in detailed_types %}
+		{% with type_preferences=preferences|lookup:type %}
+			{% with use_percents=type_preferences.compare_with_prev %}
+				<p style="font-size: 14px; line-height: 1.25; margin-bottom: 0; text-align: center; font-weight: bold;">{{ type_preferences.table_verbose }}</p>
+				<table border="1" width="100%" bordercolor="dimgray" style="font-size: 14px; line-height: 1.25; border-collapse: collapse; text-align: center;">
+					<thead>
+						<tr style="font-weight: bold;">
+							<td width="10%">No.</td>
+							<td>Merchant</td>
+							<td width="25%">Count</td>
+						</tr>
+					</thead>
+					<tbody>
+						{% if use_percents %}
+							{% for info in data.detailed|lookup:type %}
+								<tr>
+									<td>{{ forloop.counter }}</td>
+									<td>{%  autoescape on %}{{ info.name }}{% endautoescape %}</td>
+									<td>{{ info.count }}
+											{% with percent=info.percent_growth|stylize_growth %}
+												(<span style="color: {{ percent.color }}">{{ percent.value }}</span>)
+											{% endwith %}
+									</td>
+								</tr>
+							{% endfor %}
+						{% else %}
+							{% for info in data.detailed|lookup:type %}
+								<tr>
+									<td>{{ forloop.counter }}</td>
+									<td>{%  autoescape on %}{{ info.name }}{% endautoescape %}</td>
+									<td>{{ info.count }}</td>
+								</tr>
+							{% endfor %}
+						{% endif %}
+					</tbody>
+				</table>
+			{% endwith %}
+		{% endwith %}
+	{% endfor %}
+		{% for type in detailed_types %}
+			{% with type_preferences=preferences|lookup:type %}
+				<p style="margin-top: 10px; line-height: 1.25; font-style: italic; font-size: 12px"><b>*</b> {{ type_preferences.note }}</p>
+			{% endwith %}
+		{% endfor %}
+{% endblock %}
+
+{% block empty_link %}
+{% endblock %}
+{% block break_line %}
+{% endblock %}
+{% block empty %}
+{% endblock %}

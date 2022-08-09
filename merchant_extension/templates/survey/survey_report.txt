@@ -1,0 +1,8 @@
+Hello, {{merchant.name}}!
+{% if report_link != '' %}
+Here is your Periodical Survey Report.
+{% else %}
+    There were no surveys passed to generate the Periodical Report on {{ date_from|date:"M d, Y" }}
+{% endif %}
+
+{% if report_link %} {{report_link}} {% endif %}

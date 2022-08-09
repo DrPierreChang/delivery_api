@@ -1,0 +1,57 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Weekly Radaro Usage Report{% endblock %}
+
+{% block content %}
+	{% if success_message %}
+        <ul class="grp-messagelist">
+            <li class="grp-success">{{ success_message }}</li>
+        </ul>
+    {% endif %}
+
+    <header id="grp-content-title">
+        <h1>Weekly Radaro Usage Report</h1>
+	</header>
+
+	<form id="filter_form" method="post" action="">
+        {% csrf_token %}
+	    <div class="grp-module">
+			<div class="grp-row">
+                <div style="display: inline-block;">
+                    {{ form.report_date.errors }}
+                    {{ form.report_date.label_tag }}
+                    {{ form.report_date }}
+                </div>
+	        </div>
+
+            <div class="grp-row">
+                <div style="display: inline-block;">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                </div>
+		        <input type="submit" value="Send" style="display: inline-block"/>
+                {{ form.email.errors }}
+                <p class="grp-help">
+                    {{ form.email.help_text }}
+                </p>
+	        </div>
+	    </div>
+	</form>
+    <script type="text/javascript">
+        var $ = django.jQuery;
+        $( ".datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: grappelli.getFormat('date')
+        }).attr('readonly', 'readonly');
+    </script>
+	<style>
+	input.datepicker[readonly] {
+		border-style: solid !important;
+		background-color: white !important;
+	}
+	input[type="email"] {
+		width: auto !important;
+	}
+	</style>
+{% endblock %}

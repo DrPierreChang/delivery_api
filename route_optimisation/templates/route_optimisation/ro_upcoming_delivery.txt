@@ -1,0 +1,3 @@
+Your order from {{ merchant }} will be delivered to {{customer_address}} between {{time_interval}}!
+Click on the link to track your order in real-time.
+{{ url }}

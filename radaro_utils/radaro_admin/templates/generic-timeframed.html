@@ -1,0 +1,54 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+    {% block report_header %}
+    {% endblock %}
+    {% block report_pre_form %}
+    {% endblock %}
+    {% block report_form %}
+        <div class="grp-module">
+            <div class="grp-row">
+                <form id="filter_form" method="get">
+                    {% for field in form %}
+                        <div style="display: inline-block;">
+                            {{ field.errors }}
+                            {{ field.label_tag }}
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                </form>
+            </div>
+        </div>
+    {% endblock %}
+    {% block report_content %}
+    {% endblock %}
+
+    <script type="text/javascript">
+        var $ = django.jQuery;
+        var DATE_FORMAT = "{{ date_format }}";
+
+        getFormat = function() {
+            var format = DATE_FORMAT.toLowerCase().replace(/%\w/g, function(str) {
+                str = str.replace(/%/, '');
+                return str + str;
+            });
+            return format;
+        };
+
+        $( ".datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: getFormat(),
+        }).attr('readonly', 'readonly');
+    </script>
+
+    {% block js %}
+        <script type="text/javascript">
+            var $ = django.jQuery;
+            $('#filter_form').on('keyup change', function() {
+                $(this).submit();
+            });
+        </script>
+    {% endblock %}
+
+{% endblock %}

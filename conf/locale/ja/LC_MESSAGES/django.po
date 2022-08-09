@@ -1,0 +1,1020 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 16:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base/api/mobile/invitations/v1/serializers.py:51
+msgid "Already registered."
+msgstr "すでに登録。"
+
+#: base/api/mobile/invitations/v1/serializers.py:54
+msgid "No invitations with this phone number were found."
+msgstr "この電話番号の招待状は見つかりませんでした。"
+
+#: base/api/mobile/invitations/v1/serializers.py:74
+msgid "Pin code is not valid or out of date."
+msgstr "PINコードが無効であるか、古くなっています。"
+
+#: base/csv_parsing.py:13
+msgid "Time has wrong format. Use hh:mm time format instead."
+msgstr "時間の形式が間違っています。代わりにhh：mm時間形式を使用してください。"
+
+#: base/csv_parsing.py:18 base/csv_parsing.py:33
+msgid "\"driver_id\" field is required."
+msgstr "「driver_id」フィールドは必須です。"
+
+#: base/csv_parsing.py:92 schedule/admin/fields/schedule.py:19
+#: schedule/api/mobile/schedule/v1/serializers.py:31
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:32
+msgid "Break ranges overlap."
+msgstr "ブレーク範囲が重なっています。"
+
+#: base/csv_parsing.py:144 base/csv_parsing.py:146
+#: schedule/admin/fields/schedule.py:20
+#: schedule/api/mobile/schedule/v1/serializers.py:71
+#: schedule/api/mobile/schedule/v1/serializers.py:75
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:27
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:32
+msgid "The break went beyond working hours."
+msgstr "休憩は労働時間を超えました。"
+
+#: base/fields.py:13
+#, python-format
+msgid "'%(value)s' value must be valid JSON."
+msgstr "' %(value)s '値は有効なJSONである必要があります。"
+
+#: base/fields.py:14
+msgid "All keys must be in YYYY-MM-DD format."
+msgstr "すべてのキーはYYYY-MM-DD形式である必要があります。"
+
+#: base/fields.py:15
+msgid "All keys must be days."
+msgstr "すべてのキーは日でなければなりません。"
+
+#: base/fields.py:16
+msgid "Data must be in key-value format."
+msgstr "データはKey-Value形式である必要があります。"
+
+#: base/models/cars.py:16
+msgid "Scooter"
+msgstr "スクーター"
+
+#: base/models/cars.py:17
+msgid "Car"
+msgstr "車両"
+
+#: base/models/cars.py:18
+msgid "Pickup / Ute"
+msgstr "ピックアップ/ウテ"
+
+#: base/models/cars.py:19
+msgid "Van"
+msgstr "バン"
+
+#: base/models/cars.py:20
+msgid "Truck"
+msgstr "トラック"
+
+#: base/templates/admin/drivers_schedule_import.html:17
+msgid "Home"
+msgstr "家"
+
+#: custom_auth/api/legacy/serializers.py:70
+msgid "User with such email doesn't exist."
+msgstr "そのようなメールを持っているユーザーは存在しません。"
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:25
+msgid "Invalid username or password."
+msgstr "無効なユーザー名またはパスワード。"
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:29
+msgid "User inactive or deleted."
+msgstr "ユーザーが非アクティブまたは削除されました。"
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:35
+msgid "You're currently online on another device."
+msgstr "現在、別のデバイスでオンラインになっています。"
+
+#: custom_auth/push_messages/composers.py:11
+msgid "you logged in"
+msgstr "ログインしました"
+
+#: custom_auth/push_messages/composers.py:21
+msgid " on another device."
+msgstr "別のデバイスで。"
+
+#: driver/api/mobile/drivers/v1/serializers/validators.py:29
+msgid "User with such email already registered."
+msgstr "そのようなメールを持っているユーザーはすでに登録されています。"
+
+#: driver/push_messages/composers.py:12
+msgid "you have been forced offline"
+msgstr "あなたは強制的にオフラインにされました"
+
+#: driver/push_messages/composers.py:18 merchant/push_messages/composers.py:16
+#, python-brace-format
+msgid " by the manager {manager}"
+msgstr "マネージャーによる{manager}"
+
+#: merchant/api/legacy/serializers/skill_sets.py:20
+#, python-format
+msgid "%(count)d active job that has"
+msgid_plural "%(count)d active jobs that have"
+msgstr[0] "%(count)dアクティブなジョブがあります"
+
+#: merchant/api/legacy/serializers/skill_sets.py:25
+#, python-format
+msgid "Can't delete the skill because you have %(jobs_msg)s this skill"
+msgid_plural ""
+"Can't delete the skills because you have %(jobs_msg)s these skills"
+msgstr[0] "これらのスキル%(jobs_msg)sため、スキルを削除できません"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "you"
+msgstr "君"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "driver"
+msgid_plural "drivers"
+msgstr[0] "運転手"
+
+#: merchant/api/legacy/serializers/skill_sets.py:35
+#, python-format
+msgid "%(count)d job that has"
+msgid_plural "%(count)d jobs that have"
+msgstr[0] "%(count)dジョブがあります"
+
+#: merchant/api/legacy/serializers/skill_sets.py:38
+#, python-format
+msgid ""
+"%(jobs_msg)s this skill will be unassigned from %(from)s after you delete "
+"the skill"
+msgid_plural ""
+"%(jobs_msg)s these skills will be unassigned from %(from)s after you delete "
+"the skills"
+msgstr[0] "%(jobs_msg)sこれらのスキルは、スキルを削除した後%(from)s"
+
+#: merchant/models/merchant.py:400
+msgid "route optimisation"
+msgstr "ルートの最適化"
+
+#: merchant/models/merchant.py:403
+msgid "route optimisation focus"
+msgstr "ルート最適化の焦点"
+
+#: merchant/models/merchant.py:404
+msgid ""
+"Set, what to focus on for group optimisation. This setting is useful only "
+"with \"route optimisation\" enabled."
+msgstr ""
+"グループの最適化のために何に焦点を当てるべきかを設定します。この設定は、"
+"「ルート最適化」が有効になっている場合にのみ役立ちます。"
+
+#: merchant/models/merchant.py:409
+msgid ""
+"Set average duration of time a driver needs to spend to on job site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"ドライバーが現場で過ごす必要のある平均時間を設定します。この設定は、「ルート"
+"最適化」が有効になっている場合にのみ役立ちます。"
+
+#: merchant/models/merchant.py:414
+msgid ""
+"Set average duration of time a driver needs to spend to on pickup site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"ドライバーが集荷場所で過ごす必要のある平均時間を設定します。この設定は、"
+"「ルート最適化」が有効になっている場合にのみ役立ちます。"
+
+#: merchant/models/merchant.py:422
+msgid "Barcodes"
+msgstr "バーコード"
+
+#: merchant/models/merchant.py:629
+msgid "You can't use `route optimisation` feature without enabling `hubs`"
+msgstr "「ハブ」を有効にせずに「ルート最適化」機能を使用することはできません"
+
+#: merchant/models/merchant.py:664
+msgid ""
+"You cannot select an option that requires a barcode scan upon delivery with "
+"`enable_delivery_confirmation` disabled"
+msgstr ""
+"`enable_delivery_confirmation`を無効にして、配信時にバーコードスキャンを必要"
+"とするオプションを選択することはできません"
+
+#: merchant/models/merchant.py:670
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation` disabled"
+msgstr "`enable_delivery_confirmation`を無効にしたオプションは選択できません"
+
+#: merchant/models/merchant.py:675
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation_documents` "
+"disabled"
+msgstr ""
+"`enable_delivery_confirmation_documents`を無効にしたオプションは選択できませ"
+"ん"
+
+#: merchant/models/merchant.py:680
+msgid "You cannot select an option with `in_app_jobs_assignment` disabled"
+msgstr "`in_app_jobs_assignment`が無効になっているオプションは選択できません"
+
+#: merchant/permissions.py:17
+msgid ""
+"You don't have ability to perform this action because labels aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"ラベルが有効になっていないため、このアクションを実行することはできません。管"
+"理者に連絡してください。"
+
+#: merchant/permissions.py:27
+msgid ""
+"You don't have ability to perform this action because skill sets aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"スキルセットが有効になっていないため、このアクションを実行することはできませ"
+"ん。管理者に連絡してください。"
+
+#: merchant/permissions.py:35
+msgid ""
+"You don't have ability to perform this action because barcodes aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"バーコードが有効になっていないため、このアクションを実行することはできませ"
+"ん。管理者に連絡してください。"
+
+#: merchant/permissions.py:51
+msgid ""
+"You don't have ability to perform this action because SKIDs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"SKIDが有効になっていないため、このアクションを実行することはできません。管理"
+"者に連絡してください。"
+
+#: merchant/permissions.py:59
+msgid ""
+"You don't have ability to perform this action because subbranding aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"サブブランディングが有効になっていないため、このアクションを実行することはで"
+"きません。管理者に連絡してください。"
+
+#: merchant/permissions.py:67
+msgid ""
+"You don't have ability to perform this action because hubs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"ハブが有効になっていないため、このアクションを実行することはできません。管理"
+"者に連絡してください。"
+
+#: merchant/push_messages/composers.py:13
+#, python-brace-format
+msgid "skill set \"{name}\" {message}"
+msgstr "スキルセット \" {name} {message}"
+
+#: merchant/push_messages/composers.py:32
+msgid "has been added to you"
+msgstr "あなたに追加されました"
+
+#: merchant/push_messages/composers.py:37
+msgid "has been removed from you"
+msgstr "あなたから削除されました"
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:65
+msgid "A valid bool is required."
+msgstr "有効なブール値が必要です。"
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:96
+msgid "Not a valid choice"
+msgstr "有効な選択ではありません"
+
+#: merchant_extension/api/mobile/checklists/v2/serializers.py:14
+msgid "Photos are required for this answer."
+msgstr "この回答には写真が必要です。"
+
+#: radaro_utils/filters/date_filters.py:26
+#, python-brace-format
+msgid "{alias} for today (US EST timezone)"
+msgstr "{alias} （米国東部標準時）"
+
+#: radaro_utils/filters/date_filters.py:27
+#, python-brace-format
+msgid "{alias} for 24+ hours ago"
+msgstr "{alias} 24時間以上前"
+
+#: radaro_utils/filters/date_filters.py:28
+#, python-brace-format
+msgid "{alias} for 72+ hours ago"
+msgstr "{alias} 72時間以上前"
+
+#: radaro_utils/filters/date_filters.py:29
+msgid "7 days"
+msgstr "7日"
+
+#: radaro_utils/filters/date_filters.py:30
+msgid "Month"
+msgstr "月"
+
+#: radaro_utils/filters/date_filters.py:31
+msgid "3 months"
+msgstr "3ヶ月"
+
+#: radaro_utils/filters/date_filters.py:32
+msgid "Year"
+msgstr "年"
+
+#: radaro_utils/password_validation.py:17
+#, python-format
+msgid "The password must contain at least %(min_letters)d uppercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d uppercase characters"
+msgstr[0] "%(min_letters)d大文字が含まれている必要があります"
+
+#: radaro_utils/password_validation.py:37
+#, python-format
+msgid "The password must contain at least %(min_letters)d lowercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d lowercase characters"
+msgstr[0] "%(min_letters)d小文字が含まれている必要があります"
+
+#: radaro_utils/password_validation.py:57
+#, python-format
+msgid "The password must contain at least %(min_numbers)d number"
+msgid_plural "The password must contain at least %(min_numbers)d numbers"
+msgstr[0] "%(min_numbers)d数字が含まれている必要があります"
+
+#: radaro_utils/radaro_phone/serializers.py:25
+msgid "This field may not be blank."
+msgstr "このフィールドは空白にすることはできません。"
+
+#: radaro_utils/radaro_phone/serializers.py:27
+msgid "Phone number have too many characters"
+msgstr "電話番号の文字数が多すぎます"
+
+#: radaro_utils/radaro_phone/utils.py:31
+msgid "Not supported region for merchant."
+msgstr "販売者がサポートしていない地域。"
+
+#: radaro_utils/radaro_phone/utils.py:33
+msgid "Invalid phone number for merchant's region."
+msgid_plural "Invalid phone number for merchant's regions."
+msgstr[0] "販売者の地域の電話番号が無効です。"
+
+#: radaro_utils/radaro_phone/utils.py:52
+msgid ""
+"Phone must be in international format since the merchant operates in "
+"multiple countries."
+msgstr ""
+"販売者は複数の国で事業を行っているため、電話は国際形式である必要があります。"
+
+#: radaro_utils/serializers/mixins.py:37
+msgid "You should specify either location or address"
+msgstr "場所または住所のいずれかを指定する必要があります"
+
+#: radaro_utils/serializers/mixins.py:41
+msgid "Address not found."
+msgstr "アドレスが見つかりません。"
+
+#: radaro_utils/serializers/mobile/serializers.py:45
+#, python-brace-format
+msgid "Invalid data. Expected a dictionary, but got {datatype}."
+msgstr "無効なデータ。辞書が必要ですが、 {datatype}取得しました。"
+
+#: radaro_utils/serializers/validators.py:55
+msgid "This date cannot be earlier than now."
+msgstr "この日付を今より前にすることはできません。"
+
+#: route_optimisation/admin/base.py:38
+msgid "Optimisation cost"
+msgstr "最適化コスト"
+
+#: route_optimisation/admin/base.py:78
+msgid "Soft delete selected optimisations and unassign jobs"
+msgstr "選択した最適化をソフト削除し、ジョブの割り当てを解除します"
+
+#: route_optimisation/admin/base.py:89
+msgid "Soft delete selected optimisations, keep jobs assigned"
+msgstr "選択した最適化をソフト削除し、ジョブを割り当てたままにします"
+
+#: route_optimisation/api/mobile/v1/serializers.py:54
+#: route_optimisation/api/web/serializers/route_optimisation.py:54
+#: route_optimisation/api/web/temp_legacy/serializers/route_optimisation.py:64
+#: webhooks/api/route_optimisation/v1/serializers/optimisation.py:68
+#: webhooks/api/route_optimisation/v2/serializers/optimisation.py:48
+msgid "Cannot create optimisation in the past."
+msgstr "過去に最適化を作成することはできません。"
+
+#: route_optimisation/api/permissions.py:9
+msgid "Route optimisation is not active for you"
+msgstr "ルート最適化がアクティブではありません"
+
+#: route_optimisation/api/web/filters.py:75
+msgid "\"{}\" is not a valid value."
+msgstr "「{}」は有効な値ではありません。"
+
+#: route_optimisation/api/web/serializers/manage_orders.py:27
+#: route_optimisation/api/web/serializers/manage_orders.py:41
+#: route_optimisation/logging/logs/validation.py:124
+msgid "optimisation"
+msgstr "最適化"
+
+#: route_optimisation/api/web/serializers/refresh.py:43
+msgid "This field is required."
+msgstr "この項目は必須です。"
+
+#: route_optimisation/api/web/temp_legacy/views.py:50
+#: route_optimisation/api/web/views/route_optimisations.py:65
+msgid "You can't delete optimisation which hasn't yet been calculated."
+msgstr "まだ計算されていない最適化は削除できません。"
+
+#: route_optimisation/apps.py:9
+msgid "Route Optimisation"
+msgstr "ルートの最適化"
+
+#: route_optimisation/celery_tasks/notification.py:30
+#, python-brace-format
+msgid " on {optimisation_day}"
+msgstr "{optimisation_day}に"
+
+#: route_optimisation/engine/ortools/context/init.py:256
+msgid ""
+"We could not create the optimisation. There are orders on different "
+"continents."
+msgstr "最適化を作成できませんでした。さまざまな大陸で注文があります。"
+
+#: route_optimisation/engine/ortools/context/init.py:267
+msgid ""
+"We could not create the optimisation. There are hubs on different continents."
+msgstr "最適化を作成できませんでした。さまざまな大陸にハブがあります。"
+
+#: route_optimisation/logging/logs/base.py:89
+#: route_optimisation/logging/logs/base.py:94
+msgid "Old type route optimisation"
+msgstr "古いタイプのルート最適化"
+
+#: route_optimisation/logging/logs/exception.py:60
+#: route_optimisation/logging/logs/help_logs.py:21
+#: route_optimisation/logging/logs/help_logs.py:43
+#: route_optimisation/logging/logs/help_logs.py:58
+#: route_optimisation/logging/logs/help_logs.py:82
+#: route_optimisation/logging/logs/help_logs.py:86
+#: route_optimisation/logging/logs/help_logs.py:90
+#: route_optimisation/logging/logs/help_logs.py:93
+#: route_optimisation/logging/logs/help_logs.py:171
+#: route_optimisation/logging/logs/help_logs.py:228
+#: route_optimisation/logging/logs/managing.py:82
+#: route_optimisation/logging/logs/state_change.py:16
+#: route_optimisation/logging/logs/state_change.py:53
+#: route_optimisation/logging/logs/state_change.py:56
+#: route_optimisation/logging/logs/state_change.py:58
+#: route_optimisation/logging/logs/validation.py:57
+#: route_optimisation/logging/logs/validation.py:64
+#: route_optimisation/logging/logs/validation.py:66
+#: route_optimisation/logging/logs/validation.py:69
+#: route_optimisation/logging/logs/validation.py:88
+#: route_optimisation/logging/logs/validation.py:93
+#: route_optimisation/logging/logs/validation.py:97
+#: route_optimisation/logging/logs/validation.py:101
+#: route_optimisation/logging/logs/validation.py:105
+#: route_optimisation/logging/logs/validation.py:193
+#: route_optimisation/logging/logs/validation.py:196
+#: route_optimisation/logging/logs/validation.py:199
+#: route_optimisation/logging/logs/validation.py:202
+#: route_optimisation/logging/logs/validation.py:244
+#: route_optimisation/utils/backends/move_orders.py:81
+#: route_optimisation/utils/backends/move_orders.py:88
+#: route_optimisation/utils/validation/serializers.py:71
+#: route_optimisation/utils/validation/serializers.py:160
+#: webhooks/api/route_optimisation/v2/serializers/options.py:25
+msgid "Optimisation"
+msgstr "最適化"
+
+#: route_optimisation/logging/logs/validation.py:71
+msgid "optimised"
+msgstr "最適化"
+
+#: route_optimisation/push_messages/composers.py:11
+msgid "your route was optimised"
+msgstr "あなたのルートは最適化されました"
+
+#: route_optimisation/push_messages/composers.py:34
+msgid "Route optimisation"
+msgstr "ルートの最適化"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "completed"
+msgstr "完了"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "failed"
+msgstr "失敗した"
+
+#: route_optimisation/push_messages/composers.py:56
+msgid "your route was removed"
+msgstr "ルートが削除されました"
+
+#: route_optimisation/push_messages/composers.py:79
+msgid "your route was updated"
+msgstr "ルートが更新されました"
+
+#: route_optimisation/utils/validation/serializers.py:158
+#, python-brace-format
+msgid ""
+"Vehicle Capacity feature is disabled, please turn this on to create "
+"{optimisation} that accounts Vehicle Capacity"
+msgstr ""
+"車両容量機能が無効になっています。これをオンにして、車両容量を考慮した"
+"{optimisation}"
+
+#: route_optimisation/utils/validation/serializers.py:172
+msgid "Wrong working hours"
+msgstr "間違った労働時間"
+
+#: route_optimisation/utils/validation/serializers.py:180
+msgid "No start hub passed"
+msgstr "スタートハブが通過しません"
+
+#: route_optimisation/utils/validation/serializers.py:190
+msgid "No end hub passed"
+msgstr "エンドハブが通過しません"
+
+#: route_optimisation/utils/validation/validators.py:47
+msgid "There are no jobs to optimise"
+msgstr "最適化する仕事はありません"
+
+#: route_optimisation/utils/validation/validators.py:53
+msgid "Too many jobs to optimise"
+msgstr "最適化するにはジョブが多すぎます"
+
+#: route_optimisation/utils/validation/validators.py:61
+msgid "There are no drivers available"
+msgstr "利用可能なドライバーはありません"
+
+#: routing_optimization/apps.py:9
+msgid "Routing Optimisation"
+msgstr "ルーティングの最適化"
+
+#: schedule/admin/fields/const_schedule.py:26
+msgid "The values in the constant schedule are required."
+msgstr "一定スケジュールの値が必要です。"
+
+#: schedule/admin/fields/schedule.py:15
+msgid "There must be both values."
+msgstr "両方の値が必要です。"
+
+#: schedule/admin/fields/schedule.py:16
+#: schedule/api/mobile/schedule/v1/serializers.py:46
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:17
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:44
+msgid "The start time should be less than the end time."
+msgstr "開始時間は終了時間よりも短くする必要があります。"
+
+#: schedule/admin/fields/schedule.py:17 schedule/admin/fields/schedule.py:49
+msgid "Invalid data."
+msgstr "無効なデータ。"
+
+#: schedule/admin/fields/schedule.py:18
+#: schedule/api/mobile/schedule/v1/serializers.py:15
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:17
+msgid "The start of the break must be before the end."
+msgstr "休憩の開始は終了前でなければなりません。"
+
+#: schedule/admin/fields/schedule.py:21
+#: schedule/api/mobile/schedule/v1/serializers.py:42
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:48
+msgid "You can't add a weekend break."
+msgstr "週末の休憩を追加することはできません。"
+
+#: schedule/api/mobile/schedule/v1/serializers.py:36
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:13
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:40
+msgid "You must enter both time period values"
+msgstr "両方の期間の値を入力する必要があります"
+
+#: schedule/api/mobile/schedule/v1/serializers.py:39
+msgid "Breaks are only available on one time schedule"
+msgstr "休憩は1つのタイムスケジュールでのみ利用可能です"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:119
+msgid "Barcode is not found"
+msgstr "バーコードが見つかりません"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:121
+msgid "This barcode has not been assigned to you"
+msgstr "このバーコードはあなたに割り当てられていません"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:124
+msgid "The barcode has been already scanned both times"
+msgstr "バーコードはすでに両方の時間スキャンされています"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:144
+msgid "The barcode has been already scanned upon delivery"
+msgstr "バーコードは配達時にすでにスキャンされています"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:149
+msgid "The barcode has been already scanned at warehouse"
+msgstr "バーコードはすでに倉庫でスキャンされています"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:153
+msgid "Incorrect job status to scan this barcode"
+msgstr "このバーコードをスキャンするための不正なジョブステータス"
+
+#: tasks/api/mobile/concatenated_orders/v1/serializers.py:41
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:40
+msgid "You cannot use pick up status"
+msgstr "ピックアップステータスは使用できません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/barcodes.py:31
+#, python-brace-format
+msgid "Barcode {code} already exists."
+msgstr "バーコード{code}すでに存在します。"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:52
+msgid "Cannot change SKID with current order status"
+msgstr "現在の注文ステータスでSKIDを変更することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:54
+msgid "Cannot change SKID with current driver status"
+msgstr "現在のドライバーステータスでSKIDを変更することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/confirmation.py:124
+msgid "You cannot change the status until delivery is confirmed"
+msgstr "配達が確認されるまでステータスを変更することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:60
+#, python-brace-format
+msgid "Forbidden to change status from \"{old_status}\" to \"{new_status}\""
+msgstr "{old_status} 」から「 {new_status} 」に変更することは禁止されています"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:78
+msgid "You cannot send starting point in the current status"
+msgstr "現在の状態では開始点を送信できません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:85
+msgid "You cannot send ending point in the current status"
+msgstr "現在の状態で終点を送信することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:92
+msgid "You cannot specify a wayback point in the current status"
+msgstr "現在のステータスでウェイバックポイントを指定することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:45
+msgid "You can not send a comment without a code"
+msgstr "コードなしでコメントを送信することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:53
+msgid "Success codes are disabled for your merchant."
+msgstr "マーチャントの成功コードは無効になっています。"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:60
+#, python-brace-format
+msgid "{code_type} comment is required."
+msgstr "{code_type}コメントが必要です。"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:81
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:88
+#, python-brace-format
+msgid "You can not pass {code_type} code with this status."
+msgstr "このステータスの{code_type}コードを渡すことはできません。"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:102
+msgid "You cannot change the status before sending a terminate code"
+msgstr "終了コードを送信する前にステータスを変更することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_create.py:32
+msgid "Pickup customer and pickup address must be used together"
+msgstr "集荷の顧客と集荷の住所は一緒に使用する必要があります"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_documents.py:29
+#, python-brace-format
+msgid "The document named \"{name}\" is already uploaded to the server."
+msgstr ""
+"{name} 」という名前のドキュメントはすでにサーバーにアップロードされています。"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:57
+msgid "You are not able to send pick up confirmation with the current status"
+msgstr "現在のステータスでピックアップ確認を送信することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:63
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:69
+msgid "You are not able to send confirmation with the current status"
+msgstr "現在のステータスで確認を送信することはできません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:40
+#, python-brace-format
+msgid "Driver {full_name} doesn't have all these skills"
+msgstr ""
+"ドライバー{full_name}はこれらすべてのスキルを持っているわけではありません"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:49
+msgid "There are no drivers with the same set of skills."
+msgstr "同じスキルを持ったドライバーはいません。"
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+msgid "Pick up after"
+msgstr "後にピックアップ"
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Pick up deadline"
+msgstr "締め切りを受け取る"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+msgid "Deliver after"
+msgstr "後に配達"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Deliver deadline"
+msgstr "締め切りをお届けします"
+
+#: tasks/api/web/orders/serializers/order/validators.py:41
+#, python-brace-format
+msgid "{lower_label} cannot be later than {upper_label}"
+msgstr "{lower_label}より後にすることはできません{upper_label}"
+
+#: tasks/api/web/orders/serializers/order/validators.py:44
+#, python-brace-format
+msgid "{lower_label} and {upper_label} must be within one day"
+msgstr "{lower_label}と{upper_label}は1日以内である必要があります"
+
+#: tasks/mixins/order_status.py:35
+msgid "Not assigned"
+msgstr "割り当てられていない"
+
+#: tasks/mixins/order_status.py:36
+msgid "Assigned"
+msgstr "割り当てられた"
+
+#: tasks/mixins/order_status.py:37
+msgid "Pick up"
+msgstr "選び出す"
+
+#: tasks/mixins/order_status.py:38
+msgid "Picked up"
+msgstr "拾った"
+
+#: tasks/mixins/order_status.py:39
+msgid "In progress"
+msgstr "作業中"
+
+#: tasks/mixins/order_status.py:40
+msgid "Way back"
+msgstr "帰り道"
+
+#: tasks/mixins/order_status.py:41
+msgid "Completed"
+msgstr "完了"
+
+#: tasks/mixins/order_status.py:42
+msgid "Failed"
+msgstr "失敗した"
+
+#: tasks/push_notification/push_messages/event_composers.py:12
+msgid "your job"
+msgstr "あなたの仕事"
+
+#: tasks/push_notification/push_messages/event_composers.py:21
+msgid " has been deleted"
+msgstr "削除されました"
+
+#: tasks/push_notification/push_messages/event_composers.py:36
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been updated with new info"
+msgstr "{appeal} 、あなたの仕事「 {title} 」は新しい情報で更新されました"
+
+#: tasks/push_notification/push_messages/event_composers.py:44
+#, python-brace-format
+msgid ""
+"Seems, that you've arrived at job location. Please carry out the {checklist}"
+msgstr "あなたは仕事の場所に到着したようです。 {checklist}実行してください"
+
+#: tasks/push_notification/push_messages/event_composers.py:45
+#, python-brace-format
+msgid "You've arrived at your job. Please carry out the {checklist}"
+msgstr "あなたはあなたの仕事に到着しました。 {checklist}実行してください"
+
+#: tasks/push_notification/push_messages/event_composers.py:53
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" deadline has expired"
+msgstr "{appeal} 、あなたの仕事 \" {title} \"の期限が切れました"
+
+#: tasks/push_notification/push_messages/event_composers.py:61
+#, python-brace-format
+msgid "You have less than 30 minutes to finish job \"{title}\""
+msgstr "仕事を終えるのに30分もかかりません \" {title} \""
+
+#: tasks/push_notification/push_messages/event_composers.py:69
+#, python-brace-format
+msgid "SKID info in job \"{title}\" has been updated"
+msgstr "ジョブ「 {title} 」のSKID情報が更新されました"
+
+#: tasks/push_notification/push_messages/event_composers.py:77
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been added to concatenated job"
+msgstr "{appeal}、あなたのジョブ \"{title}\"が連結されたジョブに追加されました"
+
+#: tasks/push_notification/push_messages/event_composers.py:85
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been removed from concatenated job"
+msgstr ""
+"{appeal}、あなたのジョブ \"{title}\"は連結されたジョブから削除されました"
+
+#: tasks/push_notification/push_messages/event_composers.py:97
+#, python-brace-format
+msgid "{appeal}, your concatenated job has been ungrouped"
+msgstr "{appeal}、連結されたジョブはグループ化されていません"
+
+#: tasks/push_notification/push_messages/event_composers.py:105
+#, python-brace-format
+msgid "{appeal}, your jobs have been grouped into concatenated job"
+msgstr "{appeal}、あなたの仕事は連結された仕事にグループ化されました"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:53
+msgid "your current job"
+msgstr "あなたの現在の仕事"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:54
+msgid "has been"
+msgstr "されています"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:65
+msgid " by the manager"
+msgstr "マネージャーによる"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:74
+msgid "marked as"
+msgstr "としてマーク"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:89
+#: tasks/push_notification/push_messages/order_change_status_composers.py:119
+msgid "Job"
+msgstr "仕事"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:96
+msgid " is available"
+msgstr "利用可能です"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:126
+msgid " was unassigned from you"
+msgstr "あなたから割り当てられていませんでした"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:134
+msgid "you have received"
+msgstr "あなたが受け取った"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:135
+msgid "a new job:"
+msgstr "新しい仕事："
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:152
+msgid "you've received"
+msgstr "あなたが受け取った"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:163
+#, python-brace-format
+msgid " {count} new jobs"
+msgstr "{count}新しい仕事"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:187
+#, python-brace-format
+msgid "{count} jobs were unassigned from you"
+msgstr "{count}ジョブはあなたから割り当てられていません"
+
+#: tasks/utils/reminder.py:36
+#, python-brace-format
+msgid "on {delivery_day}"
+msgstr "{delivery_day}に"
+
+#: tasks/utils/reminder.py:39
+msgid "tomorrow"
+msgstr "明日"
+
+#: tasks/utils/reminder.py:40
+msgid "Good news! "
+msgstr "朗報です！"
+
+#: tasks/utils/reminder.py:56
+msgid "today"
+msgstr "今日"
+
+#: webhooks/api/permissions.py:53
+msgid "External Route optimisation API is not available for you"
+msgstr "外部ルート最適化APIは利用できません"
+
+#: webhooks/api/route_optimisation/v1/views.py:41
+#: webhooks/api/route_optimisation/v2/views.py:54
+msgid ""
+"Customers can only be notified in Completed/Running optimisation statuses."
+msgstr ""
+"顧客は、完了/実行中の最適化ステータスでのみ通知を受けることができます。"
+
+#~ msgid "You can't create optimisation in past"
+#~ msgstr "過去に最適化を作成することはできません"
+
+#~ msgid ""
+#~ "You already have existing optimisation or currently running optimisation "
+#~ "process on this day"
+#~ msgstr "この日に既存の最適化または現在実行中の最適化プロセスがあります"
+
+#~ msgid "There is currently running optimisation process for the driver"
+#~ msgstr "現在、ドライバーの最適化プロセスが実行されています"
+
+#~ msgid ""
+#~ "You can't create or update solo optimisation while group optimisation is "
+#~ "still not finished."
+#~ msgstr ""
+#~ "グループ最適化がまだ完了していない間は、ソロ最適化を作成または更新すること"
+#~ "はできません。"
+
+#~ msgid "Optimisation successfully created."
+#~ msgstr "最適化が正常に作成されました。"
+
+#~ msgid "Unknown optimiser backend."
+#~ msgstr "不明なオプティマイザーバックエンド。"
+
+#~ msgid "Optimisation time exceeded. Optimisation cancelled."
+#~ msgstr "最適化時間を超えました。最適化がキャンセルされました。"
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are more than 100 jobs to "
+#~ "optimise."
+#~ msgstr "最適化を作成できませんでした。最適化するジョブは100以上あります。"
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs with deadline on "
+#~ "a selected day."
+#~ msgstr ""
+#~ "最適化を作成できませんでした。選択した日に締め切りのある仕事はありません。"
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs assigned to "
+#~ "driver in near future."
+#~ msgstr ""
+#~ "最適化を作成できませんでした。近い将来、ドライバーに割り当てられる仕事はあ"
+#~ "りません。"
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created solo "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "最適化を作成できませんでした。このドライバーのソロ最適化はすでに作成されて"
+#~ "います。"
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created group "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "最適化を作成できませんでした。このドライバーのグループ最適化はすでに作成さ"
+#~ "れています。"
+
+#~ msgid ""
+#~ "You do not need to re-optimise your route. There is no difference with "
+#~ "previously optimised route."
+#~ msgstr ""
+#~ "ルートを再最適化する必要はありません。以前に最適化されたルートとの違いはあ"
+#~ "りません。"
+
+#~ msgid "We could not create the optimisation. Unknown error occurred."
+#~ msgstr "最適化を作成できませんでした。不明なエラーが発生しました。"
+
+#~ msgid "parent optimisation"
+#~ msgstr "親の最適化"
+
+#, python-brace-format
+#~ msgid "#{id} {type} route optimisation for {days}"
+#~ msgstr "＃ {id} {type} {days}のルート最適化"
+
+#~ msgid "Optimisation finished."
+#~ msgstr "最適化が終了しました。"
+
+#, python-brace-format
+#~ msgid ">>>Start GROUP optimisation. ID: {id}<<<"
+#~ msgstr "> >最適化を開始し> 。 ID： {id} < < <"
+
+#~ msgid "Optimisation failed."
+#~ msgstr "最適化に失敗しました。"
+
+#~ msgid "Answer for this question already exists."
+#~ msgstr "この質問に対する答えはすでに存在します。"
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "有効な画像をアップロードしてください。アップロードしたファイルは、画像では"
+#~ "ないか、破損した画像でした。"

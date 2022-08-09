@@ -1,0 +1,2 @@
+Hi, {{order.driver.first_name}}!
+You've been assigned to {{order.title}}.

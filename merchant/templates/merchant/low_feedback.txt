@@ -1,0 +1,9 @@
+Hello, {{merchant.name}}!
+
+You've received low feedback from the customer {{customer.name}} for the job with ID: {{order.order_id}}/
+{% if order.customer_comment %}
+See customer's comment below:
+{{ order.customer_comment }}
+{% endif %}
+{{ report_url }}
+You can get more information about the job in Radaro. Just open the job report using the button above.

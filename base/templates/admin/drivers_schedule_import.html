@@ -1,0 +1,63 @@
+{% extends "admin/base.html" %}
+{% load i18n grp_tags %}
+
+{% block javascripts %}
+    {{ block.super }}
+    <script type="text/javascript" charset="utf-8">
+        (function($) {
+            $(document).ready(function() {
+                grappelli.initDateAndTimePicker();
+            });
+        })(grp.jQuery);
+    </script>
+{% endblock %}
+
+{% block breadcrumbs %}
+    <ul>
+        <li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></li>
+        {% if title %}
+            <li>{{ title }}</li>
+        {% endif %}
+    </ul>
+{% endblock %}
+
+{% block content %}
+	<form enctype="multipart/form-data" id="filter_form" method="post" action="">
+        {% csrf_token %}
+	    <div>
+            <fieldset class="module grp-module">
+                <div class="grp-row">
+                    <div class="l-2c-fluid l-d-4">
+                        <div class="c-1">{{ form.date.label_tag|prettylabel }}</div>
+                        <div class="c-2">
+                            {{ form.date }}
+                            {{ form.date.errors }}
+                            {% if form.date.help_text %}
+                            <div class="help">{{ form.date.help_text|safe }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grp-row">
+                    <div class="l-2c-fluid l-d-4">
+                        <div class="c-1">{{ form.file.label_tag|prettylabel }}</div>
+                        <div class="c-2">
+                            {{ form.file }}
+                            {{ form.file.errors }}
+                            {% if form.file.help_text %}
+                            <div class="help">{{ form.file.help_text|safe }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+	    </div>
+
+        <div class="module grp-module submit-row grp-submit-row">
+            <ul>
+        	    <li><input type="submit" value="Upload" class="grp-button grp-default"></li>
+            </ul>
+        </div>
+	</form>
+{% endblock %}

@@ -1,0 +1,117 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/dev.Dockerfile
+    image: radaro/radaro-api
+    container_name: radaro-api
+    volumes:
+      - "..:/code"
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+    stop_signal: SIGINT
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    depends_on:
+      - redis
+      - rabbitmq
+    environment:
+      - DB_HOST=host.docker.internal
+      - REDIS_DB=redis://redis:6379/1
+      - RO_REDIS_DB=redis://redis:6379/2
+      - CELERY_BROKER_URL=amqp://user:password@rabbitmq:5672
+      - CELERY_RESULT_BACKEND=redis://redis:6379/3
+    networks:
+      - radaro-network
+
+  celery:
+    build:
+      context: ..
+      dockerfile: docker/dev.Dockerfile
+    image: radaro/radaro-api
+    container_name: radaro-celery
+    volumes:
+      - "..:/code"
+    stop_signal: SIGINT
+    command: ["celery", "-A", "delivery", "worker", "-B", "-c", "1", "-l", "info", "-Q", "delivery-queue-priority,delivery-queue-slow,delivery-queue"]
+    depends_on:
+      - redis
+      - rabbitmq
+    environment:
+      - C_FORCE_ROOT=yes
+      - DB_HOST=host.docker.internal
+      - REDIS_DB=redis://redis:6379/1
+      - RO_REDIS_DB=redis://redis:6379/2
+      - CELERY_BROKER_URL=amqp://user:password@rabbitmq:5672
+      - CELERY_RESULT_BACKEND=redis://redis:6379/3
+    networks:
+      - radaro-network
+
+  celery-ro:
+    build:
+      context: ..
+      dockerfile: docker/dev.Dockerfile
+    image: radaro/radaro-api
+    container_name: radaro-celery-ro
+    volumes:
+      - "..:/code"
+    stop_signal: SIGINT
+    command: ["celery", "-A", "delivery", "worker", "-c", "1", "-l", "info", "-Q", "delivery-queue-optimisation,delivery-queue-optimisation-slow"]
+    depends_on:
+      - redis
+      - rabbitmq
+    environment:
+      - C_FORCE_ROOT=yes
+      - DB_HOST=host.docker.internal
+      - REDIS_DB=redis://redis:6379/1
+      - RO_REDIS_DB=redis://redis:6379/2
+      - CELERY_BROKER_URL=amqp://user:password@rabbitmq:5672
+      - CELERY_RESULT_BACKEND=redis://redis:6379/3
+    networks:
+      - radaro-network
+
+  celery-ro-engine:
+    build:
+      context: ..
+      dockerfile: docker/dev.Dockerfile
+    image: radaro/radaro-api
+    container_name: radaro-celery-ro-engine
+    volumes:
+      - "..:/code"
+    stop_signal: SIGINT
+    command: ["celery", "-A", "delivery", "worker", "-c", "1", "-l", "info", "-Q", "delivery-queue-optimisation-engine"]
+    depends_on:
+      - redis
+      - rabbitmq
+    environment:
+      - C_FORCE_ROOT=yes
+      - DB_HOST=host.docker.internal
+      - REDIS_DB=redis://redis:6379/1
+      - RO_REDIS_DB=redis://redis:6379/2
+      - CELERY_BROKER_URL=amqp://user:password@rabbitmq:5672
+      - CELERY_RESULT_BACKEND=redis://redis:6379/3
+    networks:
+      - radaro-network
+
+  redis:
+    image: library/redis:6.2-alpine
+    container_name: radaro-redis
+    networks:
+      - radaro-network
+
+  rabbitmq:
+    image: library/rabbitmq:3.8-alpine
+    container_name: radaro-rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=password
+    networks:
+      - radaro-network
+
+networks:
+  radaro-network:
+    name: radaro-network
+    driver: bridge

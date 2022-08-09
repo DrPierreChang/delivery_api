@@ -1,0 +1,9 @@
+{% if member.get_full_name %}
+Hi, {{ member.get_full_name }}!
+{% else %}
+Hello!
+{% endif %}
+
+Please follow the link below to confirm registration of your account.
+{{ settings.BASE_URL }}{{ member.get_confirm_account_url }}
+If you receive this email and didn’t sign up for an account with Radaro, please simply ignore this email.

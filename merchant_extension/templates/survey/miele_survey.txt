@@ -1,0 +1,5 @@
+Hi, {{customer.name}}!
+
+Please rate your order from {{ merchant }}.
+Follow the link below:
+{{ url }}

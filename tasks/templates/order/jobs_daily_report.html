@@ -1,0 +1,30 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{merchant.name}}!
+{% endblock %}
+{% block content %}
+        {% if report_link != '' %}
+        Here is your Periodical Jobs Report.
+        {% else %}
+            There were no jobs to generate the Periodical Report on period from {{ date_from|date:"M d, Y" }} to {{ date_to|date:"M d, Y" }} .
+        {% endif %}
+{% endblock %}
+
+{% block empty_link %}
+    {% if report_link %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="DOWNLOAD REPORT" href="{{ report_link }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">DOWNLOAD REPORT</a>
+{% endblock %}
+
+{% block break_line %}
+    {% if report_link %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block empty %}
+{% endblock %}

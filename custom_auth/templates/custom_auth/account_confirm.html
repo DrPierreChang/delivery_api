@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+  <hr>
+
+  {% if validlink %}
+    <p>Your account is now confirmed. You can use the application.</p>
+  {% else %}
+    <p>The confirmation link is invalid.</p>
+  {% endif %}
+
+{% endblock %}

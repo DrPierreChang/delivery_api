@@ -1,0 +1,10 @@
+{% extends 'email/email_base.html' %}
+{% block content %}
+  Your pin code to complete your registration in the Radaro driver app is <br>
+    <p style="margin: 0px;font-size: 28px;font-weight: bold;">{{ invite.pin_code }}</p>
+{% endblock %}
+{% block empty_link %}
+{% endblock %}
+{% block notification %}
+    If you receive this email and didn’t sign up for an account with Radaro, please simply ignore this email.
+{% endblock %}

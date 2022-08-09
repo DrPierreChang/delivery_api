@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{ merchant.name }}!
+{% endblock %}
+{% block content %}
+    Here is the report on Chain of Responsibility checklist from driver {{ driver.full_name }}:
+    <table style="font-size: 12px; line-height: 16px; text-align: left;margin-top: 18px;">
+        <tr>
+            <td style="color: #959595;width: 120px;">Date:</td>
+            <td>{{ date }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Driver name:</td>
+            <td>{{ driver.full_name }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Question:</td>
+            <td>{{ answer.question.text }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Answer:</td>
+            <td>{% if answer.choice %}Yes{% else %}No{% endif %}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Driver comment:</td>
+            <td>{% if answer.comment %}{{ answer.comment }}{% else %}-{% endif %}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Driver photos:</td>
+            <td>{% if has_attachments %}see attachments{% else %}no attachments{% endif %}</td>
+        </tr>
+    </table>
+{% endblock %}
+
+{% block empty_link %}
+{% endblock %}
+
+{% block break_line %}
+{% endblock %}
+
+{% block empty %}
+{% endblock %}

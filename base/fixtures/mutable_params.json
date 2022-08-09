@@ -1,0 +1,98 @@
+[
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 1,
+    "fields": {
+        "name": "DEFAULT_JOB_COST",
+        "value": "0.55",
+        "message": "Default job price to be applied to new merchants. Can be overwritten by personal (for each merchant) price per job done. Can be only numeric, larger or equal 0.",
+        "type": "float",
+        "constraints": "{\"min\":0}",
+        "description": "Value DEFAULT_JOB_COST. The minimum value of this parameter is 0. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 2,
+    "fields": {
+        "name": "EVENT_UPDATING_ALLOWED",
+        "value": "True",
+        "message": "Enables or disables receiving update events on clients.",
+        "type": "bool",
+        "constraints": "{}",
+        "description": "Value EVENT_UPDATING_ALLOWED. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 3,
+    "fields": {
+        "name": "DEFAULT_SMS_COST",
+        "value": "0.1",
+        "message": "Default sms price to be applied to new merchants. Can be overwritten by personal (for each merchant) price per sms done. Can be only numeric, larger or equal 0.",
+        "type": "float",
+        "constraints": "{\"min\":0}",
+        "description": "Value DEFAULT_SMS_COST. The minimum value of this parameter is 0. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 4,
+    "fields": {
+        "name": "INVITE_PIN_LENGTH",
+        "value": "4",
+        "message": "Param defining length of invite pin code. Should be in range 4..10. Illegal range or changing name leads to ignoring it and creating new parameter with min value.",
+        "type": "int",
+        "constraints": "{\"max\":10,\"min\":4}",
+        "description": "Value INVITE_PIN_LENGTH. The maximum value of this parameter is 10. The minimum value of this parameter is 4. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 5,
+    "fields": {
+        "name": "TOKEN_TIMEOUT_MIN",
+        "value": "5",
+        "message": "Setting defining timeout of pin code. Value in minutes. Illegal range or changing name leads to ignoring it and creating new parameter with default value.",
+        "type": "int",
+        "constraints": "{\"min\":0}",
+        "description": "Value TOKEN_TIMEOUT_MIN. The minimum value of this parameter is 0. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 6,
+    "fields": {
+        "name": "MASTER_PIN_ENABLED",
+        "value": "False",
+        "message": "Possible value is \"True\" or \"False\". If value is \"True\"than \"MASTER_PIN\" setting will be enabled, else \"MASTER_PIN\" setting will be disabled.",
+        "type": "bool",
+        "constraints": "{}",
+        "description": ""
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 7,
+    "fields": {
+        "name": "MASTER_PIN",
+        "value": "1111",
+        "message": "Setting defining default pin code for drivers registration. Value should be an integer with number of digits equals to PIN lengthIllegal range or changing name leads to ignoring it andcreating new parameter with default random value.",
+        "type": "int",
+        "constraints": "{\"max\":9999999999,\"min\":1000}",
+        "description": "Value MASTER_PIN. The maximum value of this parameter is 9999999999. The minimum value of this parameter is 1000. "
+    }
+},
+{
+    "model": "base.mutablemodelparameters",
+    "pk": 8,
+    "fields": {
+        "name": "NTI_TA_PHONE",
+        "value": " ",
+        "message": "Phone number of the TA of NTI merchant.",
+        "type": "str",
+        "constraints": "{}",
+        "description": " "
+    }
+}
+]

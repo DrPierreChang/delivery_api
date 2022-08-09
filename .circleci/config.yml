@@ -1,0 +1,48 @@
+version: 2
+jobs:
+  test:
+    machine:
+      image: ubuntu-2004:current
+      docker_layer_caching: true
+    steps:
+      - run:
+          name: Install Docker Compose
+          environment:
+            COMPOSE_VERSION: '1.29.2'
+          command: |
+            curl -L "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o ~/docker-compose
+            chmod +x ~/docker-compose
+            sudo mv ~/docker-compose /usr/local/bin/docker-compose
+      - checkout
+      - run:
+          name: Run Tests
+          command: docker-compose -f docker/docker-compose.test.yml up --build --abort-on-container-exit
+
+  build_and_upload:
+    machine:
+      image: ubuntu-2004:current
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - run:
+          name: Docker login
+          command: docker login "$AZURE_CONTAINER_REGISTRY_SERVER_NAME" -u "$AZURE_CONTAINER_USERNAME" -p "$AZURE_CONTAINER_PASSWORD"
+      - run:
+          name: Build the image
+          command: docker build -f docker/Dockerfile . -t "${AZURE_CONTAINER_REGISTRY_SERVER_NAME}/${AZURE_CONTAINER_REPOSITORY_NAME}:${CIRCLE_BRANCH}"
+      - run:
+          name: Pushing to acr
+          command: docker push "${AZURE_CONTAINER_REGISTRY_SERVER_NAME}/${AZURE_CONTAINER_REPOSITORY_NAME}:${CIRCLE_BRANCH}"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test
+      - build_and_upload:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - release

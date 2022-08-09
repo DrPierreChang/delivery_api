@@ -1,0 +1,4 @@
+Hi, {{customer.name}}.
+
+It looks like your order from {{ merchant }} has been cancelled.
+You can contact {{ merchant }} for more details at {{phone_number}}.

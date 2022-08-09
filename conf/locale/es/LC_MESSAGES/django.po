@@ -1,0 +1,1063 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 16:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base/api/mobile/invitations/v1/serializers.py:51
+msgid "Already registered."
+msgstr "Ya registrado."
+
+#: base/api/mobile/invitations/v1/serializers.py:54
+msgid "No invitations with this phone number were found."
+msgstr "No se encontraron invitaciones con este número de teléfono."
+
+#: base/api/mobile/invitations/v1/serializers.py:74
+msgid "Pin code is not valid or out of date."
+msgstr "El código PIN no es válido o está desactualizado."
+
+#: base/csv_parsing.py:13
+msgid "Time has wrong format. Use hh:mm time format instead."
+msgstr ""
+"La hora tiene un formato incorrecto. Utilice el formato de hora hh:mm en su "
+"lugar."
+
+#: base/csv_parsing.py:18 base/csv_parsing.py:33
+msgid "\"driver_id\" field is required."
+msgstr "El campo \"driver_id\" es obligatorio."
+
+#: base/csv_parsing.py:92 schedule/admin/fields/schedule.py:19
+#: schedule/api/mobile/schedule/v1/serializers.py:31
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:32
+msgid "Break ranges overlap."
+msgstr "Los rangos de ruptura se superponen."
+
+#: base/csv_parsing.py:144 base/csv_parsing.py:146
+#: schedule/admin/fields/schedule.py:20
+#: schedule/api/mobile/schedule/v1/serializers.py:71
+#: schedule/api/mobile/schedule/v1/serializers.py:75
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:27
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:32
+msgid "The break went beyond working hours."
+msgstr "El descanso fue más allá del horario laboral."
+
+#: base/fields.py:13
+#, python-format
+msgid "'%(value)s' value must be valid JSON."
+msgstr "El valor ' %(value)s ' debe ser JSON válido."
+
+#: base/fields.py:14
+msgid "All keys must be in YYYY-MM-DD format."
+msgstr "Todas las claves deben estar en formato AAAA-MM-DD."
+
+#: base/fields.py:15
+msgid "All keys must be days."
+msgstr "Todas las claves deben ser días."
+
+#: base/fields.py:16
+msgid "Data must be in key-value format."
+msgstr "Los datos deben estar en formato clave-valor."
+
+#: base/models/cars.py:16
+msgid "Scooter"
+msgstr "Scooter"
+
+#: base/models/cars.py:17
+msgid "Car"
+msgstr "Carro"
+
+#: base/models/cars.py:18
+msgid "Pickup / Ute"
+msgstr "Camioneta / Ute"
+
+#: base/models/cars.py:19
+msgid "Van"
+msgstr "camioneta"
+
+#: base/models/cars.py:20
+msgid "Truck"
+msgstr "Camión"
+
+#: base/templates/admin/drivers_schedule_import.html:17
+msgid "Home"
+msgstr "Casa"
+
+#: custom_auth/api/legacy/serializers.py:70
+msgid "User with such email doesn't exist."
+msgstr "El usuario con dicho correo electrónico no existe."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:25
+msgid "Invalid username or password."
+msgstr "Usuario o contraseña invalido."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:29
+msgid "User inactive or deleted."
+msgstr "Usuario inactivo o eliminado."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:35
+msgid "You're currently online on another device."
+msgstr "Actualmente estás en línea en otro dispositivo."
+
+#: custom_auth/push_messages/composers.py:11
+msgid "you logged in"
+msgstr "te conectaste"
+
+#: custom_auth/push_messages/composers.py:21
+msgid " on another device."
+msgstr "en otro dispositivo."
+
+#: driver/api/mobile/drivers/v1/serializers/validators.py:29
+msgid "User with such email already registered."
+msgstr "Usuario con dicho correo ya registrado."
+
+#: driver/push_messages/composers.py:12
+msgid "you have been forced offline"
+msgstr "te han forzado a desconectarte"
+
+#: driver/push_messages/composers.py:18 merchant/push_messages/composers.py:16
+#, python-brace-format
+msgid " by the manager {manager}"
+msgstr "por el gerente {manager}"
+
+#: merchant/api/legacy/serializers/skill_sets.py:20
+#, python-format
+msgid "%(count)d active job that has"
+msgid_plural "%(count)d active jobs that have"
+msgstr[0] "%(count)d trabajo activo que tiene"
+msgstr[1] "%(count)d trabajos activos que tienen"
+
+#: merchant/api/legacy/serializers/skill_sets.py:25
+#, python-format
+msgid "Can't delete the skill because you have %(jobs_msg)s this skill"
+msgid_plural ""
+"Can't delete the skills because you have %(jobs_msg)s these skills"
+msgstr[0] ""
+"No se puede eliminar la habilidad porque tiene %(jobs_msg)s esta habilidad"
+msgstr[1] ""
+"No puede eliminar las habilidades porque tiene %(jobs_msg)s estas habilidades"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "you"
+msgstr "Uds"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "driver"
+msgid_plural "drivers"
+msgstr[0] "conductor"
+msgstr[1] "conductores"
+
+#: merchant/api/legacy/serializers/skill_sets.py:35
+#, python-format
+msgid "%(count)d job that has"
+msgid_plural "%(count)d jobs that have"
+msgstr[0] "%(count)d trabajo que tiene"
+msgstr[1] "%(count)d trabajos que tienen"
+
+#: merchant/api/legacy/serializers/skill_sets.py:38
+#, python-format
+msgid ""
+"%(jobs_msg)s this skill will be unassigned from %(from)s after you delete "
+"the skill"
+msgid_plural ""
+"%(jobs_msg)s these skills will be unassigned from %(from)s after you delete "
+"the skills"
+msgstr[0] ""
+"%(jobs_msg)s esta habilidad se anulará de %(from)s después de eliminar la "
+"habilidad"
+msgstr[1] ""
+"%(jobs_msg)s estas habilidades se anularán de %(from)s después de eliminar "
+"las habilidades"
+
+#: merchant/models/merchant.py:400
+msgid "route optimisation"
+msgstr "optimización de rutas"
+
+#: merchant/models/merchant.py:403
+msgid "route optimisation focus"
+msgstr "enfoque de optimización de ruta"
+
+#: merchant/models/merchant.py:404
+msgid ""
+"Set, what to focus on for group optimisation. This setting is useful only "
+"with \"route optimisation\" enabled."
+msgstr ""
+"Establecer, en qué enfocarse para la optimización del grupo. Esta "
+"configuración es útil solo con la \"optimización de ruta\" habilitada."
+
+#: merchant/models/merchant.py:409
+msgid ""
+"Set average duration of time a driver needs to spend to on job site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"Establezca la duración promedio del tiempo que un conductor debe pasar en el "
+"lugar de trabajo. Esta configuración es útil solo con la \"optimización de "
+"ruta\" habilitada."
+
+#: merchant/models/merchant.py:414
+msgid ""
+"Set average duration of time a driver needs to spend to on pickup site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"Establezca la duración promedio del tiempo que un conductor debe pasar en el "
+"sitio de recogida. Esta configuración es útil solo con la \"optimización de "
+"ruta\" habilitada."
+
+#: merchant/models/merchant.py:422
+msgid "Barcodes"
+msgstr "códigos de barras"
+
+#: merchant/models/merchant.py:629
+msgid "You can't use `route optimisation` feature without enabling `hubs`"
+msgstr ""
+"No puede usar la función de 'optimización de ruta' sin habilitar 'hubs'"
+
+#: merchant/models/merchant.py:664
+msgid ""
+"You cannot select an option that requires a barcode scan upon delivery with "
+"`enable_delivery_confirmation` disabled"
+msgstr ""
+"No puede seleccionar una opción que requiera un escaneo de código de barras "
+"en el momento de la entrega con `enable_delivery_confirmation` deshabilitado"
+
+#: merchant/models/merchant.py:670
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation` disabled"
+msgstr ""
+"No puede seleccionar una opción con `enable_delivery_confirmation` "
+"deshabilitado"
+
+#: merchant/models/merchant.py:675
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation_documents` "
+"disabled"
+msgstr ""
+"No puede seleccionar una opción con `enable_delivery_confirmation_documents` "
+"deshabilitado"
+
+#: merchant/models/merchant.py:680
+msgid "You cannot select an option with `in_app_jobs_assignment` disabled"
+msgstr ""
+"No puede seleccionar una opción con `in_app_jobs_assignment` deshabilitado"
+
+#: merchant/permissions.py:17
+msgid ""
+"You don't have ability to perform this action because labels aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"No tienes la capacidad de realizar esta acción porque las etiquetas no están "
+"habilitadas. Por favor, póngase en contacto con el administrador."
+
+#: merchant/permissions.py:27
+msgid ""
+"You don't have ability to perform this action because skill sets aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"No tienes la capacidad de realizar esta acción porque los conjuntos de "
+"habilidades no están habilitados. Por favor, póngase en contacto con el "
+"administrador."
+
+#: merchant/permissions.py:35
+msgid ""
+"You don't have ability to perform this action because barcodes aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"No tiene la capacidad de realizar esta acción porque los códigos de barras "
+"no están habilitados. Por favor, póngase en contacto con el administrador."
+
+#: merchant/permissions.py:51
+msgid ""
+"You don't have ability to perform this action because SKIDs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"No tiene la capacidad de realizar esta acción porque los SKID no están "
+"habilitados. Por favor, póngase en contacto con el administrador."
+
+#: merchant/permissions.py:59
+msgid ""
+"You don't have ability to perform this action because subbranding aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"No tiene la capacidad de realizar esta acción porque la submarca no está "
+"habilitada. Por favor, póngase en contacto con el administrador."
+
+#: merchant/permissions.py:67
+msgid ""
+"You don't have ability to perform this action because hubs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"No tiene la capacidad de realizar esta acción porque los concentradores no "
+"están habilitados. Por favor, póngase en contacto con el administrador."
+
+#: merchant/push_messages/composers.py:13
+#, python-brace-format
+msgid "skill set \"{name}\" {message}"
+msgstr "conjunto de habilidades \" {name} \" {message}"
+
+#: merchant/push_messages/composers.py:32
+msgid "has been added to you"
+msgstr "se te ha agregado"
+
+#: merchant/push_messages/composers.py:37
+msgid "has been removed from you"
+msgstr "se te ha quitado"
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:65
+msgid "A valid bool is required."
+msgstr "Se requiere un bool válido."
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:96
+msgid "Not a valid choice"
+msgstr "No es una opción válida"
+
+#: merchant_extension/api/mobile/checklists/v2/serializers.py:14
+msgid "Photos are required for this answer."
+msgstr "Se requieren fotos para esta respuesta."
+
+#: radaro_utils/filters/date_filters.py:26
+#, python-brace-format
+msgid "{alias} for today (US EST timezone)"
+msgstr "{alias} para hoy (zona horaria EST de EE. UU.)"
+
+#: radaro_utils/filters/date_filters.py:27
+#, python-brace-format
+msgid "{alias} for 24+ hours ago"
+msgstr "{alias} por más de 24 horas"
+
+#: radaro_utils/filters/date_filters.py:28
+#, python-brace-format
+msgid "{alias} for 72+ hours ago"
+msgstr "{alias} durante más de 72 horas"
+
+#: radaro_utils/filters/date_filters.py:29
+msgid "7 days"
+msgstr "7 días"
+
+#: radaro_utils/filters/date_filters.py:30
+msgid "Month"
+msgstr "Mes"
+
+#: radaro_utils/filters/date_filters.py:31
+msgid "3 months"
+msgstr "3 meses"
+
+#: radaro_utils/filters/date_filters.py:32
+msgid "Year"
+msgstr "Año"
+
+#: radaro_utils/password_validation.py:17
+#, python-format
+msgid "The password must contain at least %(min_letters)d uppercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d uppercase characters"
+msgstr[0] ""
+"La contraseña debe contener al menos %(min_letters)d carácter en mayúscula"
+msgstr[1] ""
+"La contraseña debe contener al menos %(min_letters)d caracteres en mayúscula"
+
+#: radaro_utils/password_validation.py:37
+#, python-format
+msgid "The password must contain at least %(min_letters)d lowercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d lowercase characters"
+msgstr[0] ""
+"La contraseña debe contener al menos %(min_letters)d carácter en minúscula"
+msgstr[1] ""
+"La contraseña debe contener al menos %(min_letters)d caracteres en minúscula"
+
+#: radaro_utils/password_validation.py:57
+#, python-format
+msgid "The password must contain at least %(min_numbers)d number"
+msgid_plural "The password must contain at least %(min_numbers)d numbers"
+msgstr[0] "La contraseña debe contener al menos %(min_numbers)d número"
+msgstr[1] "La contraseña debe contener al menos %(min_numbers)d números"
+
+#: radaro_utils/radaro_phone/serializers.py:25
+msgid "This field may not be blank."
+msgstr "Este campo no puede estar en blanco."
+
+#: radaro_utils/radaro_phone/serializers.py:27
+msgid "Phone number have too many characters"
+msgstr "El número de teléfono tiene demasiados caracteres"
+
+#: radaro_utils/radaro_phone/utils.py:31
+msgid "Not supported region for merchant."
+msgstr "Región no admitida para el comerciante."
+
+#: radaro_utils/radaro_phone/utils.py:33
+msgid "Invalid phone number for merchant's region."
+msgid_plural "Invalid phone number for merchant's regions."
+msgstr[0] "Número de teléfono no válido para la región del comerciante."
+msgstr[1] "Número de teléfono no válido para las regiones del comerciante."
+
+#: radaro_utils/radaro_phone/utils.py:52
+msgid ""
+"Phone must be in international format since the merchant operates in "
+"multiple countries."
+msgstr ""
+"El teléfono debe estar en formato internacional ya que el comerciante opera "
+"en varios países."
+
+#: radaro_utils/serializers/mixins.py:37
+msgid "You should specify either location or address"
+msgstr "Debe especificar la ubicación o la dirección"
+
+#: radaro_utils/serializers/mixins.py:41
+msgid "Address not found."
+msgstr "Dirección no encontrada."
+
+#: radaro_utils/serializers/mobile/serializers.py:45
+#, python-brace-format
+msgid "Invalid data. Expected a dictionary, but got {datatype}."
+msgstr "Datos inválidos. Esperaba un diccionario, pero obtuve {datatype} ."
+
+#: radaro_utils/serializers/validators.py:55
+msgid "This date cannot be earlier than now."
+msgstr "Esta fecha no puede ser anterior a ahora."
+
+#: route_optimisation/admin/base.py:38
+msgid "Optimisation cost"
+msgstr "Costo de optimización"
+
+#: route_optimisation/admin/base.py:78
+msgid "Soft delete selected optimisations and unassign jobs"
+msgstr ""
+"Eliminación temporal de optimizaciones seleccionadas y desasignación de "
+"trabajos"
+
+#: route_optimisation/admin/base.py:89
+msgid "Soft delete selected optimisations, keep jobs assigned"
+msgstr ""
+"Eliminación temporal de las optimizaciones seleccionadas, mantenimiento de "
+"los trabajos asignados"
+
+#: route_optimisation/api/mobile/v1/serializers.py:54
+#: route_optimisation/api/web/serializers/route_optimisation.py:54
+#: route_optimisation/api/web/temp_legacy/serializers/route_optimisation.py:64
+#: webhooks/api/route_optimisation/v1/serializers/optimisation.py:68
+#: webhooks/api/route_optimisation/v2/serializers/optimisation.py:48
+msgid "Cannot create optimisation in the past."
+msgstr "No se puede crear la optimización en el pasado."
+
+#: route_optimisation/api/permissions.py:9
+msgid "Route optimisation is not active for you"
+msgstr "La optimización de ruta no está activa para usted"
+
+#: route_optimisation/api/web/filters.py:75
+msgid "\"{}\" is not a valid value."
+msgstr "\"{}\" no es un valor válido."
+
+#: route_optimisation/api/web/serializers/manage_orders.py:27
+#: route_optimisation/api/web/serializers/manage_orders.py:41
+#: route_optimisation/logging/logs/validation.py:124
+msgid "optimisation"
+msgstr "mejoramiento"
+
+#: route_optimisation/api/web/serializers/refresh.py:43
+msgid "This field is required."
+msgstr "Este campo es requerido."
+
+#: route_optimisation/api/web/temp_legacy/views.py:50
+#: route_optimisation/api/web/views/route_optimisations.py:65
+msgid "You can't delete optimisation which hasn't yet been calculated."
+msgstr "No puede eliminar la optimización que aún no se ha calculado."
+
+#: route_optimisation/apps.py:9
+msgid "Route Optimisation"
+msgstr "Optimización de rutas"
+
+#: route_optimisation/celery_tasks/notification.py:30
+#, python-brace-format
+msgid " on {optimisation_day}"
+msgstr " el {optimisation_day}"
+
+#: route_optimisation/engine/ortools/context/init.py:256
+msgid ""
+"We could not create the optimisation. There are orders on different "
+"continents."
+msgstr ""
+"No pudimos crear la optimización. Hay órdenes en diferentes continentes."
+
+#: route_optimisation/engine/ortools/context/init.py:267
+msgid ""
+"We could not create the optimisation. There are hubs on different continents."
+msgstr ""
+"No pudimos crear la optimización. Hay centros en diferentes continentes."
+
+#: route_optimisation/logging/logs/base.py:89
+#: route_optimisation/logging/logs/base.py:94
+msgid "Old type route optimisation"
+msgstr "Optimización de rutas de tipo antiguo"
+
+#: route_optimisation/logging/logs/exception.py:60
+#: route_optimisation/logging/logs/help_logs.py:21
+#: route_optimisation/logging/logs/help_logs.py:43
+#: route_optimisation/logging/logs/help_logs.py:58
+#: route_optimisation/logging/logs/help_logs.py:82
+#: route_optimisation/logging/logs/help_logs.py:86
+#: route_optimisation/logging/logs/help_logs.py:90
+#: route_optimisation/logging/logs/help_logs.py:93
+#: route_optimisation/logging/logs/help_logs.py:171
+#: route_optimisation/logging/logs/help_logs.py:228
+#: route_optimisation/logging/logs/managing.py:82
+#: route_optimisation/logging/logs/state_change.py:16
+#: route_optimisation/logging/logs/state_change.py:53
+#: route_optimisation/logging/logs/state_change.py:56
+#: route_optimisation/logging/logs/state_change.py:58
+#: route_optimisation/logging/logs/validation.py:57
+#: route_optimisation/logging/logs/validation.py:64
+#: route_optimisation/logging/logs/validation.py:66
+#: route_optimisation/logging/logs/validation.py:69
+#: route_optimisation/logging/logs/validation.py:88
+#: route_optimisation/logging/logs/validation.py:93
+#: route_optimisation/logging/logs/validation.py:97
+#: route_optimisation/logging/logs/validation.py:101
+#: route_optimisation/logging/logs/validation.py:105
+#: route_optimisation/logging/logs/validation.py:193
+#: route_optimisation/logging/logs/validation.py:196
+#: route_optimisation/logging/logs/validation.py:199
+#: route_optimisation/logging/logs/validation.py:202
+#: route_optimisation/logging/logs/validation.py:244
+#: route_optimisation/utils/backends/move_orders.py:81
+#: route_optimisation/utils/backends/move_orders.py:88
+#: route_optimisation/utils/validation/serializers.py:71
+#: route_optimisation/utils/validation/serializers.py:160
+#: webhooks/api/route_optimisation/v2/serializers/options.py:25
+msgid "Optimisation"
+msgstr "Mejoramiento"
+
+#: route_optimisation/logging/logs/validation.py:71
+msgid "optimised"
+msgstr "optimizado"
+
+#: route_optimisation/push_messages/composers.py:11
+msgid "your route was optimised"
+msgstr "tu ruta fue optimizada"
+
+#: route_optimisation/push_messages/composers.py:34
+msgid "Route optimisation"
+msgstr "Optimización de rutas"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "completed"
+msgstr "terminado"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "failed"
+msgstr "fallido"
+
+#: route_optimisation/push_messages/composers.py:56
+msgid "your route was removed"
+msgstr "tu ruta fue eliminada"
+
+#: route_optimisation/push_messages/composers.py:79
+msgid "your route was updated"
+msgstr "tu ruta fue actualizada"
+
+#: route_optimisation/utils/validation/serializers.py:158
+#, python-brace-format
+msgid ""
+"Vehicle Capacity feature is disabled, please turn this on to create "
+"{optimisation} that accounts Vehicle Capacity"
+msgstr ""
+"La función de capacidad del vehículo está deshabilitada, actívela para crear "
+"una {optimisation} que tenga en cuenta la capacidad del vehículo"
+
+#: route_optimisation/utils/validation/serializers.py:172
+msgid "Wrong working hours"
+msgstr "horas de trabajo incorrectas"
+
+#: route_optimisation/utils/validation/serializers.py:180
+msgid "No start hub passed"
+msgstr "No pasó ningún concentrador de inicio"
+
+#: route_optimisation/utils/validation/serializers.py:190
+msgid "No end hub passed"
+msgstr "No pasó ningún centro final"
+
+#: route_optimisation/utils/validation/validators.py:47
+msgid "There are no jobs to optimise"
+msgstr "No hay trabajos para optimizar"
+
+#: route_optimisation/utils/validation/validators.py:53
+msgid "Too many jobs to optimise"
+msgstr "Demasiados trabajos para optimizar"
+
+#: route_optimisation/utils/validation/validators.py:61
+msgid "There are no drivers available"
+msgstr "No hay controladores disponibles"
+
+#: routing_optimization/apps.py:9
+msgid "Routing Optimisation"
+msgstr "Optimización de enrutamiento"
+
+#: schedule/admin/fields/const_schedule.py:26
+msgid "The values in the constant schedule are required."
+msgstr "Los valores en el programa constante son obligatorios."
+
+#: schedule/admin/fields/schedule.py:15
+msgid "There must be both values."
+msgstr "Debe haber ambos valores."
+
+#: schedule/admin/fields/schedule.py:16
+#: schedule/api/mobile/schedule/v1/serializers.py:46
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:17
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:44
+msgid "The start time should be less than the end time."
+msgstr "La hora de inicio debe ser menor que la hora de finalización."
+
+#: schedule/admin/fields/schedule.py:17 schedule/admin/fields/schedule.py:49
+msgid "Invalid data."
+msgstr "Datos inválidos."
+
+#: schedule/admin/fields/schedule.py:18
+#: schedule/api/mobile/schedule/v1/serializers.py:15
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:17
+msgid "The start of the break must be before the end."
+msgstr "El inicio del descanso debe ser antes del final."
+
+#: schedule/admin/fields/schedule.py:21
+#: schedule/api/mobile/schedule/v1/serializers.py:42
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:48
+msgid "You can't add a weekend break."
+msgstr "No se puede agregar un descanso de fin de semana."
+
+#: schedule/api/mobile/schedule/v1/serializers.py:36
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:13
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:40
+msgid "You must enter both time period values"
+msgstr "Debe introducir ambos valores de período de tiempo"
+
+#: schedule/api/mobile/schedule/v1/serializers.py:39
+msgid "Breaks are only available on one time schedule"
+msgstr "Los descansos solo están disponibles en un horario"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:119
+msgid "Barcode is not found"
+msgstr "No se encuentra el código de barras"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:121
+msgid "This barcode has not been assigned to you"
+msgstr "Este código de barras no se le ha asignado"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:124
+msgid "The barcode has been already scanned both times"
+msgstr "El código de barras ya se ha escaneado las dos veces."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:144
+msgid "The barcode has been already scanned upon delivery"
+msgstr "El código de barras ya ha sido escaneado en el momento de la entrega."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:149
+msgid "The barcode has been already scanned at warehouse"
+msgstr "El código de barras ya ha sido escaneado en el almacén."
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:153
+msgid "Incorrect job status to scan this barcode"
+msgstr "Estado de trabajo incorrecto para escanear este código de barras"
+
+#: tasks/api/mobile/concatenated_orders/v1/serializers.py:41
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:40
+msgid "You cannot use pick up status"
+msgstr "No puede usar el estado de recogida"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/barcodes.py:31
+#, python-brace-format
+msgid "Barcode {code} already exists."
+msgstr "El código de barras {code} ya existe."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:52
+msgid "Cannot change SKID with current order status"
+msgstr "No se puede cambiar SKID con el estado actual del pedido"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:54
+msgid "Cannot change SKID with current driver status"
+msgstr "No se puede cambiar SKID con el estado actual del conductor"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/confirmation.py:124
+msgid "You cannot change the status until delivery is confirmed"
+msgstr "No puede cambiar el estado hasta que se confirme la entrega"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:60
+#, python-brace-format
+msgid "Forbidden to change status from \"{old_status}\" to \"{new_status}\""
+msgstr "Prohibido cambiar el estado de \" {old_status} \" a \" {new_status} \""
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:78
+msgid "You cannot send starting point in the current status"
+msgstr "No puede enviar el punto de partida en el estado actual"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:85
+msgid "You cannot send ending point in the current status"
+msgstr "No puede enviar el punto final en el estado actual"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:92
+msgid "You cannot specify a wayback point in the current status"
+msgstr "No puede especificar un punto de retorno en el estado actual"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:45
+msgid "You can not send a comment without a code"
+msgstr "No puedes enviar un comentario sin un código."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:53
+msgid "Success codes are disabled for your merchant."
+msgstr "Los códigos de éxito están deshabilitados para su comerciante."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:60
+#, python-brace-format
+msgid "{code_type} comment is required."
+msgstr "Se {code_type} comentario."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:81
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:88
+#, python-brace-format
+msgid "You can not pass {code_type} code with this status."
+msgstr "No puede pasar el código {code_type} con este estado."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:102
+msgid "You cannot change the status before sending a terminate code"
+msgstr "No puede cambiar el estado antes de enviar un código de terminación"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_create.py:32
+msgid "Pickup customer and pickup address must be used together"
+msgstr "El cliente de recogida y la dirección de recogida deben usarse juntos"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_documents.py:29
+#, python-brace-format
+msgid "The document named \"{name}\" is already uploaded to the server."
+msgstr "El documento llamado \" {name} \" ya está cargado en el servidor."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:57
+msgid "You are not able to send pick up confirmation with the current status"
+msgstr "No puede enviar una confirmación de recogida con el estado actual"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:63
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:69
+msgid "You are not able to send confirmation with the current status"
+msgstr "No puede enviar confirmación con el estado actual"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:40
+#, python-brace-format
+msgid "Driver {full_name} doesn't have all these skills"
+msgstr "El conductor {full_name} no tiene todas estas habilidades"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:49
+msgid "There are no drivers with the same set of skills."
+msgstr "No hay conductores con el mismo conjunto de habilidades."
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+msgid "Pick up after"
+msgstr "recoger después"
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Pick up deadline"
+msgstr "plazo de recogida"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+msgid "Deliver after"
+msgstr "entregar después"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Deliver deadline"
+msgstr "plazo de entrega"
+
+#: tasks/api/web/orders/serializers/order/validators.py:41
+#, python-brace-format
+msgid "{lower_label} cannot be later than {upper_label}"
+msgstr "{lower_label} no puede ser posterior a {upper_label}"
+
+#: tasks/api/web/orders/serializers/order/validators.py:44
+#, python-brace-format
+msgid "{lower_label} and {upper_label} must be within one day"
+msgstr "{lower_label} y {upper_label} deben estar dentro de un día"
+
+#: tasks/mixins/order_status.py:35
+msgid "Not assigned"
+msgstr "No asignado"
+
+#: tasks/mixins/order_status.py:36
+msgid "Assigned"
+msgstr "Asignado"
+
+#: tasks/mixins/order_status.py:37
+msgid "Pick up"
+msgstr "Levantar"
+
+#: tasks/mixins/order_status.py:38
+msgid "Picked up"
+msgstr "Recogido"
+
+#: tasks/mixins/order_status.py:39
+msgid "In progress"
+msgstr "En curso"
+
+#: tasks/mixins/order_status.py:40
+msgid "Way back"
+msgstr "Camino de vuelta"
+
+#: tasks/mixins/order_status.py:41
+msgid "Completed"
+msgstr "Terminado"
+
+#: tasks/mixins/order_status.py:42
+msgid "Failed"
+msgstr "Fallido"
+
+#: tasks/push_notification/push_messages/event_composers.py:12
+msgid "your job"
+msgstr "tu trabajo"
+
+#: tasks/push_notification/push_messages/event_composers.py:21
+msgid " has been deleted"
+msgstr "ha sido eliminado"
+
+#: tasks/push_notification/push_messages/event_composers.py:36
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been updated with new info"
+msgstr ""
+"{appeal} , su trabajo \" {title} \" ha sido actualizado con nueva información"
+
+#: tasks/push_notification/push_messages/event_composers.py:44
+#, python-brace-format
+msgid ""
+"Seems, that you've arrived at job location. Please carry out the {checklist}"
+msgstr ""
+"Parece que has llegado a la ubicación del trabajo. Lleve a cabo la "
+"{checklist}"
+
+#: tasks/push_notification/push_messages/event_composers.py:45
+#, python-brace-format
+msgid "You've arrived at your job. Please carry out the {checklist}"
+msgstr "Has llegado a tu trabajo. Lleve a cabo la {checklist}"
+
+#: tasks/push_notification/push_messages/event_composers.py:53
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" deadline has expired"
+msgstr "{appeal} , la fecha límite de su trabajo \" {title} \" ha vencido"
+
+#: tasks/push_notification/push_messages/event_composers.py:61
+#, python-brace-format
+msgid "You have less than 30 minutes to finish job \"{title}\""
+msgstr "Tienes menos de 30 minutos para terminar el trabajo \" {title} \""
+
+#: tasks/push_notification/push_messages/event_composers.py:69
+#, python-brace-format
+msgid "SKID info in job \"{title}\" has been updated"
+msgstr "Se actualizó la información de SKID en el trabajo \" {title} \""
+
+#: tasks/push_notification/push_messages/event_composers.py:77
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been added to concatenated job"
+msgstr ""
+"{appeal}, su trabajo \" {title} \" se ha agregado al trabajo concatenado"
+
+#: tasks/push_notification/push_messages/event_composers.py:85
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been removed from concatenated job"
+msgstr "{appeal}, su trabajo \" {title} \" se eliminó del trabajo concatenado"
+
+#: tasks/push_notification/push_messages/event_composers.py:97
+#, python-brace-format
+msgid "{appeal}, your concatenated job has been ungrouped"
+msgstr "{appeal}, su trabajo concatenado se ha desagrupado"
+
+#: tasks/push_notification/push_messages/event_composers.py:105
+#, python-brace-format
+msgid "{appeal}, your jobs have been grouped into concatenated job"
+msgstr "{appeal}, sus trabajos se han agrupado en trabajos concatenados"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:53
+msgid "your current job"
+msgstr "tu trabajo actual"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:54
+msgid "has been"
+msgstr "ha sido"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:65
+msgid " by the manager"
+msgstr "por el gerente"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:74
+msgid "marked as"
+msgstr "marcado como"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:89
+#: tasks/push_notification/push_messages/order_change_status_composers.py:119
+msgid "Job"
+msgstr "Trabajo"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:96
+msgid " is available"
+msgstr "está disponible"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:126
+msgid " was unassigned from you"
+msgstr "no fue asignado por ti"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:134
+msgid "you have received"
+msgstr "has recibido"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:135
+msgid "a new job:"
+msgstr "un nuevo trabajo:"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:152
+msgid "you've received"
+msgstr "has recibido"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:163
+#, python-brace-format
+msgid " {count} new jobs"
+msgstr " {count} nuevos trabajos"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:187
+#, python-brace-format
+msgid "{count} jobs were unassigned from you"
+msgstr "{count} trabajos no fueron asignados por usted"
+
+#: tasks/utils/reminder.py:36
+#, python-brace-format
+msgid "on {delivery_day}"
+msgstr "el {delivery_day}"
+
+#: tasks/utils/reminder.py:39
+msgid "tomorrow"
+msgstr "mañana"
+
+#: tasks/utils/reminder.py:40
+msgid "Good news! "
+msgstr "¡Buenas noticias! "
+
+#: tasks/utils/reminder.py:56
+msgid "today"
+msgstr "este dia"
+
+#: webhooks/api/permissions.py:53
+msgid "External Route optimisation API is not available for you"
+msgstr "La API de optimización de ruta externa no está disponible para usted"
+
+#: webhooks/api/route_optimisation/v1/views.py:41
+#: webhooks/api/route_optimisation/v2/views.py:54
+msgid ""
+"Customers can only be notified in Completed/Running optimisation statuses."
+msgstr ""
+"Los clientes solo pueden recibir notificaciones en los estados de "
+"optimización Completado/En ejecución."
+
+#~ msgid "You can't create optimisation in past"
+#~ msgstr "No puedes crear optimización en el pasado"
+
+#~ msgid ""
+#~ "You already have existing optimisation or currently running optimisation "
+#~ "process on this day"
+#~ msgstr ""
+#~ "Ya tiene una optimización existente o actualmente está ejecutando un "
+#~ "proceso de optimización en este día"
+
+#~ msgid "There is currently running optimisation process for the driver"
+#~ msgstr ""
+#~ "Actualmente se está ejecutando un proceso de optimización para el "
+#~ "controlador."
+
+#~ msgid ""
+#~ "You can't create or update solo optimisation while group optimisation is "
+#~ "still not finished."
+#~ msgstr ""
+#~ "No puede crear ni actualizar la optimización individual mientras la "
+#~ "optimización grupal aún no haya terminado."
+
+#~ msgid "Optimisation successfully created."
+#~ msgstr "Optimización creada con éxito."
+
+#~ msgid "Unknown optimiser backend."
+#~ msgstr "Backend del optimizador desconocido."
+
+#~ msgid "Optimisation time exceeded. Optimisation cancelled."
+#~ msgstr "Se excedió el tiempo de optimización. Optimización cancelada."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are more than 100 jobs to "
+#~ "optimise."
+#~ msgstr ""
+#~ "No pudimos crear la optimización. Hay más de 100 trabajos para optimizar."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs with deadline on "
+#~ "a selected day."
+#~ msgstr ""
+#~ "No pudimos crear la optimización. No hay trabajos con fecha límite en un "
+#~ "día seleccionado."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs assigned to "
+#~ "driver in near future."
+#~ msgstr ""
+#~ "No pudimos crear la optimización. No hay puestos de trabajo asignados al "
+#~ "conductor en un futuro próximo."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created solo "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "No pudimos crear la optimización. Ya se ha creado una optimización "
+#~ "individual para este controlador."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created group "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "No pudimos crear la optimización. Ya se ha creado una optimización de "
+#~ "grupo para este controlador."
+
+#~ msgid ""
+#~ "You do not need to re-optimise your route. There is no difference with "
+#~ "previously optimised route."
+#~ msgstr ""
+#~ "No necesita volver a optimizar su ruta. No hay diferencia con la ruta "
+#~ "previamente optimizada."
+
+#~ msgid "We could not create the optimisation. Unknown error occurred."
+#~ msgstr "No pudimos crear la optimización. Ocurrió un error desconocido."
+
+#~ msgid "parent optimisation"
+#~ msgstr "optimización principal"
+
+#, python-brace-format
+#~ msgid "#{id} {type} route optimisation for {days}"
+#~ msgstr "# {id} {type} optimización de ruta para {days}"
+
+#~ msgid "Optimisation finished."
+#~ msgstr "Optimización finalizada."
+
+#, python-brace-format
+#~ msgid ">>>Start GROUP optimisation. ID: {id}<<<"
+#~ msgstr "> > > Iniciar la optimización del GRUPO. Identificación: {id} < < <"
+
+#~ msgid "Optimisation failed."
+#~ msgstr "La optimización falló."
+
+#~ msgid "Answer for this question already exists."
+#~ msgstr "La respuesta para esta pregunta ya existe."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "Sube una imagen válida. El archivo que cargó no era una imagen o estaba "
+#~ "corrupta."

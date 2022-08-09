@@ -1,0 +1,66 @@
+[
+  {
+    "model": "database.constance",
+    "pk": 1,
+    "fields": {
+      "key": "DEFAULT_JOB_COST",
+      "value": 0.55
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 2,
+    "fields": {
+      "key": "DEFAULT_SMS_COST",
+      "value": 0.15
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 3,
+    "fields": {
+      "key": "NTI_TA_PHONE",
+      "value": "gAJVDSszNzU0NDcwMjAzMDhxAS4="
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 4,
+    "fields": {
+      "key": "EVENT_UPDATING_ALLOWED",
+      "value": true
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 6,
+    "fields": {
+      "key": "DISTANCE_THRESHOLD",
+      "value": 40.0
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 7,
+    "fields": {
+      "key": "CONFIRM_PHOTOS_UPLOAD_LIMIT",
+      "value": 5
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 8,
+    "fields": {
+      "key": "ALLOWED_COUNTRIES",
+      "value": "gAJdcQEoVQJCWXECVQJBVXEDVQJBRXEEVQJVU3EFVQJOWnEGVQJTR3EHVQJHQnEIZS4="
+    }
+  },
+  {
+    "model": "database.constance",
+    "pk": 9,
+    "fields": {
+      "key": "INVITE_PIN_LENGTH",
+      "value": 4
+    }
+  }
+]

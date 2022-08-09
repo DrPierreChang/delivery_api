@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: radaro/radaro-api-test
+    container_name: radaro-api-test
+    command: bash -c "sleep 10 && /code/scripts/wait-for-it.sh db:5432 && . /code/scripts/runtests.sh"
+    environment:
+      DB_HOST: db
+      DB_USER: test
+      DB_PASSWORD: test
+      DB_NAME: delivery
+      DJANGO_SETTINGS_MODULE: delivery.settings.dev
+      REDIS_DB: redis://redis:6379/0
+      RO_REDIS_DB: redis://redis:6379/1
+    depends_on:
+      - redis
+      - db
+
+  db:
+    container_name: radaro-db-test
+    image: postgres:13
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: delivery
+
+  redis:
+    container_name: radaro-redis-test
+    restart: always
+    image: redis:latest
+    expose:
+      - "6379"

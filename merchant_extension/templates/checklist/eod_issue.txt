@@ -1,0 +1,9 @@
+Hello, {{merchant.name}}!
+
+Here is the report on Chain of Responsibility checklist from driver {{ driver.full_name }}:
+Date: {{ date }}
+Driver name: {{ driver.full_name }}
+Question: {{ answer.question.text }}
+Answer: {% if answer.choice %}Yes{% else %}No{% endif %}
+Driver comment: {% if answer.comment %}{{ answer.comment }}{% else %}-{% endif %}
+Driver photos: {% if has_attachments %}see attachments{% else %}no attachments{% endif %}

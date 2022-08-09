@@ -1,0 +1,44 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{merchant.name}}!
+{% endblock %}
+{% block content %}
+    Here are the details about job {% if terminatecode.type == 'success' %} completion {% else %} termination {% endif %}:
+    <table style="font-size: 12px; line-height: 16px; text-align: left;margin-top: 18px;">
+        <tr>
+            <td style="color: #959595; width: 120px;">Job ID:</td>
+            <td>{{ order.order_id }}</td>
+        </tr>
+        {% if external_id %}
+            <tr>
+                <td style="color: #959595;">REF:</td>
+                <td>{{ external_id }}</td>
+            </tr>
+        {% endif %}
+        <tr>
+            <td style="color: #959595;">Driver name:</td>
+            <td>{{ order.driver.full_name|title}}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Customer name:</td>
+            <td>{{ customer.name|title }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">{% if terminatecode.type == 'success' %} Success {% else %} Termination {% endif %} code:</td>
+            <td>"{{ terminatecode }}"</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Comment:</td>
+            <td>{% if order.terminate_comment %} {{ order.terminate_comment }} {% else %} - {% endif %}</td>
+        </tr>
+    </table>
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="SEE DETAILS" href="{{ report_url }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">SEE DETAILS</a>
+{% endblock %}
+
+
+{% block notification %}
+    You can get more information about the job in Radaro. Just open the job report using the button above.
+{% endblock %}

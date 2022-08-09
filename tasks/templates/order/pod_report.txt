@@ -1,0 +1,11 @@
+Hello, {{merchant.name}}!
+
+Here is the proof of job delivery:
+Job name: {{ job.title }}
+Job ID: {{ job.order_id }}
+{% if external_id %} REF: {{ external_id }} {% endif %}
+Customer name: {{ customer.name }}
+Driver name: {{ job.driver.full_name }}.
+Driver comment: {% if job.confirmation_comment %} {{ job.confirmation_comment }} {% else %} - {% endif %}
+
+Confirmation photos: see attachments

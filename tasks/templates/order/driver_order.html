@@ -1,0 +1,15 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hi, {{order.driver.first_name}}!
+{% endblock %}
+{% block content %}
+  You've been assigned to {{ order.title }}.
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="GO TO APP" href="http://www.example.com/" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">GO TO APP</a>
+{% endblock %}
+
+{% block empty %}
+{% endblock %}
+

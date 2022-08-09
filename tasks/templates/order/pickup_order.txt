@@ -1,0 +1,5 @@
+Hello from Radaro!
+
+Good news, driver {{ driver.name }} is now on the way to pick up his order from {{ merchant }}.
+Click the link below to track the driver in real time.
+{{ tracking_url }}

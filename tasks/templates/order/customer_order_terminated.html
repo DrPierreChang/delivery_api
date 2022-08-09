@@ -1,0 +1,16 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hi, {{order.customer.name}}.
+{% endblock %}
+{% block content %}
+    <div style="text-align: left;">
+        It looks like your order from {% if order.sub_branding %} {{order.sub_branding}} {% else %} {{ order.merchant }} {% endif %} has been cancelled. <br>
+        {% if order.sub_branding and order.sub_branding.phone or order.merchant.phone %}You can contact {% if order.sub_branding %} {{order.sub_branding}} {% else %} {{ order.merchant }} {% endif %} for more details at {% if order.sub_branding and order.sub_branding.phone %} {{order.sub_branding.phone}} {% else %} {{ order.merchant.phone }} {% endif %}.{% endif %}
+    </div>
+{% endblock %}
+{% block empty_link %}
+{% endblock %}
+{% block break_line %}
+{% endblock %}
+{% block empty %}
+{% endblock %}

@@ -1,0 +1,5 @@
+Hi, {{member.first_name}}!
+We just wanted to let you know that your Radaro account balance is running low and is currently ${{member.merchant.balance}}.
+To top up your account, follow the link below.
+{{ settings.FRONTEND_URL }}
+Thank you for using Radaro! We appreciate your business.

@@ -1,0 +1,14 @@
+{% spaceless %}
+    {% with widget=widget.subwidgets.0 %}
+        {% include widget.template_name %}
+    {% endwith %}
+    -
+    {% with widget=widget.subwidgets.1 %}
+        {% include widget.template_name %}
+    {% endwith %}
+
+    {% with widget=widget.subwidgets.2 %}
+        {% include widget.template_name %} <label for="{{ widget.attrs.id }}">Day off</label>
+    {% endwith %}
+{% endspaceless %}
+{{ widget.errors }}

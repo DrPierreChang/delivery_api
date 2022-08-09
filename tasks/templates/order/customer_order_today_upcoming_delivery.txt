@@ -1,0 +1,3 @@
+{{welcome_text}}{{merchant}} will be with you today between {{time_interval}}.
+Click here to track your order.
+{{url}}

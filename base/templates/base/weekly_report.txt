@@ -1,0 +1,41 @@
+{% load helper_tags %}
+Weekly Report
+{{ report_period }}
+{{ server_name }}
+
+{% for type in types %}
+{% with type_preferences=preferences|lookup:type %}
+{% with total_data=data.total|lookup:type %}
+{{ type_preferences.total_verbose }}: {{ total_data.count }}{% if type_preferences.compare_with_prev %}{% with percent=total_data.percent_growth|stylize_growth %}({{ percent.value }}){% endwith %}{% endif %}
+{% endwith %}
+{% endwith %}
+{% endfor %}
+
+
+
+Detailed Statistics
+
+{% for type in detailed_types %}
+{% with type_preferences=preferences|lookup:type %}
+{% with use_percents=type_preferences.compare_with_prev %}
+{{ type_preferences.table_verbose }}
+    "No.", "Merchant", "Count"
+{% if use_percents %}
+{% for info in data.detailed|lookup:type %}
+    {{ forloop.counter }}, {%  autoescape on %}{{ info.name }}{% endautoescape %}, {{ info.count }}{% with percent=info.percent_growth|stylize_growth %}({{ percent.value }}){% endwith %}
+{% endfor %}
+{% else %}
+{% for info in data.detailed|lookup:type %}
+    {{ forloop.counter }}, {%  autoescape on %}{{ info.name }}{% endautoescape %}, {{ info.count }}
+{% endfor %}
+{% endif %}
+
+{% endwith %}
+{% endwith %}
+{% endfor %}
+
+{% for type in detailed_types %}
+{% with type_preferences=preferences|lookup:type %}
+* {{ type_preferences.note }}
+{% endwith %}
+{% endfor %}

@@ -1,0 +1,71 @@
+{% load static %}
+{% spaceless %}
+<style>
+	.array-item {
+		padding-bottom: 5px;
+	}
+	.array-item input[type=text] {
+		width: 300px;
+	}
+	.add-array-item {
+		width: 100px;
+	}
+	.remove-array-item {
+		padding-left: 10px;
+	}
+	.remove-array-item:hover {
+		transform: scale(1.5, 1.5);
+	}
+	.dynamic-array-widget {
+		margin-left: 20px;
+	}
+</style>
+<div class="dynamic-array-widget">
+  <ol type="1" style="list-style: decimal; ">
+    {% for widget in widget.subwidgets %}
+      <li class="array-item">
+	      {% include widget.template_name %}
+	      <img class="remove-array-item" src="{%  static 'admin/img/icon-deletelink.svg' %}">
+      </li>
+    {% endfor %}
+  </ol>
+  <div><button type="button" class="grp-button grp-default add-array-item">Add another</button></div>
+</div>
+{% endspaceless %}
+<script type="text/javascript" charset="utf-8">
+(function($) {
+	$('.dynamic-array-widget').each(function(_, widget) {
+	    var $widget = $(widget);
+
+	    function updateVisibilityOfRemoveBtn() {
+	        if ($widget.find('.array-item').length === 1) {
+	            $widget.find('.remove-array-item').css('visibility', 'hidden');
+            } else {
+	            $widget.find('.remove-array-item').css('visibility', 'visible');
+	        }
+	    }
+
+	    function removeOnClick() {
+	        console.log($widget.find('.array-item').length);
+	        $(this).closest('.array-item').remove();
+	        updateVisibilityOfRemoveBtn();
+	    }
+
+        $(this).find('.add-array-item').click(function() {
+            var $last = $widget.find('.array-item').last();
+            var $new = $last.clone();
+            var id_parts = $new.find('input').attr('id').split('_');
+            var id = id_parts.slice(0, -1).join('_') + '_' + String(parseInt(id_parts.slice(-1)[0]) + 1);
+            $new.find('input').attr('id', id);
+            $new.find('input').prop('value', '');
+            $new.find('.remove-array-item').click(removeOnClick);
+            $new.insertAfter($last);
+            updateVisibilityOfRemoveBtn();
+        });
+
+       $(this).find('.array-item .remove-array-item').click(removeOnClick);
+
+       updateVisibilityOfRemoveBtn();
+	});
+})(grp.jQuery);
+</script>

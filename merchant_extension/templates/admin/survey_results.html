@@ -1,0 +1,38 @@
+{% extends "generic-timeframed.html" %}
+
+{% load admin_urls static%}
+
+{% block title %}Survey Results{% endblock %}
+{% block report_header %}
+<header id="grp-content-title">
+    <h1>Survey Results</h1>
+</header>
+{% endblock %}
+
+{% block report_form %}
+        <div class="grp-module">
+            <div class="grp-row">
+                <form id="filter_form" method="post" action="">
+                    {% if form.non_field_errors %}
+                            {{ form.non_field_errors }}
+                    {% endif %}
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div style="display: inline-block;">
+                            {{ field.errors }}
+                            {{ field.label_tag }}
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                <input type="submit" value="Export" style="display: inline-block"/>
+                </form>
+            </div>
+        </div>
+    {% endblock %}
+{% block submit_form %}
+
+{% endblock %}
+
+{% block js %}
+    <script type="application/javascript" src="{% static 'survey/surveyResultsAdmin.js' %}"></script>
+{% endblock %}

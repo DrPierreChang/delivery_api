@@ -1,0 +1,67 @@
+{% extends 'email/email_base.html' %}
+{% load link_tags %}
+
+{% block caption %}
+    Hi, {{invite.full_name}}!
+{% endblock %}
+{% block content %}
+    You've been invited to join the {{invite.merchant.name}} team on Radaro for the position of {{invite.get_position}}.
+    {% if invite.position == invite.initiator.DRIVER %}
+        Download our driver app using the link below and join your team now!<br>
+    {% else %}
+        Complete your registration using link below and join your team now!<br>
+    {% endif %}
+{% endblock %}
+
+{% block empty_link %}
+{% endblock %}
+
+{% block empty %}{% endblock %}
+{% block apps %}
+    {% get_link invite "ANDROID_APP" as android_app_link %}
+    {% get_link invite "IOS_APP" as ios_app_link %}
+    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%">
+        <tbody><tr>
+            <td style="padding-left: 66px;"><table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;margin-right: 14px;" width="100%" class="m_408557119488221757mcnTextContentContainer">
+                <tbody>
+                <tr>
+                    <td valign="top" class="mcnTextContent" style="padding-top:0;padding-bottom:9px;">
+
+                        <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse:separate!important;border:2px solid #252525;border-top-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px;border-bottom-left-radius:50px;background-color:#252525">
+                            <tbody>
+                            <tr>
+                                <td align="center" valign="middle" class="mcnButtonContent" style="width: 200px;font-family:Lato,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-size:12px;padding: 12px 40px;/* margin-right: 14px; */">
+                                    <a href="{{ ios_app_link }}" title="iOS App" style="font-weight:normal;letter-spacing:3px;line-height:100%;text-align:center;text-decoration:none;color:#ffffff">iOS App</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width: 200px;" width="100%" class="m_408557119488221757mcnTextContentContainer">
+                <tbody>
+                <tr>
+
+                    <td valign="top" class="mcnTextContent" style="padding-top:0;padding-bottom:9px">
+
+                        <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse:separate!important;border:2px solid #252525;border-top-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px;border-bottom-left-radius:50px;background-color:#252525">
+                            <tbody>
+                            <tr>
+                                <td align="center" valign="middle" class="mcnButtonContent" style="width: 200px;font-family:Lato,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;font-size:12px;padding: 12px 40px;">
+                                    <a href="{{ android_app_link }}" title="Android App" style="font-weight:normal;letter-spacing:3px;line-height:100%;text-align:center;text-decoration:none;color:#ffffff">Android App</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td></tr>
+    </tbody></table>
+
+
+{% endblock %}

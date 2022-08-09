@@ -1,0 +1,18 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    {{welcome_text}}
+{% endblock %}
+{% block content %}
+    {% if order.sub_branding %}{{order.sub_branding}}{% else %}{{ order.merchant }}{% endif %} will be with you today between {{time_interval}}.<br>
+    Click here to track your order.<br>
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="ORDER DETAILS" href="{{ order.get_order_url }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">
+        ORDER DETAILS
+    </a>
+{% endblock %}
+{% block break_line %}
+{% endblock %}
+{% block empty %}
+{% endblock %}

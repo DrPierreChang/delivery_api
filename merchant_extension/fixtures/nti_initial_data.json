@@ -1,0 +1,121 @@
+[
+    {
+        "model": "merchant_extension.checklist",
+        "pk": 1,
+        "fields": {
+            "title": "NTI Risk assessment checklist",
+            "description": ""
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 1,
+        "fields": {
+            "text": "Are you familiar with TEBAR Guidelines?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 1
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 2,
+        "fields": {
+            "text": "Have you activated all warning devices on the Service vehicle?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 2
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 3,
+        "fields": {
+            "text": "Are you wearing the required Hi-Viz clothing before exiting your vehicle?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 3
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 4,
+        "fields": {
+            "text": "Is there sufficient room to work safely?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 4
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 5,
+        "fields": {
+            "text": "Is the terrain suitable to undertake the task?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 5
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 6,
+        "fields": {
+            "text": "Does the casualty vehicle require stabilisation?",
+            "checklist": 1,
+            "correct_answer": false,
+            "description": "",
+            "consecutive_number": 6
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 7,
+        "fields": {
+            "text": "Is the Service Vehicle positioned, giving you some protection?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 7
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 8,
+        "fields": {
+            "text": "Can you position Traffic Control Cones, Triangles, Bollards or Beacons correctly?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 8
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 9,
+        "fields": {
+            "text": "Have all Risks been identified?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 9
+        }
+    },
+    {
+        "model": "merchant_extension.question",
+        "pk": 10,
+        "fields": {
+            "text": "Are you prepared to accept the work environment and any associated risk?",
+            "checklist": 1,
+            "correct_answer": true,
+            "description": "",
+            "consecutive_number": 10
+        }
+    }
+
+]

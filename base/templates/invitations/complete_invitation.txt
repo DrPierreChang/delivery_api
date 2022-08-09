@@ -1,0 +1,2 @@
+Your pin code to complete your registration in the Radaro driver app is {{ invite.pin_code }}.
+{{ sms_android_verification_hash|default:"" }}

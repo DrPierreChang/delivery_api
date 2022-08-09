@@ -1,0 +1,31 @@
+{% load helper_tags %}
+
+<div>
+    <div style="margin-bottom: 5px; display: flex; font-weight: bold;">
+        <span style="flex: 30%">App type</span>
+        <span style="flex: 35%">Current Version</span>
+        <span style="flex: 35%">Lowest Allowed Version</span>
+    </div>
+
+    {% for subwidgets in widget.subwidgets|chunks:2 %}
+        <div style="margin-bottom: 5px; display: flex;">
+            <label style="flex: 30%" for="{{ subwidgets.0.attrs.id }}">{{ subwidgets.0.attrs.label_text }} (key: {{ subwidgets.0.attrs.app_type }})</label>
+            <div style="flex: 35%">
+                {% with widget=subwidgets.0 %}
+                    <div class="{% if widget.errors %}grp-errors{% endif %}">
+                        {% include widget.template_name %}
+                        {{ widget.errors }}
+                    </div>
+                {% endwith %}
+            </div>
+            <div style="flex: 35%">
+                {% with widget=subwidgets.1 %}
+                    <div class="{% if widget.errors %}grp-errors{% endif %}">
+                        {% include widget.template_name %}
+                        {{ widget.errors }}
+                    </div>
+                {% endwith %}
+            </div>
+        </div>
+    {% endfor %}
+</div>

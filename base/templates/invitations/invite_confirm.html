@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+  <hr>
+  {% if valid_link %}
+    <p>Please, provide your registration data to finish joining the team.</p>
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Create">
+    </form>
+  {% else %}
+    <p>Invitation was not found. The link is invalid or outdated.</p>
+  {% endif %}
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'email/email_base.html' %}
+
+{% block caption %}
+    <p class="heading">Hello, {{merchant.name}}!</p>
+{% endblock %}
+{% block content %}
+    Here is the proof of job delivery:
+    <table style="font-size: 12px; line-height: 16px; text-align: left; margin-top: 18px;">
+        <tr>
+            <td style="color: #959595;width: 120px;">Job name:</td>
+            <td>{{ job.title }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Job ID:</td>
+            <td>{{ job.order_id }}</td>
+        </tr>
+        {% if external_id %}
+            <tr>
+                <td style="color: #959595;">REF:</td>
+                <td>{{ external_id }}</td>
+            </tr>
+        {% endif %}
+        <tr>
+            <td style="color: #959595;">Customer name:</td>
+            <td>{{ customer.name }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Driver name:</td>
+            <td>{{ job.driver.full_name }}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Driver comment:</td>
+            <td>{% if job.confirmation_comment %} {{ job.confirmation_comment }} {% else %} - {% endif %}</td>
+        </tr>
+        <tr>
+            <td style="color: #959595;">Confirmation photos:</td>
+            <td>see attachments</td>
+        </tr>
+    </table>
+
+{% endblock %}
+
+{% block empty_link %}
+    {% if report_link %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block break_line %}
+    {% if report_link %}
+        {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block empty %}
+{% endblock %}

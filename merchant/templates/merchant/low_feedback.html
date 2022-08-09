@@ -1,0 +1,21 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{merchant.name}}!
+{% endblock %}
+{% block content %}
+    <div style="text-align: left">
+        You've received low feedback from the customer {{customer.name}} for the job with ID: {{order.order_id}}. <br>
+        {% if order.customer_comment %}
+        See customer's comment below:<br>
+        "{{ order.customer_comment }}"
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="SEE DETAILS" href="{{ report_url }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">SEE DETAILS</a>
+{% endblock %}
+
+{% block notification %}
+    You can get more information about the job in Radaro. Just open the job report using the button above.
+{% endblock %}

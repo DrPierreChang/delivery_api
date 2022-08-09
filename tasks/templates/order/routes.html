@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routes comparison</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'order/routes.css' %}">
+</head>
+<body>
+<div id="map"></div>
+<div id="legend"><h3>Legend</h3></div>
+<script>
+realPath = {{ real_path|safe }};
+filteredPath = {{ filtered_path|safe }};
+</script>
+<script src="{% static 'order/routes.js' %}"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key={{ key }}&callback=initMap">
+</script>
+</body>
+</html>

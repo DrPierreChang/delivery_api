@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geofences comparison</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'order/routes.css' %}">
+</head>
+<body>
+<div id="map"></div>
+<div id="legend" style="z-index: 0; position: absolute; bottom: 127px; right: 0px;"><h3>Legend</h3></div>
+<script>
+    deliver_address = {{ deliver_address |safe }};
+    events = {{ events|safe }};
+</script>
+<script src="{% static 'order/geofences.js' %}"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key={{ key }}&callback=initMap">
+</script>
+</body>
+</html>

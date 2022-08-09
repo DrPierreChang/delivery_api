@@ -1,0 +1,16 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello, {{member.first_name}}!
+{% endblock %}
+{% block content %}
+    <div style="text-align: left">
+        Please be aware that you currently have insufficient funds on your account to process jobs and track your drivers. <br>
+        To reactivate your account, please add credit at the link below.
+    </div>
+{% endblock %}
+{% block link %}
+    <a class="mcnButton " title="MAKE PAYMENT" href="{{ settings.FRONTEND_URL }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">MAKE PAYMENT</a>
+{% endblock %}
+{% block notification %}
+    Thank you for using Radaro! We appreciate your business.
+{% endblock %}

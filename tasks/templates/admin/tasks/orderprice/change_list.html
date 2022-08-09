@@ -1,0 +1,20 @@
+{% extends "admin/change_list.html" %}
+
+{% block javascripts %}
+	{{ block.super }}
+	<script type="text/javascript">
+        var $ = django.jQuery;
+        $(document).ready(function() {
+            let url = window.location.origin + window.location.pathname + 'calculate/';
+            $('.field-order_id').each(function() {
+                let _this = this;
+                let order_id = $(this).text();
+                $.get(url + order_id, function(data) {
+                    $.each(data, function(key, value) {
+                        $(_this).siblings('.field-' + key).text(value);
+                    });
+                });
+            });
+        });
+    </script>
+{% endblock %}

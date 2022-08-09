@@ -1,0 +1,7 @@
+Customer name*,Job address*,Driver ID,Job deadline,Comment,Customer_Email,Customer Phone,Job name
+John Doe,"Melbourne, Australia",,,Tst task in csv,example%,61491570156, John’s job
+Judy Doe,"Sidney, Australia",,,Some description,example@not.example.com,61491570156,
+Peter Doe,"51.569064, -0.094444",,,,,,
+John Doe,"Melbourne, Australia",,,Tst task in csv,example@example.com,61491570156, John’s job
+Judy Doe,"Sidney, Australia",,,Some description,example%,61491570156,
+Peter Doe,"51.569064, -0.094444",,,,,,

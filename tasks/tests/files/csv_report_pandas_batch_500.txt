@@ -1,0 +1,144 @@
+Measurement 1 with scale: 50
+========================
+ Mem used: 513.421875 MB. Clock: 1536075984.22 sec
+
+Mem used: 513.421875 MB. Clock: 1536075984.5 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.283279895782 sec
+
+
+Measurement 2 with scale: 50
+========================
+ Mem used: 513.421875 MB. Clock: 1536075984.5 sec
+
+Mem used: 513.421875 MB. Clock: 1536075984.76 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.257458925247 sec
+
+
+Measurement 3 with scale: 50
+========================
+ Mem used: 513.421875 MB. Clock: 1536075984.76 sec
+
+Mem used: 513.421875 MB. Clock: 1536075985.02 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.258167028427 sec
+
+Average time: 0.266301949819 sec
+Afterall memory growth: 0.0 MB
+
+Measurement 1 with scale: 100
+========================
+ Mem used: 1155.8671875 MB. Clock: 1536076159.84 sec
+
+Mem used: 1159.109375 MB. Clock: 1536076160.73 sec
+ Mem grabbed since last measure: 3.2421875 MB
+Time passed since last measure: 0.893031835556 sec
+
+
+Measurement 2 with scale: 100
+========================
+ Mem used: 1159.109375 MB. Clock: 1536076160.73 sec
+
+Mem used: 1159.109375 MB. Clock: 1536076161.45 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.723749160767 sec
+
+
+Measurement 3 with scale: 100
+========================
+ Mem used: 1159.109375 MB. Clock: 1536076161.45 sec
+
+Mem used: 1159.109375 MB. Clock: 1536076162.2 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.743682861328 sec
+
+Average time: 0.786821285884 sec
+Afterall memory growth: 3.2421875 MB
+
+Measurement 1 with scale: 250
+========================
+ Mem used: 2638.25390625 MB. Clock: 1536076554.71 sec
+
+Mem used: 2643.671875 MB. Clock: 1536076558.73 sec
+ Mem grabbed since last measure: 5.41796875 MB
+Time passed since last measure: 4.016903162 sec
+
+
+Measurement 2 with scale: 250
+========================
+ Mem used: 2643.671875 MB. Clock: 1536076558.73 sec
+
+Mem used: 2643.671875 MB. Clock: 1536076562.65 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 3.92094993591 sec
+
+
+Measurement 3 with scale: 250
+========================
+ Mem used: 2643.671875 MB. Clock: 1536076562.65 sec
+
+Mem used: 2643.671875 MB. Clock: 1536076566.57 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 3.91971802711 sec
+
+Average time: 3.95252370834 sec
+Afterall memory growth: 5.41796875 MB
+
+Measurement 1 with scale: 100
+========================
+ Mem used: 2740.0078125 MB. Clock: 1536076738.47 sec
+
+Mem used: 2745.19140625 MB. Clock: 1536076739.66 sec
+ Mem grabbed since last measure: 5.18359375 MB
+Time passed since last measure: 1.19534802437 sec
+
+
+Measurement 2 with scale: 100
+========================
+ Mem used: 2745.19140625 MB. Clock: 1536076739.66 sec
+
+Mem used: 2745.19140625 MB. Clock: 1536076740.7 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 1.03620696068 sec
+
+
+Measurement 3 with scale: 100
+========================
+ Mem used: 2745.19140625 MB. Clock: 1536076740.7 sec
+
+Mem used: 2745.19140625 MB. Clock: 1536076741.7 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 1.00560092926 sec
+
+Average time: 1.07905197144 sec
+Afterall memory growth: 5.18359375 MB
+
+Measurement 1 with scale: 50
+========================
+ Mem used: 2220.94921875 MB. Clock: 1536076830.96 sec
+
+Mem used: 2225.74609375 MB. Clock: 1536076831.29 sec
+ Mem grabbed since last measure: 4.796875 MB
+Time passed since last measure: 0.334033966064 sec
+
+
+Measurement 2 with scale: 50
+========================
+ Mem used: 2225.74609375 MB. Clock: 1536076831.29 sec
+
+Mem used: 2225.74609375 MB. Clock: 1536076831.6 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.30153298378 sec
+
+
+Measurement 3 with scale: 50
+========================
+ Mem used: 2225.74609375 MB. Clock: 1536076831.6 sec
+
+Mem used: 2225.74609375 MB. Clock: 1536076831.92 sec
+ Mem grabbed since last measure: 0.0 MB
+Time passed since last measure: 0.329160928726 sec
+
+Average time: 0.321575959524 sec
+Afterall memory growth: 4.796875 MB

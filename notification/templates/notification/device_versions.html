@@ -1,0 +1,84 @@
+{% extends "generic-timeframed.html" %}
+{% load device_report_tags %}
+
+{% block title %}Device versions report{% endblock %}
+
+{% block report_header %}
+<header id="grp-content-title">
+    <h1>Device versions report</h1>
+    {% if enable_csv_url %}
+        <ul class="grp-object-tools">
+            <li>
+                <a href="{{ csv_url }}" class="grp-state-focus">Generate CSV</a>
+            </li>
+        </ul>
+    {% endif %}
+</header>
+{% endblock %}
+
+{% block report_pre_form %}
+<div class="grp-module">
+    <div class="grp-row">
+        <div id="search" class="g-d-6 g-d-f">
+            <form id="grp-changelist-search-form" action="" method="get" novalidate="">
+                <input type="text" name="q" id="grp-changelist-search" class="grp-search-field"
+                       value="{{ search_query }}">
+                <button type="submit" value="" class="grp-search-button"></button>
+                <input type="hidden" name="date_from" value="{{ form.date_from.value | urlencode}}"/>
+                <input type="hidden" name="date_to" value="{{ form.date_to.value | urlencode}}"/>
+                <input type="hidden" name="report_type"
+                       value="{{ form.report_type.value|default_if_none:'short'}}"/>
+                <input type="hidden" name="ordering" value="{{ ordering }}"/>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block report_content %}
+<div class="grp-module grp-changelist-results">
+    <table class="grp-table grp-sortable">
+        <thead>
+            <tr>
+                {% for column in columns %}
+                    {% if not column.detailed or is_detailed_report %}
+                        {% if column.ordering %}
+                            <th class="sortable sorted {{ column.ordering_type }}">
+                                {% if column.ordering_type %}
+                                    <div class="grp-sortoptions">
+                                        <a href="{{ column.ordering_toggle }}"
+                                           class="grp-toggle grp-{{ column.ordering_type }}"
+                                           title="Toggle sorting">
+                                        </a>
+                                        <a class="grp-sortremove" href="{{ column.ordering_remove }}"
+                                           title="Remove from sorting"></a>
+                                    </div>
+                                {% endif %}
+                                <div class="grp-text" style="z-index: 0">
+                                    <a href="{{ column.ordering_toggle }}">{{ column.name }}</a>
+                                </div>
+                            </th>
+                        {% else %}
+                            <th>
+                                <div class="grp-text"><span>{{ column.name }}</span></div>
+                            </th>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr class="grp-row grp-row-{% cycle 'odd' 'even' %}">
+                    {% for column in columns %}
+                        {% if not column.detailed or is_detailed_report %}
+                            {% get_field_value item column.field as field_value %}
+                            <td>{{ field_value }}</td>
+                        {% endif %}
+                {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

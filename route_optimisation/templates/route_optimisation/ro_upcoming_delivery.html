@@ -1,0 +1,17 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+{% endblock %}
+{% block content %}
+    Your order from {{ merchant }} will be delivered to {{customer_address}} between {{time_interval}}!<br>
+    Click on the link to track your order in real-time.<br>
+{% endblock %}
+
+{% block link %}
+    <a class="mcnButton " title="ORDER DETAILS" href="{{ order.get_order_url }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">
+        ORDER DETAILS
+    </a>
+{% endblock %}
+{% block break_line %}
+{% endblock %}
+{% block empty %}
+{% endblock %}

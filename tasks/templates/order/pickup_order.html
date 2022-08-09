@@ -1,0 +1,15 @@
+{% extends 'email/email_base.html' %}
+{% block caption %}
+    Hello from Radaro!
+{% endblock %}
+{% block content %}
+    Good news, driver {{ driver.name }} is now on the way to pick up his order from {{ merchant }}.
+    Click the link below to track the driver in real time.
+{% endblock %}
+{% block link %}
+    <a class="mcnButton " title="PICKUP DETAILS" href="{{ tracking_url }}" target="_blank" style="padding:0 40px;font-weight: normal;letter-spacing: 3px;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">
+        PICKUP DETAILS
+    </a>
+{% endblock %}
+{% block empty %}
+{% endblock %}

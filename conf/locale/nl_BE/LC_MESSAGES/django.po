@@ -1,0 +1,1068 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-27 16:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base/api/mobile/invitations/v1/serializers.py:51
+msgid "Already registered."
+msgstr "Al geregistreerd."
+
+#: base/api/mobile/invitations/v1/serializers.py:54
+msgid "No invitations with this phone number were found."
+msgstr "Er zijn geen uitnodigingen met dit telefoonnummer gevonden."
+
+#: base/api/mobile/invitations/v1/serializers.py:74
+msgid "Pin code is not valid or out of date."
+msgstr "Pincode is niet geldig of verouderd."
+
+#: base/csv_parsing.py:13
+msgid "Time has wrong format. Use hh:mm time format instead."
+msgstr ""
+"Tijd heeft een verkeerd formaat. Gebruik in plaats daarvan de tijdnotatie uu:"
+"mm."
+
+#: base/csv_parsing.py:18 base/csv_parsing.py:33
+msgid "\"driver_id\" field is required."
+msgstr "Het veld \"driver_id\" is verplicht."
+
+#: base/csv_parsing.py:92 schedule/admin/fields/schedule.py:19
+#: schedule/api/mobile/schedule/v1/serializers.py:31
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:32
+msgid "Break ranges overlap."
+msgstr "Pauzebereiken overlappen elkaar."
+
+#: base/csv_parsing.py:144 base/csv_parsing.py:146
+#: schedule/admin/fields/schedule.py:20
+#: schedule/api/mobile/schedule/v1/serializers.py:71
+#: schedule/api/mobile/schedule/v1/serializers.py:75
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:27
+#: schedule/api/mobile/schedule_calendar/v1/serializers/schedule.py:32
+msgid "The break went beyond working hours."
+msgstr "De pauze viel buiten de werkuren."
+
+#: base/fields.py:13
+#, python-format
+msgid "'%(value)s' value must be valid JSON."
+msgstr "' %(value)s ' waarde moet een geldige JSON zijn."
+
+#: base/fields.py:14
+msgid "All keys must be in YYYY-MM-DD format."
+msgstr "Alle sleutels moeten de indeling JJJJ-MM-DD hebben."
+
+#: base/fields.py:15
+msgid "All keys must be days."
+msgstr "Alle sleutels moeten dagen zijn."
+
+#: base/fields.py:16
+msgid "Data must be in key-value format."
+msgstr "Gegevens moeten de sleutelwaarde-indeling hebben."
+
+#: base/models/cars.py:16
+msgid "Scooter"
+msgstr "Scooter"
+
+#: base/models/cars.py:17
+msgid "Car"
+msgstr "Auto"
+
+#: base/models/cars.py:18
+msgid "Pickup / Ute"
+msgstr "Ophalen / Ute"
+
+#: base/models/cars.py:19
+msgid "Van"
+msgstr "bestelwagen"
+
+#: base/models/cars.py:20
+msgid "Truck"
+msgstr "Vrachtauto"
+
+#: base/templates/admin/drivers_schedule_import.html:17
+msgid "Home"
+msgstr "Huis"
+
+#: custom_auth/api/legacy/serializers.py:70
+msgid "User with such email doesn't exist."
+msgstr "Gebruiker met zo'n e-mail bestaat niet."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:25
+msgid "Invalid username or password."
+msgstr "Ongeldige gebruikersnaam of wachtwoord."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:29
+msgid "User inactive or deleted."
+msgstr "Gebruiker inactief of verwijderd."
+
+#: custom_auth/api/mobile/auth/v1/serializers.py:35
+msgid "You're currently online on another device."
+msgstr "Je bent momenteel online op een ander apparaat."
+
+#: custom_auth/push_messages/composers.py:11
+msgid "you logged in"
+msgstr "je bent ingelogd"
+
+#: custom_auth/push_messages/composers.py:21
+msgid " on another device."
+msgstr " op een ander apparaat."
+
+#: driver/api/mobile/drivers/v1/serializers/validators.py:29
+msgid "User with such email already registered."
+msgstr "Gebruiker met een dergelijk e-mailadres is al geregistreerd."
+
+#: driver/push_messages/composers.py:12
+msgid "you have been forced offline"
+msgstr "je bent offline gedwongen"
+
+#: driver/push_messages/composers.py:18 merchant/push_messages/composers.py:16
+#, python-brace-format
+msgid " by the manager {manager}"
+msgstr " door de manager {manager}"
+
+#: merchant/api/legacy/serializers/skill_sets.py:20
+#, python-format
+msgid "%(count)d active job that has"
+msgid_plural "%(count)d active jobs that have"
+msgstr[0] "%(count)d actieve baan die heeft"
+msgstr[1] "%(count)d actieve banen die hebben"
+
+#: merchant/api/legacy/serializers/skill_sets.py:25
+#, python-format
+msgid "Can't delete the skill because you have %(jobs_msg)s this skill"
+msgid_plural ""
+"Can't delete the skills because you have %(jobs_msg)s these skills"
+msgstr[0] ""
+"Kan de vaardigheid niet verwijderen omdat je %(jobs_msg)s deze vaardigheid "
+"hebt"
+msgstr[1] ""
+"Kan de vaardigheden niet verwijderen omdat je %(jobs_msg)s deze vaardigheden "
+"hebt"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "you"
+msgstr "Jij"
+
+#: merchant/api/legacy/serializers/skill_sets.py:34
+msgid "driver"
+msgid_plural "drivers"
+msgstr[0] "bestuurder"
+msgstr[1] "chauffeurs"
+
+#: merchant/api/legacy/serializers/skill_sets.py:35
+#, python-format
+msgid "%(count)d job that has"
+msgid_plural "%(count)d jobs that have"
+msgstr[0] "%(count)d baan die heeft"
+msgstr[1] "%(count)d banen die hebben"
+
+#: merchant/api/legacy/serializers/skill_sets.py:38
+#, python-format
+msgid ""
+"%(jobs_msg)s this skill will be unassigned from %(from)s after you delete "
+"the skill"
+msgid_plural ""
+"%(jobs_msg)s these skills will be unassigned from %(from)s after you delete "
+"the skills"
+msgstr[0] ""
+"%(jobs_msg)s deze vaardigheid wordt %(from)s nadat je de vaardigheid hebt "
+"verwijderd"
+msgstr[1] ""
+"%(jobs_msg)s deze vaardigheden worden %(from)s nadat u de vaardigheden hebt "
+"verwijderd"
+
+#: merchant/models/merchant.py:400
+msgid "route optimisation"
+msgstr "route optimalisatie"
+
+#: merchant/models/merchant.py:403
+msgid "route optimisation focus"
+msgstr "focus op route-optimalisatie"
+
+#: merchant/models/merchant.py:404
+msgid ""
+"Set, what to focus on for group optimisation. This setting is useful only "
+"with \"route optimisation\" enabled."
+msgstr ""
+"Stel in, waar moet je op letten voor groepsoptimalisatie. Deze instelling is "
+"alleen nuttig als \"route-optimalisatie\" is ingeschakeld."
+
+#: merchant/models/merchant.py:409
+msgid ""
+"Set average duration of time a driver needs to spend to on job site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"Stel de gemiddelde tijdsduur in die een chauffeur op het werkterrein moet "
+"doorbrengen. Deze instelling is alleen nuttig als \"route-optimalisatie\" is "
+"ingeschakeld."
+
+#: merchant/models/merchant.py:414
+msgid ""
+"Set average duration of time a driver needs to spend to on pickup site. This "
+"setting is useful only with \"route optimisation\" enabled."
+msgstr ""
+"Stel de gemiddelde tijdsduur in die een chauffeur nodig heeft op de "
+"ophaallocatie. Deze instelling is alleen nuttig als \"route-optimalisatie\" "
+"is ingeschakeld."
+
+#: merchant/models/merchant.py:422
+msgid "Barcodes"
+msgstr "Barcodes"
+
+#: merchant/models/merchant.py:629
+msgid "You can't use `route optimisation` feature without enabling `hubs`"
+msgstr ""
+"U kunt de functie `route-optimalisatie` niet gebruiken zonder `hubs` in te "
+"schakelen"
+
+#: merchant/models/merchant.py:664
+msgid ""
+"You cannot select an option that requires a barcode scan upon delivery with "
+"`enable_delivery_confirmation` disabled"
+msgstr ""
+"U kunt geen optie selecteren die een barcodescan vereist bij levering met "
+"'enable_delivery_confirmation' uitgeschakeld"
+
+#: merchant/models/merchant.py:670
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation` disabled"
+msgstr ""
+"U kunt geen optie selecteren met 'enable_delivery_confirmation' uitgeschakeld"
+
+#: merchant/models/merchant.py:675
+msgid ""
+"You cannot select an option with `enable_delivery_confirmation_documents` "
+"disabled"
+msgstr ""
+"U kunt geen optie selecteren met `enable_delivery_confirmation_documents` "
+"uitgeschakeld"
+
+#: merchant/models/merchant.py:680
+msgid "You cannot select an option with `in_app_jobs_assignment` disabled"
+msgstr ""
+"U kunt geen optie selecteren met 'in_app_jobs_assignment' uitgeschakeld"
+
+#: merchant/permissions.py:17
+msgid ""
+"You don't have ability to perform this action because labels aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat labels niet zijn ingeschakeld. Neem "
+"contact op met de beheerder."
+
+#: merchant/permissions.py:27
+msgid ""
+"You don't have ability to perform this action because skill sets aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat vaardigheden niet zijn ingeschakeld. "
+"Neem contact op met de beheerder."
+
+#: merchant/permissions.py:35
+msgid ""
+"You don't have ability to perform this action because barcodes aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat streepjescodes niet zijn "
+"ingeschakeld. Neem contact op met de beheerder."
+
+#: merchant/permissions.py:51
+msgid ""
+"You don't have ability to perform this action because SKIDs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat SKID's niet zijn ingeschakeld. Neem "
+"contact op met de beheerder."
+
+#: merchant/permissions.py:59
+msgid ""
+"You don't have ability to perform this action because subbranding aren't "
+"enabled. Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat subbranding niet is ingeschakeld. "
+"Neem contact op met de beheerder."
+
+#: merchant/permissions.py:67
+msgid ""
+"You don't have ability to perform this action because hubs aren't enabled. "
+"Please, contact administrator."
+msgstr ""
+"U kunt deze actie niet uitvoeren omdat hubs niet zijn ingeschakeld. Neem "
+"contact op met de beheerder."
+
+#: merchant/push_messages/composers.py:13
+#, python-brace-format
+msgid "skill set \"{name}\" {message}"
+msgstr "vaardigheden \" {name} \" {message}"
+
+#: merchant/push_messages/composers.py:32
+msgid "has been added to you"
+msgstr "is aan je toegevoegd"
+
+#: merchant/push_messages/composers.py:37
+msgid "has been removed from you"
+msgstr "is van je verwijderd"
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:65
+msgid "A valid bool is required."
+msgstr "Een geldige bool is vereist."
+
+#: merchant_extension/api/mobile/checklists/v1/serializers.py:96
+msgid "Not a valid choice"
+msgstr "Geen geldige keuze"
+
+#: merchant_extension/api/mobile/checklists/v2/serializers.py:14
+msgid "Photos are required for this answer."
+msgstr "Foto's zijn vereist voor dit antwoord."
+
+#: radaro_utils/filters/date_filters.py:26
+#, python-brace-format
+msgid "{alias} for today (US EST timezone)"
+msgstr "{alias} voor vandaag (tijdzone US EST)"
+
+#: radaro_utils/filters/date_filters.py:27
+#, python-brace-format
+msgid "{alias} for 24+ hours ago"
+msgstr "{alias} uur geleden"
+
+#: radaro_utils/filters/date_filters.py:28
+#, python-brace-format
+msgid "{alias} for 72+ hours ago"
+msgstr "{alias} meer dan 72 uur geleden"
+
+#: radaro_utils/filters/date_filters.py:29
+msgid "7 days"
+msgstr "7 dagen"
+
+#: radaro_utils/filters/date_filters.py:30
+msgid "Month"
+msgstr "Maand"
+
+#: radaro_utils/filters/date_filters.py:31
+msgid "3 months"
+msgstr "3 maanden"
+
+#: radaro_utils/filters/date_filters.py:32
+msgid "Year"
+msgstr "Jaar"
+
+#: radaro_utils/password_validation.py:17
+#, python-format
+msgid "The password must contain at least %(min_letters)d uppercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d uppercase characters"
+msgstr[0] ""
+"Het wachtwoord moet ten minste %(min_letters)d hoofdletters bevatten"
+msgstr[1] "Het wachtwoord moet minstens %(min_letters)d hoofdletters bevatten"
+
+#: radaro_utils/password_validation.py:37
+#, python-format
+msgid "The password must contain at least %(min_letters)d lowercase character"
+msgid_plural ""
+"The password must contain at least %(min_letters)d lowercase characters"
+msgstr[0] ""
+"Het wachtwoord moet ten minste %(min_letters)d kleine letters bevatten"
+msgstr[1] ""
+"Het wachtwoord moet ten minste %(min_letters)d kleine letters bevatten"
+
+#: radaro_utils/password_validation.py:57
+#, python-format
+msgid "The password must contain at least %(min_numbers)d number"
+msgid_plural "The password must contain at least %(min_numbers)d numbers"
+msgstr[0] "Het wachtwoord moet ten minste %(min_numbers)d nummer bevatten"
+msgstr[1] "Het wachtwoord moet ten minste %(min_numbers)d cijfers bevatten"
+
+#: radaro_utils/radaro_phone/serializers.py:25
+msgid "This field may not be blank."
+msgstr "Dit veld mag niet leeg zijn."
+
+#: radaro_utils/radaro_phone/serializers.py:27
+msgid "Phone number have too many characters"
+msgstr "Telefoonnummer bevat te veel tekens"
+
+#: radaro_utils/radaro_phone/utils.py:31
+msgid "Not supported region for merchant."
+msgstr "Niet ondersteunde regio voor handelaar."
+
+#: radaro_utils/radaro_phone/utils.py:33
+msgid "Invalid phone number for merchant's region."
+msgid_plural "Invalid phone number for merchant's regions."
+msgstr[0] "Ongeldig telefoonnummer voor de regio van de verkoper."
+msgstr[1] "Ongeldig telefoonnummer voor de regio's van de verkoper."
+
+#: radaro_utils/radaro_phone/utils.py:52
+msgid ""
+"Phone must be in international format since the merchant operates in "
+"multiple countries."
+msgstr ""
+"De telefoon moet een internationaal formaat hebben, aangezien de verkoper in "
+"meerdere landen actief is."
+
+#: radaro_utils/serializers/mixins.py:37
+msgid "You should specify either location or address"
+msgstr "U moet een locatie of adres opgeven"
+
+#: radaro_utils/serializers/mixins.py:41
+msgid "Address not found."
+msgstr "Adres niet gevonden."
+
+#: radaro_utils/serializers/mobile/serializers.py:45
+#, python-brace-format
+msgid "Invalid data. Expected a dictionary, but got {datatype}."
+msgstr "Onjuiste data. Had een woordenboek verwacht, maar kreeg {datatype} ."
+
+#: radaro_utils/serializers/validators.py:55
+msgid "This date cannot be earlier than now."
+msgstr "Deze datum kan niet vroeger zijn dan nu."
+
+#: route_optimisation/admin/base.py:38
+msgid "Optimisation cost"
+msgstr "optimalisatie kosten"
+
+#: route_optimisation/admin/base.py:78
+msgid "Soft delete selected optimisations and unassign jobs"
+msgstr "Geselecteerde optimalisaties zacht verwijderen en taken ongedaan maken"
+
+#: route_optimisation/admin/base.py:89
+msgid "Soft delete selected optimisations, keep jobs assigned"
+msgstr ""
+"Geselecteerde optimalisaties zacht verwijderen, taken toegewezen houden"
+
+#: route_optimisation/api/mobile/v1/serializers.py:54
+#: route_optimisation/api/web/serializers/route_optimisation.py:54
+#: route_optimisation/api/web/temp_legacy/serializers/route_optimisation.py:64
+#: webhooks/api/route_optimisation/v1/serializers/optimisation.py:68
+#: webhooks/api/route_optimisation/v2/serializers/optimisation.py:48
+msgid "Cannot create optimisation in the past."
+msgstr "Kan in het verleden geen optimalisatie maken."
+
+#: route_optimisation/api/permissions.py:9
+msgid "Route optimisation is not active for you"
+msgstr "Route-optimalisatie is niet actief voor jou"
+
+#: route_optimisation/api/web/filters.py:75
+msgid "\"{}\" is not a valid value."
+msgstr "\"{}\" is geen geldige waarde."
+
+#: route_optimisation/api/web/serializers/manage_orders.py:27
+#: route_optimisation/api/web/serializers/manage_orders.py:41
+#: route_optimisation/logging/logs/validation.py:124
+msgid "optimisation"
+msgstr "optimalisatie"
+
+#: route_optimisation/api/web/serializers/refresh.py:43
+msgid "This field is required."
+msgstr "Dit veld is verplicht."
+
+#: route_optimisation/api/web/temp_legacy/views.py:50
+#: route_optimisation/api/web/views/route_optimisations.py:65
+msgid "You can't delete optimisation which hasn't yet been calculated."
+msgstr "U kunt optimalisatie die nog niet is berekend, niet verwijderen."
+
+#: route_optimisation/apps.py:9
+msgid "Route Optimisation"
+msgstr "Route-optimalisatie"
+
+#: route_optimisation/celery_tasks/notification.py:30
+#, python-brace-format
+msgid " on {optimisation_day}"
+msgstr " op {optimisation_day}"
+
+#: route_optimisation/engine/ortools/context/init.py:256
+msgid ""
+"We could not create the optimisation. There are orders on different "
+"continents."
+msgstr ""
+"We konden de optimalisatie niet creëren. Er zijn bestellingen op "
+"verschillende continenten."
+
+#: route_optimisation/engine/ortools/context/init.py:267
+msgid ""
+"We could not create the optimisation. There are hubs on different continents."
+msgstr ""
+"We konden de optimalisatie niet creëren. Er zijn hubs op verschillende "
+"continenten."
+
+#: route_optimisation/logging/logs/base.py:89
+#: route_optimisation/logging/logs/base.py:94
+msgid "Old type route optimisation"
+msgstr "Route-optimalisatie van het oude type"
+
+#: route_optimisation/logging/logs/exception.py:60
+#: route_optimisation/logging/logs/help_logs.py:21
+#: route_optimisation/logging/logs/help_logs.py:43
+#: route_optimisation/logging/logs/help_logs.py:58
+#: route_optimisation/logging/logs/help_logs.py:82
+#: route_optimisation/logging/logs/help_logs.py:86
+#: route_optimisation/logging/logs/help_logs.py:90
+#: route_optimisation/logging/logs/help_logs.py:93
+#: route_optimisation/logging/logs/help_logs.py:171
+#: route_optimisation/logging/logs/help_logs.py:228
+#: route_optimisation/logging/logs/managing.py:82
+#: route_optimisation/logging/logs/state_change.py:16
+#: route_optimisation/logging/logs/state_change.py:53
+#: route_optimisation/logging/logs/state_change.py:56
+#: route_optimisation/logging/logs/state_change.py:58
+#: route_optimisation/logging/logs/validation.py:57
+#: route_optimisation/logging/logs/validation.py:64
+#: route_optimisation/logging/logs/validation.py:66
+#: route_optimisation/logging/logs/validation.py:69
+#: route_optimisation/logging/logs/validation.py:88
+#: route_optimisation/logging/logs/validation.py:93
+#: route_optimisation/logging/logs/validation.py:97
+#: route_optimisation/logging/logs/validation.py:101
+#: route_optimisation/logging/logs/validation.py:105
+#: route_optimisation/logging/logs/validation.py:193
+#: route_optimisation/logging/logs/validation.py:196
+#: route_optimisation/logging/logs/validation.py:199
+#: route_optimisation/logging/logs/validation.py:202
+#: route_optimisation/logging/logs/validation.py:244
+#: route_optimisation/utils/backends/move_orders.py:81
+#: route_optimisation/utils/backends/move_orders.py:88
+#: route_optimisation/utils/validation/serializers.py:71
+#: route_optimisation/utils/validation/serializers.py:160
+#: webhooks/api/route_optimisation/v2/serializers/options.py:25
+msgid "Optimisation"
+msgstr "Optimalisatie"
+
+#: route_optimisation/logging/logs/validation.py:71
+msgid "optimised"
+msgstr "geoptimaliseerd"
+
+#: route_optimisation/push_messages/composers.py:11
+msgid "your route was optimised"
+msgstr "je route is geoptimaliseerd"
+
+#: route_optimisation/push_messages/composers.py:34
+msgid "Route optimisation"
+msgstr "Route-optimalisatie"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "completed"
+msgstr "voltooid"
+
+#: route_optimisation/push_messages/composers.py:42
+msgid "failed"
+msgstr "gefaald"
+
+#: route_optimisation/push_messages/composers.py:56
+msgid "your route was removed"
+msgstr "je route is verwijderd"
+
+#: route_optimisation/push_messages/composers.py:79
+msgid "your route was updated"
+msgstr "je route is bijgewerkt"
+
+#: route_optimisation/utils/validation/serializers.py:158
+#, python-brace-format
+msgid ""
+"Vehicle Capacity feature is disabled, please turn this on to create "
+"{optimisation} that accounts Vehicle Capacity"
+msgstr ""
+"De functie Voertuigcapaciteit is uitgeschakeld, schakel deze in om "
+"{optimisation} die rekening houdt met Voertuigcapaciteit"
+
+#: route_optimisation/utils/validation/serializers.py:172
+msgid "Wrong working hours"
+msgstr "Verkeerde werkuren"
+
+#: route_optimisation/utils/validation/serializers.py:180
+msgid "No start hub passed"
+msgstr "Geen starthub geslaagd"
+
+#: route_optimisation/utils/validation/serializers.py:190
+msgid "No end hub passed"
+msgstr "Geen eindhub gepasseerd"
+
+#: route_optimisation/utils/validation/validators.py:47
+msgid "There are no jobs to optimise"
+msgstr "Er zijn geen banen om te optimaliseren"
+
+#: route_optimisation/utils/validation/validators.py:53
+msgid "Too many jobs to optimise"
+msgstr "Te veel taken om te optimaliseren"
+
+#: route_optimisation/utils/validation/validators.py:61
+msgid "There are no drivers available"
+msgstr "Er zijn geen stuurprogramma's beschikbaar"
+
+#: routing_optimization/apps.py:9
+msgid "Routing Optimisation"
+msgstr "Routeringsoptimalisatie"
+
+#: schedule/admin/fields/const_schedule.py:26
+msgid "The values in the constant schedule are required."
+msgstr "De waarden in het constante schema zijn vereist."
+
+#: schedule/admin/fields/schedule.py:15
+msgid "There must be both values."
+msgstr "Er moeten beide waarden zijn."
+
+#: schedule/admin/fields/schedule.py:16
+#: schedule/api/mobile/schedule/v1/serializers.py:46
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:17
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:44
+msgid "The start time should be less than the end time."
+msgstr "De starttijd moet korter zijn dan de eindtijd."
+
+#: schedule/admin/fields/schedule.py:17 schedule/admin/fields/schedule.py:49
+msgid "Invalid data."
+msgstr "Onjuiste data."
+
+#: schedule/admin/fields/schedule.py:18
+#: schedule/api/mobile/schedule/v1/serializers.py:15
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:17
+msgid "The start of the break must be before the end."
+msgstr "De start van de pauze moet voor het einde zijn."
+
+#: schedule/admin/fields/schedule.py:21
+#: schedule/api/mobile/schedule/v1/serializers.py:42
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:48
+msgid "You can't add a weekend break."
+msgstr "Je kunt geen weekendje weg toevoegen."
+
+#: schedule/api/mobile/schedule/v1/serializers.py:36
+#: schedule/api/mobile/schedule_calendar/v1/serializers/constant.py:13
+#: schedule/api/mobile/schedule_calendar/v1/serializers/one_time.py:40
+msgid "You must enter both time period values"
+msgstr "U moet beide tijdsperiodewaarden invoeren"
+
+#: schedule/api/mobile/schedule/v1/serializers.py:39
+msgid "Breaks are only available on one time schedule"
+msgstr "Pauzes zijn alleen beschikbaar op één tijdschema"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:119
+msgid "Barcode is not found"
+msgstr "Barcode is niet gevonden"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:121
+msgid "This barcode has not been assigned to you"
+msgstr "Deze barcode is niet aan jou toegewezen"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:124
+msgid "The barcode has been already scanned both times"
+msgstr "De barcode is beide keren al gescand"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:144
+msgid "The barcode has been already scanned upon delivery"
+msgstr "De barcode is al gescand bij levering"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:149
+msgid "The barcode has been already scanned at warehouse"
+msgstr "De barcode is al gescand in het magazijn"
+
+#: tasks/api/mobile/barcodes/v1/serializers.py:153
+msgid "Incorrect job status to scan this barcode"
+msgstr "Onjuiste taakstatus om deze streepjescode te scannen"
+
+#: tasks/api/mobile/concatenated_orders/v1/serializers.py:41
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:40
+msgid "You cannot use pick up status"
+msgstr "U kunt de ophaalstatus niet gebruiken"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/barcodes.py:31
+#, python-brace-format
+msgid "Barcode {code} already exists."
+msgstr "Barcode {code} bestaat al."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:52
+msgid "Cannot change SKID with current order status"
+msgstr "Kan SKID niet wijzigen met huidige bestelstatus"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/cargoes.py:54
+msgid "Cannot change SKID with current driver status"
+msgstr "Kan SKID niet wijzigen met huidige stuurprogrammastatus"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/confirmation.py:124
+msgid "You cannot change the status until delivery is confirmed"
+msgstr "U kunt de status niet wijzigen totdat de levering is bevestigd"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:60
+#, python-brace-format
+msgid "Forbidden to change status from \"{old_status}\" to \"{new_status}\""
+msgstr ""
+"Verboden om de status te wijzigen van \" {old_status} \" naar "
+"\" {new_status} \""
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:78
+msgid "You cannot send starting point in the current status"
+msgstr "U kunt het startpunt niet verzenden in de huidige status"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:85
+msgid "You cannot send ending point in the current status"
+msgstr "U kunt het eindpunt niet verzenden in de huidige status"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/main.py:92
+msgid "You cannot specify a wayback point in the current status"
+msgstr "U kunt geen terugwegpunt specificeren in de huidige status"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:45
+msgid "You can not send a comment without a code"
+msgstr "Zonder code kun je geen reactie sturen"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:53
+msgid "Success codes are disabled for your merchant."
+msgstr "Succescodes zijn uitgeschakeld voor uw handelaar."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:60
+#, python-brace-format
+msgid "{code_type} comment is required."
+msgstr "{code_type} commentaar is vereist."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:81
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:88
+#, python-brace-format
+msgid "You can not pass {code_type} code with this status."
+msgstr "Met deze status kunt u de {code_type}"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order/terminate.py:102
+msgid "You cannot change the status before sending a terminate code"
+msgstr "U kunt de status niet wijzigen voordat u een beëindigingscode verzendt"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_create.py:32
+msgid "Pickup customer and pickup address must be used together"
+msgstr "Ophaalklant en ophaaladres moeten samen worden gebruikt"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_documents.py:29
+#, python-brace-format
+msgid "The document named \"{name}\" is already uploaded to the server."
+msgstr "Het document met de naam \" {name} \" is al geüpload naar de server."
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:57
+msgid "You are not able to send pick up confirmation with the current status"
+msgstr "U kunt geen afhaalbevestiging sturen met de huidige status"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:63
+#: tasks/api/mobile/driver_orders/v1/serializers/order_images.py:69
+msgid "You are not able to send confirmation with the current status"
+msgstr "U kunt geen bevestiging sturen met de huidige status"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:40
+#, python-brace-format
+msgid "Driver {full_name} doesn't have all these skills"
+msgstr "Bestuurder {full_name} heeft niet al deze vaardigheden"
+
+#: tasks/api/mobile/driver_orders/v1/serializers/skill_set.py:49
+msgid "There are no drivers with the same set of skills."
+msgstr "Er zijn geen chauffeurs met dezelfde vaardigheden."
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+msgid "Pick up after"
+msgstr "Ophalen na"
+
+#: tasks/api/web/orders/serializers/order/validators.py:16
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Pick up deadline"
+msgstr "Deadline ophalen"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+msgid "Deliver after"
+msgstr "Lever na"
+
+#: tasks/api/web/orders/serializers/order/validators.py:19
+#: tasks/api/web/orders/serializers/order/validators.py:22
+msgid "Deliver deadline"
+msgstr "Lever deadline"
+
+#: tasks/api/web/orders/serializers/order/validators.py:41
+#, python-brace-format
+msgid "{lower_label} cannot be later than {upper_label}"
+msgstr "{lower_label} mag niet later zijn dan {upper_label}"
+
+#: tasks/api/web/orders/serializers/order/validators.py:44
+#, python-brace-format
+msgid "{lower_label} and {upper_label} must be within one day"
+msgstr "{lower_label} en {upper_label} moeten binnen één dag zijn"
+
+#: tasks/mixins/order_status.py:35
+msgid "Not assigned"
+msgstr "Niet toegekend"
+
+#: tasks/mixins/order_status.py:36
+msgid "Assigned"
+msgstr "Toegewezen"
+
+#: tasks/mixins/order_status.py:37
+msgid "Pick up"
+msgstr "Oppakken"
+
+#: tasks/mixins/order_status.py:38
+msgid "Picked up"
+msgstr "Opgehaald"
+
+#: tasks/mixins/order_status.py:39
+msgid "In progress"
+msgstr "Bezig"
+
+#: tasks/mixins/order_status.py:40
+msgid "Way back"
+msgstr "Ver terug"
+
+#: tasks/mixins/order_status.py:41
+msgid "Completed"
+msgstr "Voltooid"
+
+#: tasks/mixins/order_status.py:42
+msgid "Failed"
+msgstr "Mislukt"
+
+#: tasks/push_notification/push_messages/event_composers.py:12
+msgid "your job"
+msgstr "jouw baan"
+
+#: tasks/push_notification/push_messages/event_composers.py:21
+msgid " has been deleted"
+msgstr " is verwijderd"
+
+#: tasks/push_notification/push_messages/event_composers.py:36
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been updated with new info"
+msgstr ""
+"{appeal} , uw vacature \" {title} \" is bijgewerkt met nieuwe informatie"
+
+#: tasks/push_notification/push_messages/event_composers.py:44
+#, python-brace-format
+msgid ""
+"Seems, that you've arrived at job location. Please carry out the {checklist}"
+msgstr ""
+"Het lijkt erop dat je op de werklocatie bent aangekomen. Voer de {checklist}"
+
+#: tasks/push_notification/push_messages/event_composers.py:45
+#, python-brace-format
+msgid "You've arrived at your job. Please carry out the {checklist}"
+msgstr "Je bent aangekomen op je werk. Voer de {checklist}"
+
+#: tasks/push_notification/push_messages/event_composers.py:53
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" deadline has expired"
+msgstr "{appeal} , de deadline van je vacature \" {title} \" is verlopen"
+
+#: tasks/push_notification/push_messages/event_composers.py:61
+#, python-brace-format
+msgid "You have less than 30 minutes to finish job \"{title}\""
+msgstr "Je hebt minder dan 30 minuten om de taak te voltooien \" {title} \""
+
+#: tasks/push_notification/push_messages/event_composers.py:69
+#, python-brace-format
+msgid "SKID info in job \"{title}\" has been updated"
+msgstr "SKID-info in vacature “ {title} ” is bijgewerkt"
+
+#: tasks/push_notification/push_messages/event_composers.py:77
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been added to concatenated job"
+msgstr ""
+"{appeal}, uw vacature \"{title}\" is toegevoegd aan een aaneengeschakelde "
+"vacature"
+
+#: tasks/push_notification/push_messages/event_composers.py:85
+#, python-brace-format
+msgid "{appeal}, your job \"{title}\" has been removed from concatenated job"
+msgstr ""
+"{appeal}, uw vacature \"{title}\" is verwijderd uit de aaneengeschakelde "
+"vacature"
+
+#: tasks/push_notification/push_messages/event_composers.py:97
+#, python-brace-format
+msgid "{appeal}, your concatenated job has been ungrouped"
+msgstr "{appeal}, uw aaneengeschakelde taak is gedegroepeerd"
+
+#: tasks/push_notification/push_messages/event_composers.py:105
+#, python-brace-format
+msgid "{appeal}, your jobs have been grouped into concatenated job"
+msgstr "{appeal}, uw banen zijn gegroepeerd in aaneengeschakelde banen"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:53
+msgid "your current job"
+msgstr "je huidige baan"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:54
+msgid "has been"
+msgstr "is geweest"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:65
+msgid " by the manager"
+msgstr " door de manager"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:74
+msgid "marked as"
+msgstr "gemarkeerd als"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:89
+#: tasks/push_notification/push_messages/order_change_status_composers.py:119
+msgid "Job"
+msgstr "Functie"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:96
+msgid " is available"
+msgstr " is beschikbaar"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:126
+msgid " was unassigned from you"
+msgstr " werd niet toegewezen aan jou"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:134
+msgid "you have received"
+msgstr "je hebt ontvangen"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:135
+msgid "a new job:"
+msgstr "een nieuwe baan:"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:152
+msgid "you've received"
+msgstr "je hebt ontvangen"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:163
+#, python-brace-format
+msgid " {count} new jobs"
+msgstr " {count} nieuwe banen"
+
+#: tasks/push_notification/push_messages/order_change_status_composers.py:187
+#, python-brace-format
+msgid "{count} jobs were unassigned from you"
+msgstr "{count} banen zijn ingetrokken bij jou"
+
+#: tasks/utils/reminder.py:36
+#, python-brace-format
+msgid "on {delivery_day}"
+msgstr "op {delivery_day}"
+
+#: tasks/utils/reminder.py:39
+msgid "tomorrow"
+msgstr "morgen"
+
+#: tasks/utils/reminder.py:40
+msgid "Good news! "
+msgstr "Goed nieuws! "
+
+#: tasks/utils/reminder.py:56
+msgid "today"
+msgstr "vandaag"
+
+#: webhooks/api/permissions.py:53
+msgid "External Route optimisation API is not available for you"
+msgstr "Externe route-optimalisatie-API is niet voor u beschikbaar"
+
+#: webhooks/api/route_optimisation/v1/views.py:41
+#: webhooks/api/route_optimisation/v2/views.py:54
+msgid ""
+"Customers can only be notified in Completed/Running optimisation statuses."
+msgstr ""
+"Klanten kunnen alleen op de hoogte worden gebracht in de status Voltooid/"
+"Bezig met optimaliseren."
+
+#~ msgid "You can't create optimisation in past"
+#~ msgstr "U kunt in het verleden geen optimalisatie maken"
+
+#~ msgid ""
+#~ "You already have existing optimisation or currently running optimisation "
+#~ "process on this day"
+#~ msgstr ""
+#~ "U heeft op deze dag al een bestaande optimalisatie of een momenteel "
+#~ "lopend optimalisatieproces"
+
+#~ msgid "There is currently running optimisation process for the driver"
+#~ msgstr ""
+#~ "Er is momenteel een optimalisatieproces voor de bestuurder aan de gang"
+
+#~ msgid ""
+#~ "You can't create or update solo optimisation while group optimisation is "
+#~ "still not finished."
+#~ msgstr ""
+#~ "U kunt geen solo-optimalisatie maken of bijwerken zolang de "
+#~ "groepsoptimalisatie nog niet is voltooid."
+
+#~ msgid "Optimisation successfully created."
+#~ msgstr "Optimalisatie succesvol gemaakt."
+
+#~ msgid "Unknown optimiser backend."
+#~ msgstr "Onbekende optimizer-backend."
+
+#~ msgid "Optimisation time exceeded. Optimisation cancelled."
+#~ msgstr "Optimalisatietijd overschreden. Optimalisatie geannuleerd."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are more than 100 jobs to "
+#~ "optimise."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er zijn meer dan 100 jobs te "
+#~ "optimaliseren."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs with deadline on "
+#~ "a selected day."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er zijn geen vacatures met "
+#~ "deadline op een geselecteerde dag."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There are no jobs assigned to "
+#~ "driver in near future."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er zijn in de nabije toekomst "
+#~ "geen banen toegewezen aan chauffeur."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created solo "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er is al een solo-optimalisatie "
+#~ "gemaakt voor deze driver."
+
+#~ msgid ""
+#~ "We could not create the optimisation. There is already created group "
+#~ "optimisation for this driver."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er is al groepsoptimalisatie "
+#~ "gemaakt voor dit stuurprogramma."
+
+#~ msgid ""
+#~ "You do not need to re-optimise your route. There is no difference with "
+#~ "previously optimised route."
+#~ msgstr ""
+#~ "U hoeft uw route niet opnieuw te optimaliseren. Er is geen verschil met "
+#~ "eerder geoptimaliseerde route."
+
+#~ msgid "We could not create the optimisation. Unknown error occurred."
+#~ msgstr ""
+#~ "We konden de optimalisatie niet creëren. Er is een onbekende fout "
+#~ "opgetreden."
+
+#~ msgid "parent optimisation"
+#~ msgstr "bovenliggende optimalisatie"
+
+#, python-brace-format
+#~ msgid "#{id} {type} route optimisation for {days}"
+#~ msgstr "# {id} {type} route-optimalisatie voor {days}"
+
+#~ msgid "Optimisation finished."
+#~ msgstr "Optimalisatie voltooid."
+
+#, python-brace-format
+#~ msgid ">>>Start GROUP optimisation. ID: {id}<<<"
+#~ msgstr "> > > Start GROEP optimalisatie. ID: {id} < < <"
+
+#~ msgid "Optimisation failed."
+#~ msgstr "Optimalisatie mislukt."
+
+#~ msgid "Answer for this question already exists."
+#~ msgstr "Het antwoord op deze vraag bestaat al."
+
+#~ msgid ""
+#~ "Upload a valid image. The file you uploaded was either not an image or a "
+#~ "corrupted image."
+#~ msgstr ""
+#~ "Upload een geldige afbeelding. Het bestand dat je hebt geüpload, was geen "
+#~ "afbeelding of een beschadigde afbeelding."

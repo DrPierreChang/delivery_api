@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#map {
+    min-height: 100%;
+    width: 100%;
+}
+
+#legend {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+#legend h3 {
+    margin-top: 0;
+}
+
+#legend span {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    display: inline-block;
+    height: 0;
+    width: 10px;
+}

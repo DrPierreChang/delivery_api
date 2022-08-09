@@ -1,0 +1,19 @@
+{% load link_tags %}
+
+Hi, {{invite.full_name}}!
+
+{% if invite.merchant.is_nti %}
+You've been invited to join the Truck Assist team as a Service Provider.
+{% else %}
+You've been invited to join the {{invite.merchant.name}} team on Radaro for the position of {{invite.get_position}}.
+{% endif %}
+{% if invite.position == invite.initiator.DRIVER %}
+{% get_link invite "SMS_DOWNLOAD_APP_TEXT" as download_app_text %}
+{{download_app_text}}
+{% get_link invite "SMS" as link %}
+{{ link }}
+{% else %}
+Complete your registration using link below and join your team now!
+{{ settings.FRONTEND_URL}}{{ invite.get_invite_url }}
+Join team!
+{% endif %}

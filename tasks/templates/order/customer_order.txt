@@ -1,0 +1,5 @@
+Hi, {{customer.name}}!
+
+Great news, your order from {{merchant}} is on its way and will be delivered in {{ order.eta }}.
+Click on the link to track your order in real-time.
+{{ url }}

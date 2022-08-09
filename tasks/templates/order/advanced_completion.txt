@@ -1,0 +1,12 @@
+Hello, {{merchant.name}}!
+Here are the details about job {% if terminatecode.type == 'success' %} completion {% else %} termination {% endif %}
+
+Job ID: {{order.order_id}}
+{% if external_id %} REF: {{ external_id }} {% endif %}
+Driver name: {{ order.driver.full_name | title }}
+Customer name: {{ customer.name|title }}
+{% if terminatecode.type == 'success' %} Success {% else %} Termination {% endif %} code: "{{ terminatecode }}"
+Comment: {% if order.terminate_comment %} {{ order.terminate_comment }} {% else %} - {% endif %}
+
+You can get more information about the job in Radaro. Just open the job report using the link below.
+{{ report_url }}

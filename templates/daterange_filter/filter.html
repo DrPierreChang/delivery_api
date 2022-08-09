@@ -1,0 +1,115 @@
+{% load i18n admin_static %}
+
+{% with choices.0 as i %}
+<div class="grp-module">
+    <div class="grp-row">
+        <label>By {{ title }}</label>
+
+        <form method="GET" class="date-range-form" id="date_filter" action="">
+            {{ spec.form.as_p }}
+
+            <p class="submit-row">
+                {#create hidden inputs to preserve values from other filters and search field#}
+                {% for k, v in i.get_query.items %}
+                    <input type="hidden" name="{{ k }}" value="{{ v }}">
+                {% endfor %}
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+    </div>
+</div>
+
+<style>
+    .calendarbox, .clockbox {
+        /* Make sure the calendar widget popover displays in front of the sidebar */
+        z-index: 1100;
+        margin-left: -16em !important;
+        margin-top: 9em !important;
+    }
+    .datetimeshortcuts {
+        /* Hide "|" symbol */
+        font-size: 0;
+    }
+    .datetimeshortcuts a:before {
+        /* Restore deleted spaces */
+        content: " ";
+    }
+    .datetimeshortcuts a {
+        /* Make text for "Today" a bit smaller so it appears on one line. */
+        font-size: 7pt;
+    }
+    #changelist-filter a {
+        display: inline;
+    }
+    .date-range-form p {
+        margin-bottom: 10px;
+    }
+</style>
+<script type="text/javascript" charset="utf-8">
+    (function($) {
+        $(document).ready(function() {
+            grappelli.initDateAndTimePicker();
+
+            $('.date-range-form input[type=reset]').click(function () {
+                $(this).parent().parent().find('input[type=text]').each(function (index, element) {
+                    $(element).val('');
+                });
+                filter_page();
+            });
+
+            var filter_page = function () {
+                var getUrl = window.location;
+                var url = getUrl.protocol + "//" + getUrl.host + getUrl.pathname + "?";
+
+                params = getParams(window.location.search);
+                $('.date-range-form input:visible').each(function () {
+                    var field =  $(this).attr("name");
+                    if (field) {
+                        params[field] = $(this).val();
+                    }
+                });
+
+                for (var field in params) {
+                    url += field + "=" + params[field] + "&";
+                }
+                window.location.href = url;
+            };
+
+            var getParams = function (search) {
+                var GET = {};
+
+                if (search.length > 1) {
+                    var param = search.slice(1).replace(/\+/g, ' ').split('&'),
+                        plength = param.length,
+                        tmp,
+                        p;
+
+                    for (p = 0; p < plength; p += 1) {
+                        tmp = param[p].split('=');
+                        if (decodeURIComponent(tmp[0])) {
+                            GET[decodeURIComponent(tmp[0])] = decodeURIComponent(tmp[1]);
+                        }
+                    }
+                }
+
+                return GET;
+            };
+
+            $('.date-range-form input[type=text]').on("change", function () {
+                if ($(this).is(":visible")) {
+                    filter_page();
+                }
+            });
+
+            $('.date-range-form').on("submit", function (event) {
+                filter_page();
+
+                return false;
+            });
+        });
+    })(grp.jQuery);
+</script>
+
+{{ spec.form.media }}
+
+{% endwith %}

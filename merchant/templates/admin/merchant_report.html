@@ -1,0 +1,85 @@
+{% extends "generic-timeframed.html" %}
+
+{% load admin_urls %}
+
+{% block title %}Blog Usage Report{% endblock %}
+{% block report_header %}
+<header id="grp-content-title">
+    <h1>Merchants Usage Report</h1>
+    <ul class="grp-object-tools">
+        <li>
+            <a href="{% url 'admin:cms-report-generate' %}?date_from={{ form.date_from.value | urlencode}}&date_to={{ form.date_to.value | urlencode}}&merchant={{ form.merchant.value|default_if_none:''}}"
+               class="grp-state-focus">Generate Report
+            </a>
+        </li>
+    </ul>
+</header>
+{% endblock %}
+{% block report_content %}
+<div class="grp-module grp-changelist-results">
+    <table class="grp-table grp-sortable">
+        <thead>
+            <tr>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Merchant</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Merchant ID</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Invites SMS to driver</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Pin codes SMS to driver</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Total SMS to driver</span></div>
+                </th>
+
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Delivery day SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Job started SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Job failed SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Reminder(1 h) SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Reminder(24 h) SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text" style=""><span>Total SMS to customer</span></div>
+                </th>
+                <th class="column-__unicode__">
+                    <div class="grp-text"><span>Jobs created</span></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for merchant in merchants %}
+                <tr class="grp-row grp-row-{% cycle 'odd' 'even' %}">
+                    <td class="field-__unicode__">{{ merchant.name }}</td>
+                    <td class="field-__unicode__">{{ merchant.id }}</td>
+
+                    <td class="field-__unicode__">{{ merchant.sms_invitation }}</td>
+                    <td class="field-__unicode__">{{ merchant.sms_invitation_complete }}</td>
+                    <td class="field-__unicode__" style="font-weight: bold">{{ merchant.total_driver_sms }}</td>
+
+                    <td class="field-__unicode__">{{ merchant.sms_order_upcoming_delivery }}</td>
+                    <td class="field-__unicode__">{{ merchant.sms_order_in_progress }}</td>
+                    <td class="field-__unicode__">{{ merchant.sms_order_terminated }}</td>
+                    <td class="field-__unicode__">{{ merchant.sms_order_follow_up }}</td>
+                    <td class="field-__unicode__">{{ merchant.sms_order_follow_up_reminder }}</td>
+                    <td class="field-__unicode__" style="font-weight: bold">{{ merchant.total_customer_sms }}</td>
+
+                    <td class="field-__unicode__">{{ merchant.jobs }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<div>
+    <div>
+    <div style="margin-bottom: 5px; display: flex; font-weight: bold; border-bottom: 2px solid black;">
+        <div style="flex: 20%">
+            Time
+        </div>
+        <div style="flex: 60%">
+            Message
+        </div>
+        <div style="flex: 20%">
+            Labels
+        </div>
+    </div>
+    {% for subwidget in widget.subwidgets %}
+        <div style="margin-bottom: 5px; display: flex; border-bottom: 1px solid black;">
+            {% with widget=subwidget %}
+                <div style="flex: 20%">
+                    {{ widget.attrs.value.time }}
+                </div>
+                <div style="flex: 60%; white-space: pre-line">{{ widget.attrs.value.msg }}</div>
+                <div style="flex: 20%">
+                    {{ widget.attrs.value.labels }}
+                </div>
+            {% endwith %}
+        </div>
+
+    {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{% extends "admin/base.html" %}
+{% block title %}SMS Test Page{% endblock %}
+{% block content %}
+    {% if success_message %}
+        <ul class="grp-messagelist">
+            <li class="grp-success">{{ success_message }}</li>
+        </ul>
+    {% endif %}
+
+    <header id="grp-content-title">
+        <h1>SMS Test</h1>
+    </header>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="grp-module">
+            <div class="grp-row">
+                <div style="display: inline-block">
+                    {{ form.phone.label_tag }}
+                    {{ form.phone }}
+                </div>
+                <input type="submit" value="Send" style="display: inline-block"/>
+                {{ form.phone.errors }}
+                <p class="grp-help">
+                    {{ form.phone.help_text }}
+                </p>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

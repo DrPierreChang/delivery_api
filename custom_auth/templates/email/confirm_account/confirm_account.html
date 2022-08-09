@@ -1,0 +1,25 @@
+{% extends "email/email_base.html" %}
+{% block caption %}
+    <p class="heading">
+        {% if member.get_full_name %}
+            Hi, {{ member.get_full_name }}!
+        {% else %}
+            Hello!
+        {% endif %}
+    </p>
+{% endblock %}
+{% block content %}
+    <p>Please follow the link below to confirm registration of your account. <br/></p>
+    <br/>
+{% endblock %}
+{% block link %}
+    <a href="{{ settings.BASE_URL }}{{ member.get_confirm_account_url }}" style="font-size:12px; font-family: Lato, sans-serif;
+    text-decoration: none; line-height:1.0; letter-spacing: 3px; display:inline-block">
+            <p style="text-align: center; color: #FFFFFF">
+                CONFIRM ACCOUNT
+            </p>
+        </a>
+{% endblock %}
+{% block notification %}
+    <p class="extra-info">If you receive this email and didn’t sign up for an account with Radaro, please simply ignore this email.</p>
+{% endblock %}
